@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Stock Details</h2>
+    <form id="stockForm">
+        <div class="form-group">
+            <label for="ticker">Stock Ticker</label>
+            <input type="text" class="form-control" id="ticker" name="ticker" placeholder="Enter ticker (e.g. AAPL)" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Get Details</button>
+    </form>
+
+    <div id="priceResult" class="mt-4" style="display:none;">
+        <h4>Current Price for <span id="tickerDisplay"></span></h4>
+        <p>$<span id="priceDisplay"></span></p>
+    </div>
+</div>
+
+<script>
+document.getElementById('stockForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const ticker = document.getElementById('ticker').value;
+    
+    fetch('/stock/details', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ticker: ticker})
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.price) {
+            document.getElementById('tickerDisplay').textContent = data.ticker;
+            document.getElementById('priceDisplay').textContent = data.price;
+            document.getElementById('priceResult').style.display = 'block';
+        }
+    })
+    .catch(error => console.error('Error:', error));
+});
+</script>
+{% endblock %}

@@ -8,3 +8,151 @@
 2025-03-25 21:17:54,215 [INFO] 127.0.0.1 - - [25/Mar/2025 21:17:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 2025-03-25 21:17:56,790 [INFO] 127.0.0.1 - - [25/Mar/2025 21:17:56] "GET / HTTP/1.1" 200 -
 2025-03-25 21:17:56,861 [INFO] 127.0.0.1 - - [25/Mar/2025 21:17:56] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 21:23:51,064 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/app.py', reloading
+2025-03-25 21:23:52,350 [INFO]  * Restarting with stat
+2025-03-25 21:23:59,470 [WARNING]  * Debugger is active!
+2025-03-25 21:23:59,488 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:30:22,757 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 21:30:22,758 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 21:30:22,759 [INFO]  * Restarting with stat
+2025-03-25 21:30:28,906 [WARNING]  * Debugger is active!
+2025-03-25 21:30:28,939 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:30:31,143 [INFO] 127.0.0.1 - - [25/Mar/2025 21:30:31] "GET / HTTP/1.1" 200 -
+2025-03-25 21:30:31,179 [INFO] 127.0.0.1 - - [25/Mar/2025 21:30:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 21:30:34,382 [INFO] 127.0.0.1 - - [25/Mar/2025 21:30:34] "[35m[1mGET /stock/details HTTP/1.1[0m" 500 -
+2025-03-25 21:30:34,438 [INFO] 127.0.0.1 - - [25/Mar/2025 21:30:34] "GET /stock/details?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-25 21:30:34,440 [INFO] 127.0.0.1 - - [25/Mar/2025 21:30:34] "GET /stock/details?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-25 21:30:34,456 [INFO] 127.0.0.1 - - [25/Mar/2025 21:30:34] "GET /stock/details?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-25 21:30:34,457 [INFO] 127.0.0.1 - - [25/Mar/2025 21:30:34] "GET /stock/details?__debugger__=yes&cmd=resource&f=console.png&s=CrptwvNGJVmeR7sxij2B HTTP/1.1" 200 -
+2025-03-25 21:35:40,549 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 21:35:40,549 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 21:35:40,550 [INFO]  * Restarting with stat
+2025-03-25 21:35:47,246 [WARNING]  * Debugger is active!
+2025-03-25 21:35:47,271 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:36:03,627 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 21:36:04,371 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-25 21:36:04,412 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:04] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-25 21:36:04,413 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:04] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-25 21:36:04,419 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:04] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-25 21:36:04,420 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:04] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=MF2gLfYaA9ggrM4wDj0W HTTP/1.1" 200 -
+2025-03-25 21:36:07,194 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-25 21:36:07,223 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 21:36:07,223 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:07] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-25 21:36:07,229 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:07] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=MF2gLfYaA9ggrM4wDj0W HTTP/1.1" 200 -
+2025-03-25 21:36:07,236 [INFO] 127.0.0.1 - - [25/Mar/2025 21:36:07] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-25 21:40:14,163 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 21:40:14,163 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 21:40:14,168 [INFO]  * Restarting with stat
+2025-03-25 21:40:21,257 [WARNING]  * Debugger is active!
+2025-03-25 21:40:21,282 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:40:28,662 [INFO] 127.0.0.1 - - [25/Mar/2025 21:40:28] "GET / HTTP/1.1" 200 -
+2025-03-25 21:40:28,705 [INFO] 127.0.0.1 - - [25/Mar/2025 21:40:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 21:40:28,710 [INFO] 127.0.0.1 - - [25/Mar/2025 21:40:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 21:40:33,710 [INFO] 127.0.0.1 - - [25/Mar/2025 21:40:33] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 21:40:33,762 [INFO] 127.0.0.1 - - [25/Mar/2025 21:40:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 21:40:33,769 [INFO] 127.0.0.1 - - [25/Mar/2025 21:40:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 21:40:37,859 [INFO] 127.0.0.1 - - [25/Mar/2025 21:40:37] "POST /stock/details HTTP/1.1" 200 -
+2025-03-25 21:40:37,889 [INFO] 127.0.0.1 - - [25/Mar/2025 21:40:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 21:40:37,898 [INFO] 127.0.0.1 - - [25/Mar/2025 21:40:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 21:41:03,934 [INFO] 127.0.0.1 - - [25/Mar/2025 21:41:03] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 21:41:07,292 [INFO] 127.0.0.1 - - [25/Mar/2025 21:41:07] "POST /stock/details HTTP/1.1" 200 -
+2025-03-25 21:41:07,364 [INFO] 127.0.0.1 - - [25/Mar/2025 21:41:07] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 21:41:07,369 [INFO] 127.0.0.1 - - [25/Mar/2025 21:41:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 21:41:19,698 [INFO] 127.0.0.1 - - [25/Mar/2025 21:41:19] "POST /stock/details HTTP/1.1" 200 -
+2025-03-25 21:41:19,774 [INFO] 127.0.0.1 - - [25/Mar/2025 21:41:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 21:41:19,793 [INFO] 127.0.0.1 - - [25/Mar/2025 21:41:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 21:44:58,072 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/app.py', reloading
+2025-03-25 21:44:59,416 [INFO]  * Restarting with stat
+2025-03-25 21:45:06,680 [WARNING]  * Debugger is active!
+2025-03-25 21:45:06,703 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:47:10,886 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/app.py', reloading
+2025-03-25 21:47:12,298 [INFO]  * Restarting with stat
+2025-03-25 21:47:19,193 [WARNING]  * Debugger is active!
+2025-03-25 21:47:19,209 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:49:46,414 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 21:49:46,414 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 21:49:46,415 [INFO]  * Restarting with stat
+2025-03-25 21:49:53,907 [WARNING]  * Debugger is active!
+2025-03-25 21:49:53,929 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:50:02,615 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:02] "GET / HTTP/1.1" 200 -
+2025-03-25 21:50:02,688 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 21:50:04,587 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:04] "[31m[1mGET /stock/details HTTP/1.1[0m" 405 -
+2025-03-25 21:50:08,408 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:08] "GET / HTTP/1.1" 200 -
+2025-03-25 21:50:08,441 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:08] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 21:50:08,445 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 21:50:10,384 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:10] "GET / HTTP/1.1" 200 -
+2025-03-25 21:50:10,431 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 21:50:11,904 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:11] "GET / HTTP/1.1" 200 -
+2025-03-25 21:50:11,942 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 21:50:13,156 [INFO] 127.0.0.1 - - [25/Mar/2025 21:50:13] "[31m[1mGET /stock/details HTTP/1.1[0m" 405 -
+2025-03-25 21:52:29,378 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/app.py', reloading
+2025-03-25 21:52:30,862 [INFO]  * Restarting with stat
+2025-03-25 21:52:38,813 [WARNING]  * Debugger is active!
+2025-03-25 21:52:38,831 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:52:52,626 [INFO] 127.0.0.1 - - [25/Mar/2025 21:52:52] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 21:52:52,688 [INFO] 127.0.0.1 - - [25/Mar/2025 21:52:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 21:52:52,702 [INFO] 127.0.0.1 - - [25/Mar/2025 21:52:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 21:52:54,850 [INFO] 127.0.0.1 - - [25/Mar/2025 21:52:54] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 21:52:54,894 [INFO] 127.0.0.1 - - [25/Mar/2025 21:52:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 21:53:01,550 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30d978550>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 21:53:01,641 [ERROR] 
+1 Failed download:
+2025-03-25 21:53:01,641 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30e091d90>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 21:53:01,698 [ERROR] Error getting price for AAPL on 2025-03-25: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 21:53:01,699 [INFO] 127.0.0.1 - - [25/Mar/2025 21:53:01] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 21:54:09,832 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 21:54:11,269 [INFO]  * Restarting with stat
+2025-03-25 21:54:18,625 [WARNING]  * Debugger is active!
+2025-03-25 21:54:18,645 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:55:53,043 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30bd4c650>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 21:55:53,055 [ERROR] 
+1 Failed download:
+2025-03-25 21:55:53,055 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30c52ab90>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 21:55:53,068 [WARNING] Yahoo failed for AAPL, trying Alpha Vantage: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 21:55:53,079 [ERROR] All providers failed for AAPL: 
+[Error] -> 1 validations error(s)
+[Arg] provider -> input: alpha_vantage -> Input should be 'fmp', 'intrinio', 'polygon', 'tiingo' or 'yfinance'
+2025-03-25 21:55:53,079 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 21:55:53,079 [INFO] 127.0.0.1 - - [25/Mar/2025 21:55:53] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 21:56:22,895 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 21:56:22,895 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 21:56:22,899 [INFO]  * Restarting with stat
+2025-03-25 21:56:29,700 [WARNING]  * Debugger is active!
+2025-03-25 21:56:29,722 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 21:56:29,738 [INFO] 127.0.0.1 - - [25/Mar/2025 21:56:29] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 21:56:29,808 [INFO] 127.0.0.1 - - [25/Mar/2025 21:56:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 21:56:33,611 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x314243cd0>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 21:56:33,624 [ERROR] 
+1 Failed download:
+2025-03-25 21:56:33,625 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x314832fd0>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 21:56:33,646 [WARNING] Yahoo failed for AAPL, trying Alpha Vantage: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 21:56:33,659 [ERROR] All providers failed for AAPL: 
+[Error] -> 1 validations error(s)
+[Arg] provider -> input: alpha_vantage -> Input should be 'fmp', 'intrinio', 'polygon', 'tiingo' or 'yfinance'
+2025-03-25 21:56:33,659 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 21:56:33,659 [INFO] 127.0.0.1 - - [25/Mar/2025 21:56:33] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 21:59:55,907 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 21:59:55,907 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 21:59:55,910 [INFO]  * Restarting with stat
+2025-03-25 22:00:03,142 [WARNING]  * Debugger is active!
+2025-03-25 22:00:03,159 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:00:03,411 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30782e890>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:00:03,425 [ERROR] 
+1 Failed download:
+2025-03-25 22:00:03,425 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30c32a910>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:00:03,459 [WARNING] Yahoo failed for AAPL, trying Alpha Vantage: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:00:03,470 [ERROR] All providers failed for AAPL: 
+[Error] -> 1 validations error(s)
+[Arg] provider -> input: alpha_vantage -> Input should be 'fmp', 'intrinio', 'polygon', 'tiingo' or 'yfinance'
+2025-03-25 22:00:03,470 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:00:03,470 [INFO] 127.0.0.1 - - [25/Mar/2025 22:00:03] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -

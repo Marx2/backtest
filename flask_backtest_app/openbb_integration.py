@@ -27,7 +27,18 @@ def get_price_at_date(symbol: str, date: str) -> float:
         if cache_key in price_cache:
             return price_cache[cache_key]
             
-        df = obb.equity.price.historical(symbol, start_date=date, end_date=date)
+        try:
+            # First try with Yahoo provider
+            df = obb.equity.price.historical(symbol, provider="yfinance", start_date=date, end_date=date)
+        except Exception as yahoo_error:
+            logging.warning(f"Yahoo failed for {symbol}, trying Alpha Vantage: {str(yahoo_error)}")
+            try:
+                # Fallback to Alpha Vantage
+                df = obb.equity.price.historical(symbol, provider="alpha_vantage", start_date=date, end_date=date)
+            except Exception as av_error:
+                logging.error(f"All providers failed for {symbol}: {str(av_error)}")
+                raise ValueError(f"Could not retrieve price data for {symbol} from any provider")
+                
         if df.empty:
             raise ValueError(f"No data found for {symbol} on {date}")
             

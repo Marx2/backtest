@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Backtesting Application{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app">
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/stock/details">Stock Details</a>
+        </nav>
+        
+        {% block content %}{% endblock %}
+        
+        <footer>
+            &copy; 2025 Backtest Company. All rights reserved.<br>
+            Address: 123 Main Street, Anytown, USA
+        </footer>
+    </div>
+</body>
+</html>

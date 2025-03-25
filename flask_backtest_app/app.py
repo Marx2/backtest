@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+from datetime import datetime
 import yaml
 import os
 import openbb_integration
@@ -18,6 +19,28 @@ def load_strategies():
 def index():
     strategies = load_strategies()
     return render_template('index.html', strategies=strategies)
+
+@app.route('/stock/details', methods=['GET'])
+def show_stock_details():
+    return render_template('stock_details.html')
+
+@app.route('/stock/details', methods=['POST'])
+def stock_details():
+    data = request.get_json()
+    ticker = data.get('ticker')
+    try:
+        price = openbb_integration.get_price_at_date(ticker, datetime.now().strftime('%Y-%m-%d'))
+        return jsonify({
+            'success': True,
+            'ticker': ticker,
+            'price': price
+        })
+    except Exception as e:
+        print(f"Error getting price: {str(e)}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 400
 
 @app.route('/backtest', methods=['POST'])
 def run_backtest():
