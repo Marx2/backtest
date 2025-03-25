@@ -1,68 +1,50 @@
-# Backtesting Application Plan (Python/Flask Implementation)
+# Backtesting App Development Plan
 
-This document outlines the architecture of the Python/Flask backtesting application.
+## OpenBB Integration Module
 
-## Project Setup
-
-1. Create a Python virtual environment:
-```bash
-conda create -n backtest_env python=3.11
-conda activate backtest_env
+### File Structure
+```
+flask_backtest_app/
+├── openbb_integration.py   # New module
+├── data/
+│   ├── cache/             # Cached API responses
+│   └── logs/              # Error logs
 ```
 
-2. Install required packages:
-```bash
-pip install flask pyyaml
-```
-
-## Application Structure
-
-The application uses Flask with the following key components:
-
-* **app.py:** Main application file with Flask routes
-* **templates/index.html:** Jinja2 template for the UI
-* **static/css/style.css:** CSS styling
-* **strategies.yaml:** Strategy definitions
-
-## Key Features
-
-* Form for entering tickers, selecting strategy and year
-* Backtesting results display
-* Investment resources sidebar
-* Responsive design with modern styling
-
-## Data Flow
-
-1. User submits form data (tickers, strategy, year)
-2. Flask processes the request and runs backtest logic
-3. Results are rendered in the template
-4. Transactions and profit summary are displayed
-
-## strategies.yaml
-
-The strategy definitions file remains the same:
-
-```yaml
-- Strategy1
-- Strategy2
-- Strategy3
-```
-
-## UI Design
-
-The UI features:
-* Gradient background
-* Card-based layout
-* Responsive tables
-* Hover effects on buttons
-* Consistent color scheme
-
-## Architecture Diagram
-
+### Module Architecture
 ```mermaid
 graph TD
-    A[Flask App] --> B[Routes];
-    B --> C[Templates];
-    B --> D[Static Files];
-    C --> E[Form Handling];
-    C --> F[Results Display];
+    A[openbb_integration.py] --> B[Price Endpoints]
+    A --> C[Caching]
+    A --> D[Error Logging]
+    B --> E[get_price_at_date]
+    B --> F[get_prices_in_range]
+    C --> G[Local Cache]
+    C --> H[TTL=24h]
+    D --> I[Log to File]
+    D --> J[Console Output]
+```
+
+### Implementation Details
+
+1. **Price Endpoints**:
+   - `get_price_at_date(symbol: str, date: str) -> float`
+     * Returns closing price for specific date
+   - `get_prices_in_range(symbol: str, start_date: str, end_date: str) -> pd.DataFrame`
+     * Returns daily prices (open, high, low, close, volume) for date range
+
+2. **Caching**:
+   - Cache location: `flask_backtest_app/data/cache`
+   - TTL: 24 hours
+   - Cache key format: `{symbol}_{date_or_range}_{endpoint}`
+
+3. **Error Handling**:
+   - Log file: `flask_backtest_app/data/logs/openbb_errors.log`
+   - Log format: `[timestamp] [ERROR] [symbol] [endpoint] - message`
+   - Console output for immediate visibility
+
+4. **Dependencies**:
+   - Add to requirements.txt:
+     * openbb
+     * pandas
+     * cachetools

@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import yaml
 import os
+import openbb_integration
 
 app = Flask(__name__)
 
@@ -24,15 +25,36 @@ def run_backtest():
     strategy = request.form.get('strategy')
     year = request.form.get('year')
     
-    # Placeholder for backtesting logic
-    print(f"Running backtest with: {tickers}, {strategy}, {year}")
-    
-    # Sample results
-    transactions = [
-        {'date': '2024-01-31', 'ticker': tickers, 'quantity': 10, 'price': 150.00},
-        {'date': '2024-02-29', 'ticker': tickers, 'quantity': -10, 'price': 160.00, 'profit': 100.00}
-    ]
-    profit = 100.00
+    try:
+        # Get price data for backtesting
+        start_date = f"{year}-01-01"
+        end_date = f"{year}-12-31"
+        prices = openbb_integration.get_prices_in_range(tickers, start_date, end_date)
+        
+        # Simple moving average strategy example
+        if strategy == "Moving Average":
+            prices['SMA_50'] = prices['close'].rolling(50).mean()
+            prices['Signal'] = (prices['close'] > prices['SMA_50']).astype(int)
+            prices['Position'] = prices['Signal'].diff()
+            
+            transactions = []
+            for idx, row in prices[prices['Position'] != 0].iterrows():
+                transactions.append({
+                    'date': idx.strftime('%Y-%m-%d'),
+                    'ticker': tickers,
+                    'quantity': 10 * row['Position'],
+                    'price': row['close']
+                })
+            
+            profit = sum(t['quantity'] * t['price'] for t in transactions if t['quantity'] < 0)
+        else:
+            transactions = []
+            profit = 0.0
+            
+    except Exception as e:
+        print(f"Backtest error: {str(e)}")
+        transactions = []
+        profit = 0.0
     
     strategies = load_strategies()
     return render_template('index.html',
