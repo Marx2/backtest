@@ -4,6 +4,7 @@ import pandas as pd
 from openbb import obb
 from cachetools import TTLCache
 import logging
+import socket
 from dotenv import load_dotenv
 
 logging.info("Application is starting...")
@@ -54,20 +55,6 @@ price_cache = TTLCache(maxsize=100, ttl=CACHE_TTL.total_seconds())
 
 import socket
 
-def check_network_and_dns():
-    """Check network connectivity and DNS resolution"""
-    try:
-        # Check network connectivity
-        try:
-            socket.create_connection(("8.8.8.8", 53), timeout=5)
-            logging.info("Network connectivity: OK")
-        except OSError as e:
-            logging.error(f"Network connectivity: FAILED - {e}")
-            raise
-    except Exception as e:
-        logging.error(f"Network/DNS check failed: {str(e)}")
-        raise
-
 def get_price_at_date(symbol: str, date: str) -> float:
     """Get closing price for a stock on specific date"""
     try:
@@ -83,24 +70,81 @@ def get_price_at_date(symbol: str, date: str) -> float:
         raise
 
 def get_prices_in_range(symbol: str, start_date: str, end_date: str) -> pd.DataFrame:
+    logging.info("Entering get_prices_in_range function")
     """Get daily prices (OHLCV) for a stock in date range"""
     try:
-        # Use hardcoded data for testing
-        dates = pd.to_datetime([start_date, end_date])
-        date_range = pd.date_range(dates[0], dates[1])
-        
-        data = {
-            'open': [150.00] * len(date_range),
-            'high': [155.00] * len(date_range),
-            'low': [145.00] * len(date_range),
-            'close': [150.00] * len(date_range),
-            'volume': [1000000] * len(date_range)
-        }
-        df = pd.DataFrame(data, index=date_range)
-        df.index = df.index.strftime('%Y-%m-%d')
-        df.index.name = 'date'
-        return df
+        providers = ["yfinance", "fmp", "intrinio"]
+        data = pd.DataFrame()
+        for provider in providers:
+            try:
+                logging.info(f"Trying provider: {provider}")
+                # Use the OpenBB SDK to fetch the price data
+                historical_data = obb.equity.price.historical(
+                    symbol=symbol,
+                    start_date=start_date,
+                    end_date=end_date,
+                    interval="1d",
+                    provider=provider
+                )
 
+                if historical_data and historical_data.results:
+                    data = historical_data.results
+                else:
+                    logging.warning(f"No data found for {symbol} from {start_date} to {end_date} using {provider}")
+                    continue
+
+                data = pd.DataFrame(data)
+
+                if data.empty:
+                    logging.warning(f"No data found for {symbol} from {start_date} to {end_date} using {provider}")
+                    continue
+
+                # Ensure the index is named 'date' and is a DatetimeIndex
+                data.index = pd.to_datetime(data.index)
+                logging.info(f"Index type after conversion: {type(data.index)}")
+                if isinstance(data.index, pd.RangeIndex):
+                    logging.error("Data index is a RangeIndex. This is unexpected.")
+                    raise TypeError("RangeIndex object found after conversion to datetime")
+                data.index.name = 'date'
+
+                # Rename columns to lowercase
+                logging.info(f"Column names before conversion: {data.columns}")
+                logging.info(f"Column dtypes before conversion: {data.dtypes}")
+                if data.columns.dtype == 'object':
+                    data.columns = data.columns.str.lower()
+                else:
+                    logging.warning("Column names are not of type object")
+                logging.info(f"Data before conversion: {data}")
+                break  # If data is successfully fetched, break the loop
+
+            except Exception as e:
+                logging.error(f"Error getting prices for {symbol} from {start_date} to {end_date} using {provider}: {str(e)}")
+                continue
+
+        if data.empty:
+            logging.warning("Could not retrieve price data for AAPL from any provider")
+            return pd.DataFrame()
+
+        return data
     except Exception as e:
-        logging.error(f"Error getting prices for {symbol} from {start_date} to {end_date}: {str(e)}")
-        raise
+        logging.error(f"An unexpected error occurred: {e}")
+        return pd.DataFrame()
+
+def get_stock_data(symbol: str):
+    print(f"Reading stock data for symbol: {symbol}")
+    try:
+        data = obb.equity.price.historical(symbol)
+        df = data.to_dataframe()  # Convert to DataFrame
+        return df.tail(5).to_dict()  # Show last 5 rows
+    except Exception as e:
+        print("Error:", e)
+        return {"error": str(e)}
+
+def get_stock_news(symbol: str):
+    try:
+        news_data = obb.equity.news(symbol)  # Fetch news data
+        news_df = news_data.to_dataframe()   # Convert to DataFrame
+        return news_df.head(5).to_dict(orient="records")  # Return top 5 articles as list of dictionaries
+    except Exception as e:
+        print("Error fetching news:", e)
+        return [{"title": "No news available", "summary": "", "link": ""}]

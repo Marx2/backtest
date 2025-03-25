@@ -1,6 +1,6 @@
 Flask==2.3.2
 PyYAML==6.0
-openbb
+openbb-core==1.4.2
 pandas
 cachetools
 python-dotenv

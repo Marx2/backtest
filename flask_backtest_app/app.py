@@ -11,6 +11,16 @@ load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
 
 app = Flask(__name__)
 
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.FileHandler('flask_backtest_app/data/logs/openbb_errors.log'),
+        logging.StreamHandler()
+    ]
+)
+
 def load_strategies():
     try:
         with open('backtest-app/public/strategies.yaml') as f:
@@ -25,51 +35,7 @@ def index():
     strategies = load_strategies()
     return render_template('index.html', strategies=strategies)
 
-@app.route('/stock/details', methods=['GET'])
-def show_stock_details():
-    return render_template('stock_details.html')
 
-@app.route('/stock/details', methods=['POST'])
-def stock_details():
-    data = request.get_json()
-    ticker = data.get('ticker')
-    logging.info(f"Request received for ticker: {ticker}")
-    try:
-        # Get prices for last 7 days
-        end_date = datetime.now().strftime('%Y-%m-%d')
-        start_date = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
-        logging.info(f"Getting prices for {ticker} from {start_date} to {end_date}")
-        prices = openbb_integration.get_prices_in_range(ticker, start_date, end_date)
-        
-        # Format response
-        price_history = []
-        for date, row in prices.iterrows():
-            if isinstance(date, str):
-                date_str = date
-            else:
-                date_str = date.strftime('%Y-%m-%d')
-            price_history.append({
-                'date': date_str,
-                'open': row['open'],
-                'high': row['high'],
-                'low': row['low'],
-                'close': row['close'],
-                'volume': row['volume']
-            })
-            
-        return jsonify({
-            'success': True,
-            'ticker': ticker,
-            'current_price': prices.iloc[-1]['close'],
-            'price_history': price_history,
-        })
-        print(f"Current price: {prices.iloc[-1]['close']}")
-    except Exception as e:
-        print(f"Error getting price: {str(e)}")
-        return jsonify({
-            'success': False,
-            'error': str(e)
-        }), 400
 
 @app.route('/backtest', methods=['POST'])
 def run_backtest():
@@ -114,5 +80,13 @@ def run_backtest():
                          transactions=transactions,
                          profit=profit)
 
+@app.route("/stock/details/<symbol>", methods=['GET'])
+def get_stock(symbol: str):
+    logging.info(f"get_stock called for symbol: {symbol}")
+    print("get_stock route was hit!")
+    data = openbb_integration.get_stock_data(symbol)
+    print(f"Data from openbb_integration: {data}")
+    return render_template('stock_details.html', data=data)
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5001)

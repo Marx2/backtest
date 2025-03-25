@@ -7,8 +7,6 @@
         <div class="form-group">
             <label for="ticker">Stock Ticker</label>
             <input type="text" class="form-control" id="ticker" name="ticker" placeholder="Enter ticker (e.g. AAPL)" required>
-            <input type="hidden" id="startDate" name="startDate" value="2025-03-18">
-            <input type="hidden" id="endDate" name="endDate" value="2025-03-25">
         </div>
         <button type="submit" class="btn btn-primary">Get Details</button>
     </form>
@@ -47,15 +45,9 @@
 document.getElementById('stockForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const ticker = document.getElementById('ticker').value;
-    const startDate = document.getElementById('startDate').value;
-    const endDate = document.getElementById('endDate').value;
     
-    fetch('/stock/details', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ticker: ticker, startDate: startDate, endDate: endDate})
+    fetch(`/stock/details/${ticker}`, {
+        method: 'GET',
     })
     .then(response => response.json())
     .then(data => {
