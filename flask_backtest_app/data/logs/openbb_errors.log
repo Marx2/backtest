@@ -156,3 +156,144 @@
 [Arg] provider -> input: alpha_vantage -> Input should be 'fmp', 'intrinio', 'polygon', 'tiingo' or 'yfinance'
 2025-03-25 22:00:03,470 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
 2025-03-25 22:00:03,470 [INFO] 127.0.0.1 - - [25/Mar/2025 22:00:03] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:05:46,715 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:05:48,313 [INFO]  * Restarting with stat
+2025-03-25 22:05:55,606 [WARNING]  * Debugger is active!
+2025-03-25 22:05:55,624 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:07:08,250 [INFO] 127.0.0.1 - - [25/Mar/2025 22:07:08] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:07:08,339 [INFO] 127.0.0.1 - - [25/Mar/2025 22:07:08] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:07:08,348 [INFO] 127.0.0.1 - - [25/Mar/2025 22:07:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:07:13,504 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x313fdd810>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:07:13,518 [ERROR] 
+1 Failed download:
+2025-03-25 22:07:13,518 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x314771050>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:07:13,536 [WARNING] Yahoo failed for AAPL, trying FMP: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:07:13,863 [WARNING] FMP failed for AAPL, trying Intrinio: 
+[Error] -> Missing credential 'fmp_api_key'. Check https://financialmodelingprep.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:07:13,871 [WARNING] Intrinio failed for AAPL, trying Alpha Vantage: 
+[Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:07:13,872 [ERROR] All providers failed for AAPL: 
+[Error] -> 1 validations error(s)
+[Arg] provider -> input: alpha_vantage -> Input should be 'fmp', 'intrinio', 'polygon', 'tiingo' or 'yfinance'
+2025-03-25 22:07:13,872 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:07:13,872 [INFO] 127.0.0.1 - - [25/Mar/2025 22:07:13] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:08:14,950 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:08:16,534 [INFO]  * Restarting with stat
+2025-03-25 22:08:23,850 [WARNING]  * Debugger is active!
+2025-03-25 22:08:23,869 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:08:23,897 [INFO] 127.0.0.1 - - [25/Mar/2025 22:08:23] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:08:23,961 [INFO] 127.0.0.1 - - [25/Mar/2025 22:08:23] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:08:23,990 [INFO] 127.0.0.1 - - [25/Mar/2025 22:08:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:08:24,792 [INFO] 127.0.0.1 - - [25/Mar/2025 22:08:24] "GET / HTTP/1.1" 200 -
+2025-03-25 22:08:24,869 [INFO] 127.0.0.1 - - [25/Mar/2025 22:08:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 22:08:28,351 [INFO] 127.0.0.1 - - [25/Mar/2025 22:08:28] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:08:28,434 [INFO] 127.0.0.1 - - [25/Mar/2025 22:08:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 22:08:37,898 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x318935710>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:08:37,915 [ERROR] 
+1 Failed download:
+2025-03-25 22:08:37,915 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x3189377d0>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:08:37,926 [WARNING] Yahoo failed for AAPL, trying FMP: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:08:38,142 [WARNING] FMP failed for AAPL, trying Intrinio: 
+[Error] -> Missing credential 'fmp_api_key'. Check https://financialmodelingprep.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:08:38,150 [ERROR] All providers failed for AAPL: 
+[Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:08:38,150 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:08:38,150 [INFO] 127.0.0.1 - - [25/Mar/2025 22:08:38] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:11:35,510 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x3146aee50>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:11:35,516 [ERROR] 
+1 Failed download:
+2025-03-25 22:11:35,516 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x3116405d0>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:11:35,535 [WARNING] Yahoo failed for AAPL, trying FMP: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:11:35,553 [WARNING] FMP failed for AAPL, trying Intrinio: 
+[Error] -> Missing credential 'fmp_api_key'. Check https://financialmodelingprep.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:11:35,563 [ERROR] All providers failed for AAPL: 
+[Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:11:35,563 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:11:35,564 [INFO] 127.0.0.1 - - [25/Mar/2025 22:11:35] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:12:05,091 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 22:12:05,092 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 22:12:05,096 [INFO]  * Restarting with stat
+2025-03-25 22:12:11,679 [WARNING]  * Debugger is active!
+2025-03-25 22:12:11,701 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:12:16,148 [INFO] 127.0.0.1 - - [25/Mar/2025 22:12:16] "GET / HTTP/1.1" 200 -
+2025-03-25 22:12:16,222 [INFO] 127.0.0.1 - - [25/Mar/2025 22:12:16] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:12:16,228 [INFO] 127.0.0.1 - - [25/Mar/2025 22:12:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:12:17,876 [INFO] 127.0.0.1 - - [25/Mar/2025 22:12:17] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:12:17,958 [INFO] 127.0.0.1 - - [25/Mar/2025 22:12:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 22:12:22,190 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x31680c650>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:12:22,296 [ERROR] 
+1 Failed download:
+2025-03-25 22:12:22,297 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x317f872d0>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:12:22,360 [WARNING] Yahoo failed for AAPL, trying FMP: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:12:22,569 [WARNING] FMP failed for AAPL, trying Intrinio: 
+[Error] -> Missing credential 'fmp_api_key'. Check https://financialmodelingprep.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:12:22,575 [ERROR] All providers failed for AAPL: 
+[Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:12:22,575 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:12:22,576 [INFO] 127.0.0.1 - - [25/Mar/2025 22:12:22] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:16:47,824 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 22:16:47,825 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 22:16:47,826 [INFO]  * Restarting with stat
+2025-03-25 22:16:55,129 [WARNING]  * Debugger is active!
+2025-03-25 22:16:55,156 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:16:56,061 [INFO] 127.0.0.1 - - [25/Mar/2025 22:16:56] "GET / HTTP/1.1" 200 -
+2025-03-25 22:16:56,173 [INFO] 127.0.0.1 - - [25/Mar/2025 22:16:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 22:16:57,895 [INFO] 127.0.0.1 - - [25/Mar/2025 22:16:57] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:16:57,966 [INFO] 127.0.0.1 - - [25/Mar/2025 22:16:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 22:17:03,489 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x30082a510>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:17:03,499 [ERROR] 
+1 Failed download:
+2025-03-25 22:17:03,500 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x305d77e10>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:17:03,512 [WARNING] Yahoo failed for AAPL, trying FMP: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:17:03,726 [WARNING] FMP failed for AAPL, trying Intrinio: 
+[Error] -> Missing credential 'fmp_api_key'. Check https://financialmodelingprep.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:17:03,732 [ERROR] All providers failed for AAPL: 
+[Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:17:03,732 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:17:03,733 [INFO] 127.0.0.1 - - [25/Mar/2025 22:17:03] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:19:28,619 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:19:30,365 [INFO]  * Restarting with stat
+2025-03-25 22:19:37,547 [WARNING]  * Debugger is active!
+2025-03-25 22:19:37,563 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:20:18,739 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x313f8f250>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:20:18,754 [ERROR] 
+1 Failed download:
+2025-03-25 22:20:18,754 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x314943610>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:20:18,764 [WARNING] Yahoo failed for AAPL, trying FMP: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:20:18,966 [WARNING] FMP failed for AAPL, trying Intrinio: 
+[Error] -> Missing credential 'fmp_api_key'. Check https://financialmodelingprep.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:20:18,973 [ERROR] All providers failed for AAPL: 
+[Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:20:18,973 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:20:18,974 [INFO] 127.0.0.1 - - [25/Mar/2025 22:20:18] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:20:37,947 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 22:20:37,947 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 22:20:37,949 [INFO]  * Restarting with stat
+2025-03-25 22:20:44,523 [WARNING]  * Debugger is active!
+2025-03-25 22:20:44,544 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:20:44,563 [INFO] 127.0.0.1 - - [25/Mar/2025 22:20:44] "GET / HTTP/1.1" 200 -
+2025-03-25 22:20:44,645 [INFO] 127.0.0.1 - - [25/Mar/2025 22:20:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:20:44,697 [INFO] 127.0.0.1 - - [25/Mar/2025 22:20:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:20:46,113 [INFO] 127.0.0.1 - - [25/Mar/2025 22:20:46] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:20:46,179 [INFO] 127.0.0.1 - - [25/Mar/2025 22:20:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 22:20:56,928 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x155e5bad0>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:20:56,943 [ERROR] 
+1 Failed download:
+2025-03-25 22:20:56,943 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x31916d550>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:20:56,958 [WARNING] Yahoo failed for AAPL, trying FMP: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:20:57,162 [WARNING] FMP failed for AAPL, trying Intrinio: 
+[Error] -> Missing credential 'fmp_api_key'. Check https://financialmodelingprep.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:20:57,169 [ERROR] All providers failed for AAPL: 
+[Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:20:57,169 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:20:57,169 [INFO] 127.0.0.1 - - [25/Mar/2025 22:20:57] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -

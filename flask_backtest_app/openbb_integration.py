@@ -4,6 +4,10 @@ import pandas as pd
 from openbb import obb
 from cachetools import TTLCache
 import logging
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(
@@ -31,13 +35,18 @@ def get_price_at_date(symbol: str, date: str) -> float:
             # First try with Yahoo provider
             df = obb.equity.price.historical(symbol, provider="yfinance", start_date=date, end_date=date)
         except Exception as yahoo_error:
-            logging.warning(f"Yahoo failed for {symbol}, trying Alpha Vantage: {str(yahoo_error)}")
+            logging.warning(f"Yahoo failed for {symbol}, trying FMP: {str(yahoo_error)}")
             try:
-                # Fallback to Alpha Vantage
-                df = obb.equity.price.historical(symbol, provider="alpha_vantage", start_date=date, end_date=date)
-            except Exception as av_error:
-                logging.error(f"All providers failed for {symbol}: {str(av_error)}")
-                raise ValueError(f"Could not retrieve price data for {symbol} from any provider")
+                # Fallback to FMP
+                df = obb.equity.price.historical(symbol, provider="fmp", start_date=date, end_date=date)
+            except Exception as fmp_error:
+                logging.warning(f"FMP failed for {symbol}, trying Intrinio: {str(fmp_error)}")
+                try:
+                    # Fallback to Intrinio
+                    df = obb.equity.price.historical(symbol, provider="intrinio", start_date=date, end_date=date)
+                except Exception as intrinio_error:
+                    logging.error(f"All providers failed for {symbol}: {str(intrinio_error)}")
+                    raise ValueError(f"Could not retrieve price data for {symbol} from any provider")
                 
         if df.empty:
             raise ValueError(f"No data found for {symbol} on {date}")
