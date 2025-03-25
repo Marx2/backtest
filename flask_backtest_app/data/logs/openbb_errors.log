@@ -297,3 +297,155 @@
 [Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
 2025-03-25 22:20:57,169 [ERROR] Error getting price for AAPL on 2025-03-25: Could not retrieve price data for AAPL from any provider
 2025-03-25 22:20:57,169 [INFO] 127.0.0.1 - - [25/Mar/2025 22:20:57] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:27:25,448 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/app.py', reloading
+2025-03-25 22:27:26,797 [INFO]  * Restarting with stat
+2025-03-25 22:27:33,933 [WARNING]  * Debugger is active!
+2025-03-25 22:27:33,969 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:30:49,667 [INFO] 127.0.0.1 - - [25/Mar/2025 22:30:49] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:30:49,850 [INFO] 127.0.0.1 - - [25/Mar/2025 22:30:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:30:53,365 [INFO] 127.0.0.1 - - [25/Mar/2025 22:30:53] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:30:57,670 [INFO] 127.0.0.1 - - [25/Mar/2025 22:30:57] "GET / HTTP/1.1" 200 -
+2025-03-25 22:30:57,756 [INFO] 127.0.0.1 - - [25/Mar/2025 22:30:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 22:30:59,171 [INFO] 127.0.0.1 - - [25/Mar/2025 22:30:59] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:30:59,249 [INFO] 127.0.0.1 - - [25/Mar/2025 22:30:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:30:59,274 [INFO] 127.0.0.1 - - [25/Mar/2025 22:30:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:31:03,421 [INFO] 127.0.0.1 - - [25/Mar/2025 22:31:03] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:31:46,336 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/app.py', reloading
+2025-03-25 22:31:50,187 [INFO]  * Restarting with stat
+2025-03-25 22:31:59,293 [WARNING]  * Debugger is active!
+2025-03-25 22:31:59,324 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:31:59,343 [INFO] 127.0.0.1 - - [25/Mar/2025 22:31:59] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:31:59,436 [INFO] 127.0.0.1 - - [25/Mar/2025 22:31:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:31:59,469 [INFO] 127.0.0.1 - - [25/Mar/2025 22:31:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:32:04,265 [ERROR] Failed to get ticker 'MSFT' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x315ee4450>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:32:04,279 [ERROR] 
+1 Failed download:
+2025-03-25 22:32:04,279 [ERROR] ['MSFT']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x31666d690>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:32:04,290 [ERROR] Error getting prices for MSFT from 2025-03-18 to 2025-03-25: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:32:04,290 [INFO] 127.0.0.1 - - [25/Mar/2025 22:32:04] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:37:53,347 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 22:37:53,347 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 22:37:53,348 [INFO]  * Restarting with stat
+2025-03-25 22:38:00,290 [WARNING]  * Debugger is active!
+2025-03-25 22:38:00,323 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:41:33,174 [INFO] 127.0.0.1 - - [25/Mar/2025 22:41:33] "GET / HTTP/1.1" 200 -
+2025-03-25 22:41:34,270 [INFO] 127.0.0.1 - - [25/Mar/2025 22:41:34] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:41:34,702 [INFO] 127.0.0.1 - - [25/Mar/2025 22:41:34] "GET /static/favicon.ico HTTP/1.1" 200 -
+2025-03-25 22:41:36,412 [INFO] 127.0.0.1 - - [25/Mar/2025 22:41:36] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:41:36,477 [INFO] 127.0.0.1 - - [25/Mar/2025 22:41:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 22:41:43,174 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x317e3b610>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:41:43,278 [ERROR] 
+1 Failed download:
+2025-03-25 22:41:43,279 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x31856cfd0>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:41:43,378 [ERROR] Error getting prices for AAPL from 2025-03-18 to 2025-03-25: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:41:43,379 [INFO] 127.0.0.1 - - [25/Mar/2025 22:41:43] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:42:47,175 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:42:49,958 [INFO]  * Restarting with stat
+2025-03-25 22:43:08,330 [WARNING]  * Debugger is active!
+2025-03-25 22:43:08,347 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:43:08,376 [INFO] 127.0.0.1 - - [25/Mar/2025 22:43:08] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:43:08,446 [INFO] 127.0.0.1 - - [25/Mar/2025 22:43:08] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:43:18,334 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x312f3fbd0>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:43:18,348 [ERROR] 
+1 Failed download:
+2025-03-25 22:43:18,348 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x313a845d0>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:43:18,365 [ERROR] Error getting prices for AAPL from 2025-03-18 to 2025-03-25: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:43:18,365 [INFO] 127.0.0.1 - - [25/Mar/2025 22:43:18] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:43:56,203 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 22:43:56,203 [INFO] [33mPress CTRL+C to quit[0m
+2025-03-25 22:43:56,205 [INFO]  * Restarting with stat
+2025-03-25 22:44:02,626 [WARNING]  * Debugger is active!
+2025-03-25 22:44:02,646 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:44:04,201 [INFO] 127.0.0.1 - - [25/Mar/2025 22:44:04] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:44:04,270 [INFO] 127.0.0.1 - - [25/Mar/2025 22:44:04] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:44:08,442 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x317b17a90>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:44:08,451 [ERROR] 
+1 Failed download:
+2025-03-25 22:44:08,451 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x31813ab10>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:44:08,461 [ERROR] Error getting prices for AAPL from 2025-03-18 to 2025-03-25: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:44:08,461 [INFO] 127.0.0.1 - - [25/Mar/2025 22:44:08] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:44:48,047 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:44:49,489 [INFO]  * Restarting with stat
+2025-03-25 22:44:56,259 [WARNING]  * Debugger is active!
+2025-03-25 22:44:56,269 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:44:58,213 [INFO] 127.0.0.1 - - [25/Mar/2025 22:44:58] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:44:58,298 [INFO] 127.0.0.1 - - [25/Mar/2025 22:44:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:45:02,251 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x319668b90>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:45:02,266 [ERROR] 
+1 Failed download:
+2025-03-25 22:45:02,267 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x3196697d0>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:45:02,295 [ERROR] Error getting prices for AAPL from 2025-03-18 to 2025-03-25: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:45:02,295 [INFO] 127.0.0.1 - - [25/Mar/2025 22:45:02] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:46:56,418 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:46:57,894 [INFO]  * Restarting with stat
+2025-03-25 22:47:04,982 [WARNING]  * Debugger is active!
+2025-03-25 22:47:04,996 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:47:08,037 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:47:09,412 [INFO]  * Restarting with stat
+2025-03-25 22:47:16,406 [WARNING]  * Debugger is active!
+2025-03-25 22:47:16,427 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:47:29,247 [INFO] 127.0.0.1 - - [25/Mar/2025 22:47:29] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:47:29,334 [INFO] 127.0.0.1 - - [25/Mar/2025 22:47:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-03-25 22:47:29,359 [INFO] 127.0.0.1 - - [25/Mar/2025 22:47:29] "GET /static/favicon.ico HTTP/1.1" 200 -
+2025-03-25 22:47:37,197 [INFO] Network connectivity: OK
+2025-03-25 22:47:37,204 [ERROR] DNS resolution for fc.yahoo.com: FAILED - [Errno 8] nodename nor servname provided, or not known
+2025-03-25 22:47:37,209 [ERROR] Network/DNS check failed: [Errno 8] nodename nor servname provided, or not known
+2025-03-25 22:47:37,210 [ERROR] Error getting prices for AAPL from 2025-03-18 to 2025-03-25: [Errno 8] nodename nor servname provided, or not known
+2025-03-25 22:47:37,210 [INFO] 127.0.0.1 - - [25/Mar/2025 22:47:37] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:49:12,498 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:49:13,907 [INFO]  * Restarting with stat
+2025-03-25 22:49:20,399 [WARNING]  * Debugger is active!
+2025-03-25 22:49:20,416 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:49:27,480 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:49:28,873 [INFO]  * Restarting with stat
+2025-03-25 22:49:35,265 [WARNING]  * Debugger is active!
+2025-03-25 22:49:35,281 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:50:00,477 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:50:01,593 [INFO]  * Restarting with stat
+2025-03-25 22:50:08,574 [WARNING]  * Debugger is active!
+2025-03-25 22:50:08,594 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:50:15,651 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:50:17,106 [INFO]  * Restarting with stat
+2025-03-25 22:50:23,530 [WARNING]  * Debugger is active!
+2025-03-25 22:50:23,541 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:50:55,201 [INFO] 127.0.0.1 - - [25/Mar/2025 22:50:55] "GET /stock/details HTTP/1.1" 200 -
+2025-03-25 22:50:55,296 [INFO] 127.0.0.1 - - [25/Mar/2025 22:50:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-03-25 22:50:59,193 [INFO] Network connectivity: OK
+2025-03-25 22:50:59,205 [INFO] DNS resolution for Yahoo Finance: OK
+2025-03-25 22:50:59,369 [ERROR] Failed to get ticker 'AAPL' reason: HTTPSConnectionPool(host='fc.yahoo.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x305bf1b10>: Failed to resolve 'fc.yahoo.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-03-25 22:50:59,380 [ERROR] 
+1 Failed download:
+2025-03-25 22:50:59,380 [ERROR] ['AAPL']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'fc.yahoo.com\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x306373e90>: Failed to resolve \'fc.yahoo.com\' ([Errno 8] nodename nor servname provided, or not known)"))'))
+2025-03-25 22:50:59,394 [WARNING] Yahoo failed for AAPL, trying FMP: 
+[Empty] -> No results found. Try adjusting the query parameters.
+2025-03-25 22:50:59,608 [WARNING] FMP failed for AAPL, trying Intrinio: 
+[Error] -> Missing credential 'fmp_api_key'. Check https://financialmodelingprep.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:50:59,614 [ERROR] All providers failed for AAPL: 
+[Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:50:59,615 [ERROR] Error getting prices for AAPL from 2025-03-18 to 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:50:59,615 [INFO] 127.0.0.1 - - [25/Mar/2025 22:50:59] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:51:31,166 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:51:32,904 [INFO]  * Restarting with stat
+2025-03-25 22:51:40,336 [WARNING]  * Debugger is active!
+2025-03-25 22:51:40,355 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:54:14,860 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/app.py', reloading
+2025-03-25 22:54:16,466 [INFO]  * Restarting with stat
+2025-03-25 22:54:32,592 [WARNING]  * Debugger is active!
+2025-03-25 22:54:32,631 [INFO]  * Debugger PIN: 858-982-069
+2025-03-25 22:54:38,816 [INFO] Network connectivity: OK
+2025-03-25 22:54:38,816 [WARNING] Yahoo failed for AAPL, trying FMP: Yahoo Finance not available
+2025-03-25 22:54:38,899 [WARNING] FMP failed for AAPL, trying Intrinio: 
+[Error] -> Missing credential 'fmp_api_key'. Check https://financialmodelingprep.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:54:38,907 [ERROR] All providers failed for AAPL: 
+[Error] -> Missing credential 'intrinio_api_key'. Check https://intrinio.com to get it. Known more about how to set provider credentials at https://docs.openbb.co/platform/getting_started/api_keys.
+2025-03-25 22:54:38,907 [ERROR] Error getting prices for AAPL from 2025-03-18 to 2025-03-25: Could not retrieve price data for AAPL from any provider
+2025-03-25 22:54:38,907 [INFO] 127.0.0.1 - - [25/Mar/2025 22:54:38] "[31m[1mPOST /stock/details HTTP/1.1[0m" 400 -
+2025-03-25 22:56:28,796 [INFO]  * Detected change in '/Users/i318088/prv/zed/backtest/flask_backtest_app/openbb_integration.py', reloading
+2025-03-25 22:56:30,168 [INFO]  * Restarting with stat

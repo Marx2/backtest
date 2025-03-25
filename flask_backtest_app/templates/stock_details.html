@@ -7,37 +7,115 @@
         <div class="form-group">
             <label for="ticker">Stock Ticker</label>
             <input type="text" class="form-control" id="ticker" name="ticker" placeholder="Enter ticker (e.g. AAPL)" required>
+            <input type="hidden" id="startDate" name="startDate" value="2025-03-18">
+            <input type="hidden" id="endDate" name="endDate" value="2025-03-25">
         </div>
         <button type="submit" class="btn btn-primary">Get Details</button>
     </form>
 
     <div id="priceResult" class="mt-4" style="display:none;">
-        <h4>Current Price for <span id="tickerDisplay"></span></h4>
-        <p>$<span id="priceDisplay"></span></p>
+        <h4>Price History for <span id="tickerDisplay"></span></h4>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Current Price: $<span id="priceDisplay"></span></h5>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Open</th>
+                                <th>High</th>
+                                <th>Low</th>
+                                <th>Close</th>
+                                <th>Volume</th>
+                            </tr>
+                        </thead>
+                        <tbody id="priceHistory">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="priceChart" style="height: 300px;"></div>
+            </div>
+        </div>
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 document.getElementById('stockForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const ticker = document.getElementById('ticker').value;
+    const startDate = document.getElementById('startDate').value;
+    const endDate = document.getElementById('endDate').value;
     
     fetch('/stock/details', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ticker: ticker})
+        body: JSON.stringify({ticker: ticker, startDate: startDate, endDate: endDate})
     })
     .then(response => response.json())
     .then(data => {
-        if (data.price) {
+        if (data.success) {
+            // Update ticker and current price
             document.getElementById('tickerDisplay').textContent = data.ticker;
-            document.getElementById('priceDisplay').textContent = data.price;
+            document.getElementById('priceDisplay').textContent = data.current_price.toFixed(2);
+            
+            // Populate price history table
+            const tableBody = document.getElementById('priceHistory');
+            tableBody.innerHTML = '';
+            data.price_history.forEach(day => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${day.date}</td>
+                    <td>${day.open.toFixed(2)}</td>
+                    <td>${day.high.toFixed(2)}</td>
+                    <td>${day.low.toFixed(2)}</td>
+                    <td>${day.close.toFixed(2)}</td>
+                    <td>${day.volume.toLocaleString()}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+            
+            // Render price chart
+            renderPriceChart(data.ticker, data.price_history);
+            
+            // Show results
             document.getElementById('priceResult').style.display = 'block';
         }
     })
     .catch(error => console.error('Error:', error));
 });
+
+function renderPriceChart(ticker, priceData) {
+    const ctx = document.getElementById('priceChart').getContext('2d');
+    const dates = priceData.map(day => day.date);
+    const closes = priceData.map(day => day.close);
+    
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: dates,
+            datasets: [{
+                label: `${ticker} Closing Price`,
+                data: closes,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1,
+                fill: false
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+}
 </script>
 {% endblock %}

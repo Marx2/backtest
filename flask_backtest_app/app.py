@@ -1,8 +1,13 @@
 from flask import Flask, render_template, request, jsonify
-from datetime import datetime
+from datetime import datetime, timedelta
 import yaml
 import os
+from dotenv import load_dotenv
 import openbb_integration
+import logging
+
+# Load environment variables from .env file in parent directory
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
 
 app = Flask(__name__)
 
@@ -28,13 +33,37 @@ def show_stock_details():
 def stock_details():
     data = request.get_json()
     ticker = data.get('ticker')
+    logging.info(f"Request received for ticker: {ticker}")
     try:
-        price = openbb_integration.get_price_at_date(ticker, datetime.now().strftime('%Y-%m-%d'))
+        # Get prices for last 7 days
+        end_date = datetime.now().strftime('%Y-%m-%d')
+        start_date = (datetime.now() - timedelta(days=7)).strftime('%Y-%m-%d')
+        logging.info(f"Getting prices for {ticker} from {start_date} to {end_date}")
+        prices = openbb_integration.get_prices_in_range(ticker, start_date, end_date)
+        
+        # Format response
+        price_history = []
+        for date, row in prices.iterrows():
+            if isinstance(date, str):
+                date_str = date
+            else:
+                date_str = date.strftime('%Y-%m-%d')
+            price_history.append({
+                'date': date_str,
+                'open': row['open'],
+                'high': row['high'],
+                'low': row['low'],
+                'close': row['close'],
+                'volume': row['volume']
+            })
+            
         return jsonify({
             'success': True,
             'ticker': ticker,
-            'price': price
+            'current_price': prices.iloc[-1]['close'],
+            'price_history': price_history,
         })
+        print(f"Current price: {prices.iloc[-1]['close']}")
     except Exception as e:
         print(f"Error getting price: {str(e)}")
         return jsonify({
