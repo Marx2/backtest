@@ -118,6 +118,7 @@ def get_stock_symbol(symbol):
 @app.route("/stock_suggestions")
 def stock_suggestions():
     query = request.args.get('query')
+    print(f"Received query: {query}")
     if query:
         suggestions = openbb_integration.get_stock_suggestions(query)
         return jsonify(suggestions)

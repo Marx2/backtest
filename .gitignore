@@ -1,3 +1,4 @@
 flask_backtest_app/.env
 .env
 flask_backtest_app/data/logs/openbb_errors.log
+flask_backtest_app/user_settings.json
