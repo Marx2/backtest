@@ -33,7 +33,7 @@
                     <form id="stock-details-form" method="GET" action="/stock/details">
                         <div class="form-group">
                             <label for="symbol">Stock Ticker:</label>
-                            <input type="text" id="stock_ticker" name="stock_ticker" required>
+                            <input type="text" id="stock_ticker" name="symbol" required>
                         </div>
                         <button type="submit">View Details</button>
                     </form>
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         form.addEventListener('submit', function(event) {
             console.log("Form submitted");
             event.preventDefault(); // Prevent page reload
-            const symbolInput = document.getElementById('symbol');
+            const symbolInput = document.getElementById('stock_ticker');
             const ticker = symbolInput.value;
             console.log("Ticker from input:", ticker);
             if (ticker) {
