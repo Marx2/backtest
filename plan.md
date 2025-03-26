@@ -21,11 +21,43 @@
     │   ├── favicon.ico
     │   └── css/
     │       └── style.css
+    │   └── js/
+    │       └── stock_suggestions.js
     └── templates/
         ├── base.html
         ├── index.html
         └── stock_details.html
 ```
+
+## Architecture Design
+
+```mermaid
+graph LR
+    A[Client (Browser)] --> B(Flask Application (app.py));
+    B --> C(OpenBB Integration (openbb_integration.py));
+    B --> D{Templates (templates/)};
+    B --> E{Static Files (static/)};
+    C --> F(OpenBB SDK);
+    D --> G(base.html);
+    D --> H(index.html);
+    D --> I(stock_details.html);
+    E --> J(style.css);
+    E --> K(stock_suggestions.js);
+    A --> H;
+    A --> I;
+```
+
+*   **Client (Browser)**: The user interacts with the application through a web browser.
+*   **Flask Application (`app.py`)**: The core of the application. It handles routing, user requests, and rendering templates.
+*   **OpenBB Integration (`openbb_integration.py`)**: This module provides an interface to the OpenBB SDK for fetching stock data, news, and company information. It also implements caching to improve performance.
+*   **Templates (`templates/`)**: This directory contains the HTML templates used to generate the user interface.
+    *   `base.html`: Provides the base structure for all pages.
+    *   `index.html`: The main page, which displays the backtesting form and results.
+    *   `stock_details.html`: Displays detailed information about a specific stock.
+*   **Static Files (`static/`)**: This directory contains static files such as CSS and JavaScript.
+    *   `style.css`: Contains the CSS styles for the application.
+    *   `stock_suggestions.js`: Provides stock ticker suggestions as the user types.
+*   **OpenBB SDK**: The OpenBB SDK is used to fetch financial data.
 
 ## OpenBB Integration Module
 
@@ -36,16 +68,12 @@ graph TD
     A[openbb_integration.py] --> B[Price Endpoints]
     A --> C[Caching]
     A --> D[Error Logging]
-    A --> E[Provider Configuration]
     B --> F[get_price_at_date]
     B --> G[get_prices_in_range]
     C --> H[Local Cache]
     C --> I[TTL=24h]
     D --> J[Log to File]
     D --> K[Console Output]
-    E --> L[FMP Provider]
-    E --> M[Intrinio Provider]
-    E --> N[Yahoo Finance]
 ```
 
 ### Implementation Details
@@ -53,31 +81,19 @@ graph TD
 1.  **Price Endpoints**:
     *   `get_price_at_date(symbol: str, date: str) -> float`
         *   Returns closing price for specific date
-        *   Provider fallback sequence: yfinance → fmp → intrinio
     *   `get_prices_in_range(symbol: str, start_date: str, end_date: str) -> pd.DataFrame`
         *   Returns daily prices (open, high, low, close, volume) for date range
 
-2.  **Provider Configuration**:
-    *   FMP API key required (get from https://financialmodelingprep.com)
-    *   Configure via .env file:
-        ```
-        FMP_API_KEY=your_api_key_here
-        ```
-    *   Uses python-dotenv to load environment variables
-    *   Add .env to .gitignore to protect secrets
-
-3.  **Caching**:
+2.  **Caching**:
     *   Cache location: `flask_backtest_app/data/cache`
     *   TTL: 24 hours
-    *   Cache key format: `{symbol}_{date_or_range}`
 
-4.  **Error Handling**:
+3.  **Error Handling**:
     *   Log file: `flask_backtest_app/data/logs/openbb_errors.log`
     *   Log format: `[timestamp] [LEVEL] [symbol] - message`
     *   Console output for immediate visibility
-    *   Detailed provider fallback logging
 
-5.  **Dependencies**:
+4.  **Dependencies**:
     *   Add to requirements.txt:
         *   Flask
         *   openbb
