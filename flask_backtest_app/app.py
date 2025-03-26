@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, redirect, url_for
 from datetime import datetime, timedelta
 import yaml
 import os
@@ -25,7 +25,7 @@ def load_strategies():
     try:
         with open('backtest-app/public/strategies.yaml') as f:
             strategies = yaml.safe_load(f)
-            return [strategy.replace('-', '').strip() for strategy in strategies]
+        return [strategy.replace('-', '').strip() for strategy in strategies]
     except Exception as e:
         print(f"Error loading strategies: {e}")
         return ['Moving Average', 'Mean Reversion', 'Breakout']
@@ -34,7 +34,6 @@ def load_strategies():
 def index():
     strategies = load_strategies()
     return render_template('index.html', strategies=strategies)
-
 
 
 @app.route('/backtest', methods=['POST'])
@@ -80,13 +79,41 @@ def run_backtest():
                          transactions=transactions,
                          profit=profit)
 
-@app.route("/stock/details/<symbol>", methods=['GET'])
-def get_stock(symbol: str):
-    logging.info(f"get_stock called for symbol: {symbol}")
-    print("get_stock route was hit!")
-    data = openbb_integration.get_stock_data(symbol)
-    print(f"Data from openbb_integration: {data}")
-    return render_template('stock_details.html', data=data)
+
+@app.route("/stock/data/<symbol>", methods=['GET'])
+def get_stock_data(symbol):
+    logging.info(f"get_stock_data called for symbol: {symbol}")
+    print(f"get_stock_data called for symbol: {symbol}")
+    try:
+        data = openbb_integration.get_stock_data(symbol)
+        logging.info(f"Data from openbb_integration: {data}")
+        if data:
+            logging.info(f"Data from openbb_integration: {data}")
+        else:
+            logging.warning(f"No data received from openbb_integration for symbol: {symbol}")
+        return jsonify(data)
+    except Exception as e:
+        logging.error(f"Error fetching stock data for {symbol}: {e}")
+        return jsonify({'error': str(e)})
+
+@app.route("/stock/details", methods=['GET'])
+def get_stock_details():
+    symbol = request.args.get('symbol')
+    if symbol:
+        return redirect(url_for('get_stock_symbol', symbol=symbol))
+    else:
+        logging.info("get_stock_details called without a symbol")
+        return render_template('stock_details.html', symbol=None, message="Please enter a stock symbol to view details.")
+
+
+@app.route("/stock/details/<symbol>")
+def get_stock_symbol(symbol):
+    logging.info(f"get_stock_symbol called for symbol: {symbol}")
+    try:
+        return render_template('stock_details.html', symbol=symbol)
+    except Exception as e:
+        logging.error(f"Error rendering stock_details.html: {e}")
+        return f"Error: {str(e)}"
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)

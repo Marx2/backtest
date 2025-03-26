@@ -3,14 +3,28 @@
 {% block content %}
 <div class="container mt-4">
     <h2>Stock Details</h2>
-    <form id="stockForm">
-        <div class="form-group">
-            <label for="ticker">Stock Ticker</label>
-            <input type="text" class="form-control" id="ticker" name="ticker" placeholder="Enter ticker (e.g. AAPL)" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Get Details</button>
-    </form>
-
+    {% if message %}
+    <div class="alert alert-info" role="alert">
+        {{ message }}
+    </div>
+    {% endif %}
+    {% if error %}
+    <div class="alert alert-danger" role="alert">
+        {{ error }}
+    </div>
+    {% endif %}
+    {% if not symbol %}
+    <div class="stock-details-form">
+        <h2>View Stock Details</h2>
+        <form id="stock-details-form" method="GET" action="/stock/details">
+            <div class="form-group">
+                <label for="symbol">Stock Ticker:</label>
+                <input type="text" id="symbol" name="symbol" required>
+            </div>
+            <button type="submit">View Details</button>
+        </form>
+    </div>
+    {% else %}
     <div id="priceResult" class="mt-4" style="display:none;">
         <h4>Price History for <span id="tickerDisplay"></span></h4>
         <div class="row">
@@ -38,76 +52,113 @@
             </div>
         </div>
     </div>
+    {% endif %}
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-document.getElementById('stockForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const ticker = document.getElementById('ticker').value;
-    
-    fetch(`/stock/details/${ticker}`, {
-        method: 'GET',
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            // Update ticker and current price
-            document.getElementById('tickerDisplay').textContent = data.ticker;
-            document.getElementById('priceDisplay').textContent = data.current_price.toFixed(2);
-            
-            // Populate price history table
-            const tableBody = document.getElementById('priceHistory');
-            tableBody.innerHTML = '';
-            data.price_history.forEach(day => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${day.date}</td>
-                    <td>${day.open.toFixed(2)}</td>
-                    <td>${day.high.toFixed(2)}</td>
-                    <td>${day.low.toFixed(2)}</td>
-                    <td>${day.close.toFixed(2)}</td>
-                    <td>${day.volume.toLocaleString()}</td>
-                `;
-                tableBody.appendChild(row);
-            });
-            
-            // Render price chart
-            renderPriceChart(data.ticker, data.price_history);
-            
-            // Show results
-            document.getElementById('priceResult').style.display = 'block';
-        }
-    })
-    .catch(error => console.error('Error:', error));
-});
+ function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
 
-function renderPriceChart(ticker, priceData) {
-    const ctx = document.getElementById('priceChart').getContext('2d');
-    const dates = priceData.map(day => day.date);
-    const closes = priceData.map(day => day.close);
-    
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: dates,
-            datasets: [{
-                label: `${ticker} Closing Price`,
-                data: closes,
-                borderColor: 'rgb(75, 192, 192)',
-                tension: 0.1,
-                fill: false
-            }]
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    beginAtZero: false
-                }
-            }
+    document.addEventListener('DOMContentLoaded', function() {
+        const ticker = getUrlParameter('symbol');
+        console.log("Ticker from URL:", ticker);
+        if (ticker) {
+            fetchStockData(ticker);
         }
     });
-}
+
+    // Intercept form submission
+    const form = document.getElementById('stock-details-form');
+    if (form) {
+        console.log("Form found");
+        form.addEventListener('submit', function(event) {
+            console.log("Form submitted");
+            event.preventDefault(); // Prevent page reload
+            const symbolInput = document.getElementById('symbol');
+            const ticker = symbolInput.value;
+            console.log("Ticker from input:", ticker);
+            fetchStockData(ticker);
+        });
+    } else {
+        console.log("Form not found");
+    }
+
+
+function fetchStockData(ticker) {
+        console.log("Fetching stock data for:", ticker);
+        fetch(`/stock/data/${ticker}`, {
+            method: 'GET',
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data) {
+                // Update ticker and current price
+                document.getElementById('tickerDisplay').textContent = ticker;
+
+                // Populate price history table
+                const tableBody = document.getElementById('priceHistory');
+                tableBody.innerHTML = '';
+                if (data.price_history) {
+                    data.price_history.forEach(day => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${day.date}</td>
+                            <td>${day.open.toFixed(2)}</td>
+                            <td>${day.high.toFixed(2)}</td>
+                            <td>${day.low.toFixed(2)}</td>
+                            <td>${day.close.toFixed(2)}</td>
+                            <td>${day.volume.toLocaleString()}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                }
+
+                // Render price chart
+                if (data.price_history) {
+                    renderPriceChart(ticker, data.price_history);
+                }
+
+                // Show results
+                document.getElementById('priceResult').style.display = 'block';
+            } else if (data.error) {
+                 document.getElementById('priceResult').style.display = 'none';
+                console.error('Error:', data.error);
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+    function renderPriceChart(ticker, priceData) {
+        const ctx = document.getElementById('priceChart').getContext('2d');
+        const dates = priceData.map(day => day.date);
+        const closes = priceData.map(day => day.close);
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: dates,
+                datasets: [{
+                    label: `${ticker} Closing Price`,
+                    data: closes,
+                    borderColor: 'rgb(75, 192, 192)',
+                    tension: 0.1,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                }
+            }
+        });
+    }
 </script>
 {% endblock %}

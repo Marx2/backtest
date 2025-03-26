@@ -68,4 +68,15 @@
             <li><a href="https://finance.yahoo.com/" target="_blank">Yahoo Finance</a></li>
         </ul>
     </div>
+
+   <div class="stock-details-form">
+        <h2>View Stock Details</h2>
+        <form id="stock-details-form" method="GET" action="/stock/details">
+            <div class="form-group">
+                <label for="symbol">Stock Ticker:</label>
+                <input type="text" id="symbol" name="symbol" required>
+            </div>
+            <button type="submit">View Details</button>
+        </form>
+    </div>
 {% endblock %}
