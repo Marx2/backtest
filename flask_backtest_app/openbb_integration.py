@@ -10,33 +10,6 @@ from dotenv import load_dotenv
 logging.info("Application is starting...")
 # Load environment variables from .env file or set directly
 load_dotenv()
-FMP_API_KEY = os.getenv("FMP_API_KEY")
-INTRINIO_API_KEY = os.getenv("INTRINIO_API_KEY")
-
-if FMP_API_KEY:
-    os.environ["OPENBB_FMP_API_KEY"] = FMP_API_KEY
-    logging.info(f"FMP API key set from environment variable: {'*' * len(FMP_API_KEY)}")
-else:
-    logging.warning("FMP API key not found in environment variables")
-
-if INTRINIO_API_KEY:
-    os.environ["OPENBB_INTRINIO_API_KEY"] = INTRINIO_API_KEY
-    logging.info(f"Intrinio API key set from environment variable: {'*' * len(INTRINIO_API_KEY)}")
-else:
-    logging.warning("Intrinio API key not found in environment variables")
-
-# Set API keys using credentials
-if FMP_API_KEY:
-    obb.user.credentials.fmp_api_key = FMP_API_KEY
-    logging.info("FMP API key set in credentials")
-else:
-    logging.warning("FMP API key not found in environment variables")
-
-if INTRINIO_API_KEY:
-    obb.user.credentials.intrinio_api_key = INTRINIO_API_KEY
-    logging.info("Intrinio API key set in credentials")
-else:
-    logging.warning("Intrinio API key not found in environment variables")
 
 # Configure logging
 logging.basicConfig(
@@ -110,10 +83,7 @@ def get_prices_in_range(symbol: str, start_date: str, end_date: str) -> pd.DataF
                 # Rename columns to lowercase
                 logging.info(f"Column names before conversion: {data.columns}")
                 logging.info(f"Column dtypes before conversion: {data.dtypes}")
-                if data.columns.dtype == 'object':
-                    data.columns = data.columns.str.lower()
-                else:
-                    logging.warning("Column names are not of type object")
+                data.columns = data.columns.str.lower()
                 logging.info(f"Data before conversion: {data}")
                 break  # If data is successfully fetched, break the loop
 
@@ -134,7 +104,6 @@ def get_stock_data(symbol: str):
     print(f"Reading stock data for symbol: {symbol}")
     try:
         data = obb.equity.price.historical(symbol)
-        df = data.to_dataframe()  # Convert to DataFrame
         df = data.to_dataframe()  # Convert to DataFrame
         stock_data = df.tail(5)
         # Convert DataFrame to list of dictionaries
@@ -165,29 +134,19 @@ def get_stock_news(symbol: str):
 
 def get_stock_suggestions(query: str):
     try:
-        # Try multiple providers if first one fails
-        providers = ["intrinio", "fmp", "yfinance"]
-        suggestions = []
-        
-        for provider in providers:
-            try:
-                print(f"Trying provider: {provider} with query: {query}")
-                search_results = obb.equity.search(
-                    query=query,
-                    provider=provider
-                )
-                print(f"Search results for {provider}: {search_results}")
-                if search_results and search_results.results:
-                    for result in search_results.results:
-                        suggestions.append({
-                            "ticker": result.symbol if hasattr(result, 'symbol') else result.ticker,
-                            "name": result.name,
-                            "exchange": result.exchange if hasattr(result, 'exchange') else 'N/A'
-                        })
-                    break  # Stop if we get results from any provider
-            except Exception as e:
-                print(f"Error with {provider} provider: {e}")
-                continue
+        print(f"Trying query: {query}")
+        search_results = obb.equity.search(
+            query=query
+        )
+        print(f"Search results {query}: {search_results}")
+        suggestions = []  # Initialize suggestions list
+        if search_results and search_results.results:
+            for result in search_results.results:
+                suggestions.append({
+                    "ticker": result.symbol if hasattr(result, 'symbol') else result.ticker,
+                    "name": result.name,
+                    "exchange": result.exchange if hasattr(result, 'exchange') else 'N/A'
+                })
         print(f"Final suggestions: {suggestions}")
         return suggestions[:10]  # Return max 10 suggestions
         
