@@ -180,12 +180,18 @@ function fetchStockData(ticker) {
     .catch(error => console.error('Error:', error));
 }
 
+let myChart; // Declare myChart outside the function scope
 function renderPriceChart(ticker, priceData) {
     const ctx = document.getElementById('priceChart').getContext('2d');
     const dates = priceData.map(day => day.date);
     const closes = priceData.map(day => day.close);
 
-    new Chart(ctx, {
+    // Destroy the previous chart instance if it exists
+    if (myChart) {
+        myChart.destroy();
+    }
+
+    myChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: dates,
