@@ -115,5 +115,14 @@ def get_stock_symbol(symbol):
         logging.error(f"Error rendering stock_details.html: {e}")
         return f"Error: {str(e)}"
 
+@app.route("/stock_suggestions")
+def stock_suggestions():
+    query = request.args.get('query')
+    if query:
+        suggestions = openbb_integration.get_stock_suggestions(query)
+        return jsonify(suggestions)
+    else:
+        return jsonify([])
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)

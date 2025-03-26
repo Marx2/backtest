@@ -33,7 +33,7 @@
                     <form id="stock-details-form" method="GET" action="/stock/details">
                         <div class="form-group">
                             <label for="symbol">Stock Ticker:</label>
-                            <input type="text" id="symbol" name="symbol" required>
+                            <input type="text" id="stock_ticker" name="stock_ticker" required>
                         </div>
                         <button type="submit">View Details</button>
                     </form>
@@ -208,4 +208,5 @@ function renderPriceChart(ticker, priceData) {
     });
 }
 </script>
+<script src="{{ url_for('static', filename='js/stock_suggestions.js') }}"></script>
 {% endblock %}

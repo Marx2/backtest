@@ -162,3 +162,35 @@ def get_stock_news(symbol: str):
     except Exception as e:
         print("Error fetching news:", e)
         return [{"title": "No news available", "summary": "", "link": ""}]
+
+def get_stock_suggestions(query: str):
+    try:
+        # Try multiple providers if first one fails
+        providers = ["intrinio", "fmp", "yfinance"]
+        suggestions = []
+        
+        for provider in providers:
+            try:
+                print(f"Trying provider: {provider} with query: {query}")
+                search_results = obb.equity.search(
+                    query=query,
+                    provider=provider
+                )
+                print(f"Search results for {provider}: {search_results}")
+                if search_results and search_results.results:
+                    for result in search_results.results:
+                        suggestions.append({
+                            "ticker": result.symbol if hasattr(result, 'symbol') else result.ticker,
+                            "name": result.name,
+                            "exchange": result.exchange if hasattr(result, 'exchange') else 'N/A'
+                        })
+                    break  # Stop if we get results from any provider
+            except Exception as e:
+                print(f"Error with {provider} provider: {e}")
+                continue
+        print(f"Final suggestions: {suggestions}")
+        return suggestions[:10]  # Return max 10 suggestions
+        
+    except Exception as e:
+        print(f"Error fetching stock suggestions: {e}")
+        return []
