@@ -33,18 +33,11 @@
 
 ```mermaid
 graph LR
-    Client((Client (Browser))) --> "Flask Application (app.py)";
-    "Flask Application (app.py)" --> "OpenBB Integration (openbb_integration.py)";
-    "Flask Application (app.py)" --> "Templates (templates/)";
-    "Flask Application (app.py)" --> "Static Files (static/)";
-    "OpenBB Integration (openbb_integration.py)" --> "OpenBB SDK";
-    "Templates (templates/)" --> "base.html";
-    "Templates (templates/)" --> "index.html";
-    "Templates (templates/)" --> "stock_details.html";
-    "Static Files (static/)" --> "style.css";
-    "Static Files (static/)" --> "stock_suggestions.js";
-    Client --> "index.html";
-    Client --> "stock_details.html";
+    A[Client] --> B[Flask App];
+    B --> C[OpenBB Integration];
+    B --> D[Templates];
+    B --> E[Static Files];
+    C --> F[OpenBB SDK];
 ```
 
 *   **Client (Browser)**: The user interacts with the application through a web browser.
@@ -64,16 +57,10 @@ graph LR
 ### Module Architecture
 
 ```mermaid
-graph TD
-    openbb_integration.py --> "Price Endpoints";
-    openbb_integration.py --> Caching;
-    openbb_integration.py --> "Error Logging";
-    "Price Endpoints" --> get_price_at_date;
-    "Price Endpoints" --> get_prices_in_range;
-    Caching --> "Local Cache";
-    Caching --> "TTL=24h";
-    "Error Logging" --> "Log to File";
-    "Error Logging" --> "Console Output";
+graph LR
+    A[OpenBB Integration] --> B[Price Endpoints];
+    A --> C[Caching];
+    A --> D[Error Logging];
 ```
 
 ### Implementation Details
