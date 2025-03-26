@@ -58,15 +58,41 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
  function getUrlParameter(name) {
+        console.log("Current URL:", window.location.href);
+        
+        // First try query parameters
+        console.log("Checking query parameters");
         name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
         var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
         var results = regex.exec(location.search);
-        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        if (results !== null) {
+            var paramValue = decodeURIComponent(results[1].replace(/\+/g, ' '));
+            console.log("Found in query params:", paramValue);
+            return paramValue;
+        }
+        
+        // Fall back to path parameters
+        console.log("Checking path parameters");
+        var pathParts = window.location.pathname.split('/');
+        var symbolIndex = pathParts.indexOf('details') + 1;
+        if (symbolIndex > 0 && symbolIndex < pathParts.length) {
+            var pathParam = pathParts[symbolIndex];
+            console.log("Found in path params:", pathParam);
+            return pathParam;
+        }
+        
+        console.log("Parameter not found in URL");
+        return '';
     };
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const ticker = getUrlParameter('symbol');
-        console.log("Ticker from URL:", ticker);
+document.addEventListener('DOMContentLoaded', function() {
+    const ticker = getUrlParameter('symbol');
+    console.log("Ticker from URL:", ticker);
+    
+    // Only proceed with data fetching if we're in the results view
+    const resultsView = document.getElementById('priceResult');
+    if (resultsView) {
+        console.log("In results view");
         
         // Intercept form submission
         const form = document.getElementById('stock-details-form');
@@ -78,128 +104,108 @@
                 const symbolInput = document.getElementById('symbol');
                 const ticker = symbolInput.value;
                 console.log("Ticker from input:", ticker);
-                fetchStockData(ticker);
+                if (ticker) {
+                    fetchStockData(ticker);
+                }
             });
         } else {
             console.log("Form not found");
         }
+        
         if (ticker) {
             fetchStockData(ticker);
         }
-    });
-
+    } else {
+        console.log("Not in results view - skipping data fetch");
+    }
+});
 
 function fetchStockData(ticker) {
-        console.log("Fetching stock data for:", ticker);
-        
-        setTimeout(function() {
-            const priceResult = document.getElementById('priceResult');
-            if (!priceResult) {
-                console.error('priceResult element not found');
-                return;
+    console.log("Fetching stock data for:", ticker);
+    
+    const priceResult = document.getElementById('priceResult');
+    if (!priceResult) {
+        console.error('priceResult element not found');
+        return;
+    }
+
+    fetch(`/stock/data/${ticker}`, {
+        method: 'GET',
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data) {
+            // Show results
+            priceResult.style.display = 'block';
+
+            // Update ticker and current price
+            const tickerDisplay = document.getElementById('tickerDisplay');
+            if (tickerDisplay) {
+                tickerDisplay.textContent = ticker;
+            } else {
+                console.error('tickerDisplay element not found');
             }
-            fetch(`/stock/data/${ticker}`, {
-                method: 'GET',
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data) {
-                    // Show results
-                    priceResult.style.display = 'block';
 
-                    // Update ticker and current price
-                    const tickerDisplay = document.getElementById('tickerDisplay');
-                    if (tickerDisplay) {
-                        tickerDisplay.textContent = ticker;
-                    } else {
-                        console.error('tickerDisplay element not found');
-                    }
-
-                    // Populate price history table
-                    const tableBody = document.getElementById('priceHistory');
-                    if (tableBody) {
-                        tableBody.innerHTML = '';
-                        if (data.price_history) {
-                            data.price_history.forEach(day => {
-                                const row = document.createElement('tr');
-                                row.innerHTML = `
-                                    <td>${day.date}</td>
-                                    <td>${day.open.toFixed(2)}</td>
-                                    <td>${day.high.toFixed(2)}</td>
-                                    <td>${day.low.toFixed(2)}</td>
-                                    <td>${day.close.toFixed(2)}</td>
-                                    <td>${day.volume.toLocaleString()}</td>
-                            `;
-                            tableBody.appendChild(row);
-                        });
-                    }
-                } else {
-                    console.error('priceHistory element not found');
-                }
-
-                // Render price chart
+            // Populate price history table
+            const tableBody = document.getElementById('priceHistory');
+            if (tableBody) {
+                tableBody.innerHTML = '';
                 if (data.price_history) {
-                    renderPriceChart(ticker, data.price_history);
+                    data.price_history.forEach(day => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${day.date}</td>
+                            <td>${day.open.toFixed(2)}</td>
+                            <td>${day.high.toFixed(2)}</td>
+                            <td>${day.low.toFixed(2)}</td>
+                            <td>${day.close.toFixed(2)}</td>
+                            <td>${day.volume.toLocaleString()}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
                 }
-            } else if (data.error) {
-                 document.getElementById('priceResult').style.display = 'none';
-                console.error('Error:', data.error);
+            } else {
+                console.error('priceHistory element not found');
             }
-        })
-        .catch(error => console.error('Error:', error));
-    }, 0);
+
+            // Render price chart
+            if (data.price_history) {
+                renderPriceChart(ticker, data.price_history);
+            }
+        } else if (data.error) {
+            document.getElementById('priceResult').style.display = 'none';
+            console.error('Error:', data.error);
+        }
+    })
+    .catch(error => console.error('Error:', error));
 }
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const ticker = getUrlParameter('symbol');
-        console.log("Ticker from URL:", ticker);
-        if (ticker) {
-            fetchStockData(ticker);
-        }
+function renderPriceChart(ticker, priceData) {
+    const ctx = document.getElementById('priceChart').getContext('2d');
+    const dates = priceData.map(day => day.date);
+    const closes = priceData.map(day => day.close);
 
-        // Intercept form submission
-        const form = document.getElementById('stock-details-form');
-        if (form) {
-            console.log("Form found");
-            form.addEventListener('submit', function(event) {
-                console.log("Form submitted");
-                event.preventDefault(); // Prevent page reload
-                const symbolInput = document.getElementById('symbol');
-                const ticker = symbolInput.value;
-                console.log("Ticker from input:", ticker);
-                
-            });
-        } else {
-            console.log("Form not found");
-        }
-    });
-
-    function renderPriceChart(ticker, priceData) {
-        const ctx = document.getElementById('priceChart').getContext('2d');
-        const dates = priceData.map(day => day.date);
-        const closes = priceData.map(day => day.close);
-
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: dates,
-                datasets: [{
-                    label: `${ticker} Closing Price`,
-                    data: closes,
-                    borderColor: 'rgb(75, 192, 192)',
-                    tension: 0.1,
-                    fill: false
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: false
-                    }
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: dates,
+            datasets: [{
+                label: `${ticker} Closing Price`,
+                data: closes,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1,
+                fill: false
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: false
                 }
             }
-        });
-    }
+        }
+    });
+}
 </script>
 {% endblock %}
