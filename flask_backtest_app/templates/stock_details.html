@@ -13,22 +13,31 @@
         {{ error }}
     </div>
     {% endif %}
-    {% if not symbol %}
-    <div class="stock-details-form">
-        <h2>View Stock Details</h2>
-        <form id="stock-details-form" method="GET" action="/stock/details">
-            <div class="form-group">
-                <label for="symbol">Stock Ticker:</label>
-                <input type="text" id="symbol" name="symbol" required>
-            </div>
-            <button type="submit">View Details</button>
-        </form>
-    </div>
-    {% else %}
-    <div id="priceResult" class="mt-4" style="display:none;">
+    
+    
+        
+        
+            
+                
+                
+            
+            
+        
+    
+    <div id="priceResult" class="mt-4" style="display:block;">
         <h4>Price History for <span id="tickerDisplay"></span></h4>
         <div class="row">
             <div class="col-md-6">
+                <div class="stock-details-form">
+                    <h2>View Stock Details</h2>
+                    <form id="stock-details-form" method="GET" action="/stock/details">
+                        <div class="form-group">
+                            <label for="symbol">Stock Ticker:</label>
+                            <input type="text" id="symbol" name="symbol" required>
+                        </div>
+                        <button type="submit">View Details</button>
+                    </form>
+                </div>
                 <h5>Current Price: $<span id="priceDisplay"></span></h5>
                 <div class="table-responsive">
                     <table class="table table-striped">
@@ -52,7 +61,7 @@
             </div>
         </div>
     </div>
-    {% endif %}
+    
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -80,43 +89,34 @@
             console.log("Found in path params:", pathParam);
             return pathParam;
         }
-        
+    
         console.log("Parameter not found in URL");
         return '';
     };
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Intercept form submission
+    const form = document.getElementById('stock-details-form');
+    if (form) {
+        console.log("Form found");
+        form.addEventListener('submit', function(event) {
+            console.log("Form submitted");
+            event.preventDefault(); // Prevent page reload
+            const symbolInput = document.getElementById('symbol');
+            const ticker = symbolInput.value;
+            console.log("Ticker from input:", ticker);
+            if (ticker) {
+                fetchStockData(ticker);
+            }
+        });
+    } else {
+        console.log("Form not found");
+    }
+
     const ticker = getUrlParameter('symbol');
     console.log("Ticker from URL:", ticker);
-    
-    // Only proceed with data fetching if we're in the results view
-    const resultsView = document.getElementById('priceResult');
-    if (resultsView) {
-        console.log("In results view");
-        
-        // Intercept form submission
-        const form = document.getElementById('stock-details-form');
-        if (form) {
-            console.log("Form found");
-            form.addEventListener('submit', function(event) {
-                console.log("Form submitted");
-                event.preventDefault(); // Prevent page reload
-                const symbolInput = document.getElementById('symbol');
-                const ticker = symbolInput.value;
-                console.log("Ticker from input:", ticker);
-                if (ticker) {
-                    fetchStockData(ticker);
-                }
-            });
-        } else {
-            console.log("Form not found");
-        }
-        
-        if (ticker) {
-            fetchStockData(ticker);
-        }
-    } else {
-        console.log("Not in results view - skipping data fetch");
+    if (ticker) {
+        fetchStockData(ticker);
     }
 });
 
