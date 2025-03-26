@@ -136,7 +136,8 @@ def get_stock_suggestions(query: str):
     try:
         print(f"Trying query: {query}")
         search_results = obb.equity.search(
-            query=query
+            query=query,
+            provider='sec',
         )
         print(f"Search results {query}: {search_results}")
         suggestions = []  # Initialize suggestions list
