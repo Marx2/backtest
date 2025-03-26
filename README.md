@@ -10,10 +10,8 @@ Allows users to select a stock ticker, strategy, and starting year to run a back
 *   Prerequisites: Python 3.7+, pip
 *   Clone the repository: `git clone <repository_url>`
 *   Navigate to the project directory: `cd backtest`
-*   Create a virtual environment: `python -m venv venv`
-*   Activate the virtual environment:
-    *   macOS/Linux: `source venv/bin/activate`
-    *   Windows: `venv\Scripts\activate`
+*   Create a conda environment: `conda create -n backtest_env python=3.9`
+*   Activate the conda environment: `conda activate backtest_env`
 *   Install dependencies: `pip install -r flask_backtest_app/requirements.txt`
 *   Set the FMP API key in a `.env` file:
     ```
