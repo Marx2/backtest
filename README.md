@@ -5,6 +5,8 @@
 A web application for backtesting stock trading strategies using historical data from the OpenBB platform.
 Allows users to select a stock ticker, strategy, and starting year to run a backtest and view the results.
 
+This project has been vibe coded using RooCode, and LLMs: Google Hemini Flash 2.0, Deepseek V3 0324, and local model qwen2.5-coder-cline.
+
 ## Installation
 
 *   Prerequisites: Python 3.7+, pip
