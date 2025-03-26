@@ -135,7 +135,21 @@ def get_stock_data(symbol: str):
     try:
         data = obb.equity.price.historical(symbol)
         df = data.to_dataframe()  # Convert to DataFrame
-        return df.tail(5).to_dict()  # Show last 5 rows
+        df = data.to_dataframe()  # Convert to DataFrame
+        stock_data = df.tail(5)
+        # Convert DataFrame to list of dictionaries
+        price_history = []
+        for index, row in stock_data.iterrows():
+            date_str = index.strftime('%Y-%m-%d')  # Convert Timestamp to string
+            price_history.append({
+                'date': date_str,
+                'open': row['open'],
+                'high': row['high'],
+                'low': row['low'],
+                'close': row['close'],
+                'volume': row['volume']
+            })
+        return {"price_history": price_history}
     except Exception as e:
         print("Error:", e)
         return {"error": str(e)}

@@ -67,71 +67,112 @@
     document.addEventListener('DOMContentLoaded', function() {
         const ticker = getUrlParameter('symbol');
         console.log("Ticker from URL:", ticker);
+        
+        // Intercept form submission
+        const form = document.getElementById('stock-details-form');
+        if (form) {
+            console.log("Form found");
+            form.addEventListener('submit', function(event) {
+                console.log("Form submitted");
+                event.preventDefault(); // Prevent page reload
+                const symbolInput = document.getElementById('symbol');
+                const ticker = symbolInput.value;
+                console.log("Ticker from input:", ticker);
+                fetchStockData(ticker);
+            });
+        } else {
+            console.log("Form not found");
+        }
         if (ticker) {
             fetchStockData(ticker);
         }
     });
 
-    // Intercept form submission
-    const form = document.getElementById('stock-details-form');
-    if (form) {
-        console.log("Form found");
-        form.addEventListener('submit', function(event) {
-            console.log("Form submitted");
-            event.preventDefault(); // Prevent page reload
-            const symbolInput = document.getElementById('symbol');
-            const ticker = symbolInput.value;
-            console.log("Ticker from input:", ticker);
-            fetchStockData(ticker);
-        });
-    } else {
-        console.log("Form not found");
-    }
-
 
 function fetchStockData(ticker) {
         console.log("Fetching stock data for:", ticker);
-        fetch(`/stock/data/${ticker}`, {
-            method: 'GET',
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data) {
-                // Update ticker and current price
-                document.getElementById('tickerDisplay').textContent = ticker;
+        
+        setTimeout(function() {
+            const priceResult = document.getElementById('priceResult');
+            if (!priceResult) {
+                console.error('priceResult element not found');
+                return;
+            }
+            fetch(`/stock/data/${ticker}`, {
+                method: 'GET',
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data) {
+                    // Show results
+                    priceResult.style.display = 'block';
 
-                // Populate price history table
-                const tableBody = document.getElementById('priceHistory');
-                tableBody.innerHTML = '';
-                if (data.price_history) {
-                    data.price_history.forEach(day => {
-                        const row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td>${day.date}</td>
-                            <td>${day.open.toFixed(2)}</td>
-                            <td>${day.high.toFixed(2)}</td>
-                            <td>${day.low.toFixed(2)}</td>
-                            <td>${day.close.toFixed(2)}</td>
-                            <td>${day.volume.toLocaleString()}</td>
-                        `;
-                        tableBody.appendChild(row);
-                    });
+                    // Update ticker and current price
+                    const tickerDisplay = document.getElementById('tickerDisplay');
+                    if (tickerDisplay) {
+                        tickerDisplay.textContent = ticker;
+                    } else {
+                        console.error('tickerDisplay element not found');
+                    }
+
+                    // Populate price history table
+                    const tableBody = document.getElementById('priceHistory');
+                    if (tableBody) {
+                        tableBody.innerHTML = '';
+                        if (data.price_history) {
+                            data.price_history.forEach(day => {
+                                const row = document.createElement('tr');
+                                row.innerHTML = `
+                                    <td>${day.date}</td>
+                                    <td>${day.open.toFixed(2)}</td>
+                                    <td>${day.high.toFixed(2)}</td>
+                                    <td>${day.low.toFixed(2)}</td>
+                                    <td>${day.close.toFixed(2)}</td>
+                                    <td>${day.volume.toLocaleString()}</td>
+                            `;
+                            tableBody.appendChild(row);
+                        });
+                    }
+                } else {
+                    console.error('priceHistory element not found');
                 }
 
                 // Render price chart
                 if (data.price_history) {
                     renderPriceChart(ticker, data.price_history);
                 }
-
-                // Show results
-                document.getElementById('priceResult').style.display = 'block';
             } else if (data.error) {
                  document.getElementById('priceResult').style.display = 'none';
                 console.error('Error:', data.error);
             }
         })
         .catch(error => console.error('Error:', error));
-    }
+    }, 0);
+}
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const ticker = getUrlParameter('symbol');
+        console.log("Ticker from URL:", ticker);
+        if (ticker) {
+            fetchStockData(ticker);
+        }
+
+        // Intercept form submission
+        const form = document.getElementById('stock-details-form');
+        if (form) {
+            console.log("Form found");
+            form.addEventListener('submit', function(event) {
+                console.log("Form submitted");
+                event.preventDefault(); // Prevent page reload
+                const symbolInput = document.getElementById('symbol');
+                const ticker = symbolInput.value;
+                console.log("Ticker from input:", ticker);
+                
+            });
+        } else {
+            console.log("Form not found");
+        }
+    });
 
     function renderPriceChart(ticker, priceData) {
         const ctx = document.getElementById('priceChart').getContext('2d');

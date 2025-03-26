@@ -86,7 +86,7 @@ def get_stock_data(symbol):
     print(f"get_stock_data called for symbol: {symbol}")
     try:
         data = openbb_integration.get_stock_data(symbol)
-        logging.info(f"Data from openbb_integration: {data}")
+        print(f"Data from openbb_integration: {data}")
         if data:
             logging.info(f"Data from openbb_integration: {data}")
         else:
