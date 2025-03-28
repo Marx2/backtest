@@ -199,13 +199,27 @@ th {
     font-weight: bold;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.left-column {
+    width: 70%;
+    padding: 20px;
+}
+
+.right-column {
+    width: 25%;
+    padding: 20px;
+}
+
 .sidebar {
-    width: 250px;
     padding: 10px;
     background-color: #333;
     border-radius: 10px;
     color: #fff;
-    margin: 20px auto;
 }
 
 .sidebar a {
