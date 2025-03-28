@@ -31,9 +31,7 @@ body {
 }
 
 #theme-toggle {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    margin-left: auto;
     padding: 0.5rem 1rem;
     background-color: #eee;
     color: #333;
@@ -76,9 +74,20 @@ body.dark-mode select {
     box-shadow: none;
 }
 
-body.dark-mode button {
+body.dark-mode #theme-toggle {
     background-color: #555;
+    box-shadow: none;
+}
+
+body.dark-mode #theme-toggle i {
     color: #eee;
+}
+
+body.dark-mode #theme-toggle i {
+    color: #eee;
+}
+
+body.dark-mode button {
     box-shadow: none;
 }
 
@@ -118,6 +127,10 @@ body.dark-mode #stock_suggestions li:hover {
 
 body.dark-mode .no-results {
     color: #ccc;
+}
+
+body.dark-mode footer {
+    color: #ddd;
 }
 
 .app {
@@ -203,7 +216,6 @@ th {
 footer {
     text-align: center;
     margin-top: 20px;
-    color: #fff;
 }
 
 /* Stock Suggestions Styling */
