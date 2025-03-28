@@ -43,3 +43,7 @@ This project has been vibe coded using RooCode, and LLMs: Google Gemini Flash 2.
 ## License
 
 [Specify the license here]
+
+## Star Graph
+
+[![GitHub stars](https://starchart.cc/Marx2/backtest.svg)](https://starchart.cc/Marx2/backtest)
