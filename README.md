@@ -1,3 +1,12 @@
+![Build Status](https://github.com/MyUsername/backtest/actions/workflows/build.yml/badge.svg)
+![Code Coverage](https://img.shields.io/codecov/c/github/MyUsername/backtest)
+![License](https://img.shields.io/github/license/MyUsername/backtest)
+![Stars](https://img.shields.io/github/stars/MyUsername/backtest?style=social)
+![Forks](https://img.shields.io/github/forks/MyUsername/backtest?style=social)
+![Issues](https://img.shields.io/github/issues/MyUsername/backtest)
+![Dependencies](https://img.shields.io/david/MyUsername/backtest)
+![Dev Dependencies](https://img.shields.io/david/dev/MyUsername/backtest)
+
 # Flask Backtesting App
 
 ## Description
