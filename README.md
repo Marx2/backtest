@@ -4,8 +4,6 @@
 ![Stars](https://img.shields.io/github/stars/Marx2/backtest?style=social)
 ![Forks](https://img.shields.io/github/forks/Marx2/backtest?style=social)
 ![Issues](https://img.shields.io/github/issues/Marx2/backtest)
-![Dependencies](https://img.shields.io/david/Marx2/backtest)
-![Dev Dependencies](https://img.shields.io/david/dev/Marx2/backtest)
 
 # Flask Backtesting App
 
