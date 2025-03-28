@@ -13,6 +13,7 @@
         <nav class="navbar">
             <a href="/">Home</a>
             <a href="/stock/details">Stock Details</a>
+            <button id="theme-toggle">Toggle Theme</button>
         </nav>
         
         {% block content %}{% endblock %}
@@ -22,5 +23,6 @@
             Address: 123 Main Street, Anytown, USA
         </footer>
     </div>
+    <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
 </body>
 </html>
