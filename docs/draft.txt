@@ -1,0 +1,43 @@
+Draft of application, which is doing backtests.
+
+
+Meta objects
+Currencies: List<Currency> currencies
+Cash: List<Currency, amount> wallet
+Portfolio: List<Ticker, amount> portfolio
+Dates from-to: Pair<Date,Date> boundary
+Processing Date: <Date> processingDate
+Processing Interval: <day/month/days> processingInterval
+Screened tickers: List<Ticker> screenedTickers
+Screening parameters: List<screening parameters TBD>
+All transactions: List<Date,sell/buy,Ticker,amount,price> allTransactions
+Rebalance transactions: List<Date,sell/buy,Ticker,amount,price> rebalanceTransactions
+
+Each action is a method.
+Algoritm of backtest consist of 3 steps:
+1. initial actions
+2. loop actions
+3. finishing actions
+
+1. init
+- do action: addCash(amount, Currency) - set initial cash in wallet
+- do action: setStocks(<Ticker,amount>, <Ticker,amount>...) - set initial stocks in a portfolio
+- do action: setBoundary<start,end> - set start and stop date, for example 1.1.2025 - 31.12.2025
+- do action: setProcessingInterval<day/month/days> - set interval, for example 1 month
+2. loop
+- do action: increaseProcessingDate(processingInterval) - sets processingDate
+- do action: checkEndBoundary(processingDate) - end loop if boundary is reached
+- do action: screenStocks(processingDate, List<screening parameters>) - sets screenedTickers
+- do action: rebalance(screenedTickers) - rebalance stocks in portfolio, generate rebalanceTransactions out of it
+- do action: calculateRebalanceTransactions(rebalanceTransactions) - "executes" transactions from rebalancing, it means: update wallet and add rebalanceTransactions to allTransactions
+- do action: displayWallet() - display wallet content at this moment
+- do action: displayPortfolio() - display portfolio content at this moment
+- do action: displayBalance(currency) - display sum of all cash in wallet, all value of all stocks in portfolio, converted to given currency at this moment
+3. finish
+- do action: rebalance(null) - sell all stocks in portfolio, generate rebalanceTransactions out of it
+- do action: calculateRebalanceTransactions(rebalanceTransactions)
+- do action: displayPortfolio() - display portfolio content at this moment
+- do action: displayBalance(currency) - display sum of all cash in wallet, portfolio should be empty at the end
+
+
+
