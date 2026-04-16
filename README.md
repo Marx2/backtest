@@ -1,7 +1,8 @@
 # pfire-backtest
 
-Python backtesting engine for trading strategies. Runs strategies over historical periods using mock
-data providers, with multi-currency support and diff-based rebalancing.
+Python backtesting engine for trading strategies. Runs strategies over historical periods with
+multi-currency support and diff-based rebalancing. Includes mock providers for fast testing and
+real OpenBB providers (yfinance/FMP) for live data.
 
 ## Usage
 
@@ -48,7 +49,7 @@ def run(ctx):
 ## Project Structure
 
 ```
-actions/        # one file per action + mock data providers
+actions/        # one file per action; mock + OpenBB data providers
 core/           # BacktestContext, data models
 strategies/     # strategy files
 config/         # YAML configs
@@ -59,6 +60,9 @@ tests/          # unit + integration tests
 
 ```bash
 pip install -r requirements.txt
+
+# Optional: add API credentials for FMP provider
+cp .env.example .env
 ```
 
 ## Tests
@@ -70,7 +74,9 @@ pytest tests/
 ## Architecture
 
 - **Procedural** — each action is a standalone function in `actions/`
-- **Mock providers** — `mock_prices.py`, `mock_fx_rates.py`, `mock_screener.py` generate
-  deterministic random data; swap for real providers with the same interface
+- **Dual providers** — mock providers (`mock_prices.py`, `mock_fx_rates.py`, `mock_screener.py`)
+  for deterministic tests; OpenBB providers (`openbb_prices.py`, `openbb_fx_rates.py`,
+  `openbb_screener.py`) for live data via yfinance (free) or FMP (paid). Same interface — swap by
+  changing the import.
 - **Diff-based rebalancing** — equal-weight allocation, minimal trades
-- **Multi-currency** — FX conversion via mock rates for balance display
+- **Multi-currency** — FX conversion for balance display
