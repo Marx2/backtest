@@ -1,7 +1,7 @@
 Draft of application, which is doing backtests.
 
 
-Meta objects
+Meta objects:
 Currencies: List<Currency> currencies
 Cash: List<Currency, amount> wallet
 Portfolio: List<Ticker, amount> portfolio
@@ -18,6 +18,7 @@ Algoritm of backtest consist of 3 steps:
 1. initial actions
 2. loop actions
 3. finishing actions
+All steps forms a strategy which is a python file
 
 1. init
 - do action: addCash(amount, Currency) - set initial cash in wallet
@@ -39,5 +40,10 @@ Algoritm of backtest consist of 3 steps:
 - do action: displayPortfolio() - display portfolio content at this moment
 - do action: displayBalance(currency) - display sum of all cash in wallet, portfolio should be empty at the end
 
-
-
+There should be example config/backtest.yaml file. Yaml should contains two sections:
+1. initial parameters: currencies, wallet, boundary, processingInterval
+2. screening parameters
+Example strategy described above should be in strategies/basic.py
+At the start screening should be mocked (mock should generate random 10-30 tickers) - put it into separate python file
+At the start method to read currency exchange rates, stock exchange rates should be mocked (generate reasonable random values) - put it into separate python file
+As for now all calculations should be done in-memory

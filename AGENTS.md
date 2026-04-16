@@ -24,7 +24,6 @@ follow-up questions until you reach that confidence.
 ```bash
 # Install dependencies
 pip install -r requirements.txt
-playwright install firefox
 
 # Configure credentials (required before first run)
 cp .env.example .env
