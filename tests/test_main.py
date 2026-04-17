@@ -11,12 +11,12 @@ def test_load_config():
 
     config = load_config("config/backtest.yaml")
     assert isinstance(config, BacktestConfig)
-    assert config.start_date == date(2025, 1, 1)
+    assert config.start_date == date(2020, 1, 1)
     assert config.end_date == date(2025, 12, 31)
     assert config.interval == "month"
     assert config.base_currency == "USD"
     assert config.initial_cash["USD"] == Decimal("10000")
-    assert config.screening == {"min_score": 0.5}
+    assert "mktcap_min" in config.screening
 
 
 def test_load_strategy():

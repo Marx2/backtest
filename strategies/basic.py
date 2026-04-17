@@ -2,22 +2,16 @@ from core.context import BacktestContext
 
 
 def run(ctx: BacktestContext) -> None:
-    """Basic equal-weight strategy.
-
-    Screens stocks each period, rebalances to equal weight,
-    then sells everything at the end.
-    """
-    # loop
+    """Basic equal-weight strategy using live OpenBB data (yfinance/FMP)."""
     while ctx.advance():
-        screened = ctx.screen_stocks()
-        transactions = ctx.rebalance(screened)
+        screened = ctx.openbb_screen_stocks()
+        transactions = ctx.openbb_rebalance(screened)
         ctx.execute_transactions(transactions)
         ctx.display_wallet()
         ctx.display_portfolio()
-        ctx.display_balance()
+        ctx.openbb_display_balance()
 
-    # finish
-    transactions = ctx.rebalance([])
+    transactions = ctx.openbb_rebalance([])
     ctx.execute_transactions(transactions)
     ctx.display_portfolio()
-    ctx.display_balance()
+    ctx.openbb_display_balance()

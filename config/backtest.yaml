@@ -1,4 +1,4 @@
-start_date: "2000-01-01"
+start_date: "2020-01-01"
 end_date: "2025-12-31"
 interval: "month"
 base_currency: "USD"
@@ -6,4 +6,11 @@ initial_cash:
   USD: 10000
 
 screening:
-  min_score: 0.5
+  mktcap_min: 200000000000     # $200B+ = mega-caps only
+  exchange: "nyse,nasdaq"       # US exchanges
+  country: "us"
+  beta_max: 1.5
+  # fundamental filters disabled — yfinance per-ticker calls are slow and unreliable
+  # max_pe: 40
+  # min_roe: 0.10
+  # min_revenue_growth: 0.05

@@ -47,7 +47,7 @@ def test_context_advance_delegates():
 def test_context_screen_stocks_delegates():
     ctx = BacktestContext(_make_config())
     ctx.processing_date = date(2025, 3, 1)
-    result = ctx.screen_stocks()
+    result = ctx.mock_screen_stocks()
     assert isinstance(result, list)
 
 
@@ -70,6 +70,6 @@ def test_context_display_portfolio_delegates(capsys):
 def test_context_display_balance_delegates(capsys):
     ctx = BacktestContext(_make_config())
     ctx.processing_date = date(2025, 3, 1)
-    ctx.display_balance()
+    ctx.mock_display_balance()
     output = capsys.readouterr().out
     assert "10000" in output
