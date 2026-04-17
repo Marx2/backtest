@@ -46,6 +46,13 @@ def run(ctx):
   ctx.display_balance()
 ```
 
+## Strategies
+
+| File | Data | Use |
+|------|------|-----|
+| `strategies/mock.py` | Deterministic mock data | Testing — fast, no API calls |
+| `strategies/basic.py` | Live OpenBB data (yfinance/FMP) | Real backtests |
+
 ## Project Structure
 
 ```

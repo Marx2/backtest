@@ -18,7 +18,7 @@ def _make_config():
 
 def test_full_backtest_runs_without_error(capsys):
     """Run full backtest with basic strategy and verify it completes."""
-    from strategies.basic import run
+    from strategies.mock import run
 
     config = _make_config()
     ctx = BacktestContext(config)
@@ -37,7 +37,7 @@ def test_full_backtest_runs_without_error(capsys):
 
 def test_full_backtest_deterministic():
     """Two runs with same config produce same results."""
-    from strategies.basic import run
+    from strategies.mock import run
 
     config1 = _make_config()
     ctx1 = BacktestContext(config1)
@@ -61,7 +61,7 @@ def test_backtest_cli_end_to_end(capsys):
 
     config = load_config("config/backtest.yaml")
     ctx = BacktestContext(config)
-    strategy = load_strategy("strategies/basic.py")
+    strategy = load_strategy("strategies/mock.py")
     strategy.run(ctx)
 
     assert len(ctx.portfolio.positions) == 0
