@@ -1,0 +1,1 @@
+{"nodes": [{"id": "test_openbb_fx_rates_test_get_fx_rate_returns_decimal", "label": "test_openbb_fx_rates_get_fx_rate_returns_decimal", "file_type": "code", "source_file": "tests/test_openbb_fx_rates.py", "source_location": "tests/test_openbb_fx_rates.py:10", "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

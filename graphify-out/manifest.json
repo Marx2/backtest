@@ -1,0 +1,194 @@
+{
+  "/Users/i318088/prv/pfire/backtest/main.py": {
+    "mtime": 1776372850.871741,
+    "hash": "5560c76323a5ee1075a6cddcf3bf6745"
+  },
+  "/Users/i318088/prv/pfire/backtest/core/models.py": {
+    "mtime": 1776372850.8651,
+    "hash": "7555cb1cb89cbc40f3426d947e46868c"
+  },
+  "/Users/i318088/prv/pfire/backtest/core/__init__.py": {
+    "mtime": 1776372850.8556314,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/i318088/prv/pfire/backtest/core/context.py": {
+    "mtime": 1776377634.4416814,
+    "hash": "a365920179ddfac37521c74c84e2b2dd"
+  },
+  "/Users/i318088/prv/pfire/backtest/strategies/basic.py": {
+    "mtime": 1776377634.5040288,
+    "hash": "9408a54164207bc1093cf2eaa30afcdf"
+  },
+  "/Users/i318088/prv/pfire/backtest/strategies/mock.py": {
+    "mtime": 1776377634.483928,
+    "hash": "8082a707a4b9d876efc610b63f043195"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_display_wallet.py": {
+    "mtime": 1776372850.8983104,
+    "hash": "fad3a857d144f778ce38badc25913d5b"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_execute_transactions.py": {
+    "mtime": 1776372850.9055293,
+    "hash": "3af356bdc6c0fb8d22c620ed29711827"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_display_balance.py": {
+    "mtime": 1776372850.893038,
+    "hash": "7eb95c393c732ec678a7fbdd1387894c"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_screen_stocks.py": {
+    "mtime": 1776372850.9647095,
+    "hash": "962249c9da0d7dbbdb341d570dd26ee7"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_display_portfolio.py": {
+    "mtime": 1776372850.8957179,
+    "hash": "5f3a912e3d93262c6d288a9527fcd94a"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_mock_screener.py": {
+    "mtime": 1776372850.95502,
+    "hash": "18fec0691a10539677561000c83f7135"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_openbb_screener.py": {
+    "mtime": 1776376344.6233604,
+    "hash": "8875e04e2956303f6effe8aed0f25ffa"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/__init__.py": {
+    "mtime": 1776372850.8805115,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_rebalance.py": {
+    "mtime": 1776372850.9617426,
+    "hash": "b4f212de4ef2d0bfbed80e40900beabb"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_advance.py": {
+    "mtime": 1776372850.885238,
+    "hash": "a6b88f36a494ddaf0df2470b32a01566"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_openbb_prices.py": {
+    "mtime": 1776376344.6169674,
+    "hash": "6601c97748fd7f4c728e18c5206a437e"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_models.py": {
+    "mtime": 1776372850.9586866,
+    "hash": "d0c603e7f8caf59facd72b97caa5a5d6"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_context.py": {
+    "mtime": 1776377643.997094,
+    "hash": "ed3466f4878b6f4ea98ae25612f892a1"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_mock_prices.py": {
+    "mtime": 1776372850.9511068,
+    "hash": "17e1dbb7ca7115c4fd4debaeec30b5b6"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_integration.py": {
+    "mtime": 1776377192.7759113,
+    "hash": "450c1f4ddb27e8ceb68e36badcf048fb"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_mock_fx_rates.py": {
+    "mtime": 1776372850.9470627,
+    "hash": "caf71c802d185047502e5d5c311bd344"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_openbb_fx_rates.py": {
+    "mtime": 1776376344.6065176,
+    "hash": "5bf78bb4854464a1e59f738c4676bd41"
+  },
+  "/Users/i318088/prv/pfire/backtest/tests/test_main.py": {
+    "mtime": 1776378247.2319026,
+    "hash": "84b813a2f4ea31b9bf3c2a455d435056"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/screen_stocks.py": {
+    "mtime": 1776372850.8510756,
+    "hash": "c0012b6608095c781a2c4ec47a00f478"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/openbb_display_balance.py": {
+    "mtime": 1776377634.4227479,
+    "hash": "c438f8e165bafabd6621d986b736db89"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/__init__.py": {
+    "mtime": 1776372850.8058608,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/mock_screener.py": {
+    "mtime": 1776372850.8436525,
+    "hash": "689defc34a786089b5ebd548311f4b5a"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/openbb_fx_rates.py": {
+    "mtime": 1776376344.5671027,
+    "hash": "e91107249ba6c0bbaeb8260cb5116ca0"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/openbb_prices.py": {
+    "mtime": 1776403718.3920035,
+    "hash": "21ab03fa840250934619175b4a95dc2a"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/mock_prices.py": {
+    "mtime": 1776372850.839153,
+    "hash": "2b134745b310bfd475a8a5aafd67ca84"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/openbb_rebalance.py": {
+    "mtime": 1776403677.4272919,
+    "hash": "2f264e3444cc5da30269f4986545ad65"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/advance.py": {
+    "mtime": 1776372850.8119104,
+    "hash": "d64980e31a5bfe0b69f57ca1292a412c"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/execute_transactions.py": {
+    "mtime": 1776372850.8309333,
+    "hash": "b9717cf0400be33b21e6720adb692fa3"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/display_balance.py": {
+    "mtime": 1776372850.8152237,
+    "hash": "2d9aef4e84fb882fb7cea05e364c93f0"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/display_portfolio.py": {
+    "mtime": 1776372850.8209603,
+    "hash": "917e86da5beb502ebb567aa0c0385cbb"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/rebalance.py": {
+    "mtime": 1776372850.8466945,
+    "hash": "ebe3c1426812d00d6168152dfb501f92"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/display_wallet.py": {
+    "mtime": 1776372850.823492,
+    "hash": "aba24bd80c543c813308b73ff8617829"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/openbb_screener.py": {
+    "mtime": 1776403723.0307353,
+    "hash": "da6961aa9fb1806656121074c1033eb6"
+  },
+  "/Users/i318088/prv/pfire/backtest/actions/mock_fx_rates.py": {
+    "mtime": 1776372850.8355439,
+    "hash": "1aa4eb231a17a5991d7df46533957d4f"
+  },
+  "/Users/i318088/prv/pfire/backtest/requirements.txt": {
+    "mtime": 1776376344.596014,
+    "hash": "ef3cda1e9ed1aef1cd19099f686ec1e2"
+  },
+  "/Users/i318088/prv/pfire/backtest/README.md": {
+    "mtime": 1776377199.0536659,
+    "hash": "6249b8a999ed63f09716ae63796ac739"
+  },
+  "/Users/i318088/prv/pfire/backtest/AGENTS.md": {
+    "mtime": 1776368114.095753,
+    "hash": "31bb2480c211b41c20acbc1d336a8936"
+  },
+  "/Users/i318088/prv/pfire/backtest/CLAUDE.md": {
+    "mtime": 1778618834.258159,
+    "hash": "d2049dd74b445bfb8b1cb8dd0c16cb22"
+  },
+  "/Users/i318088/prv/pfire/backtest/config/backtest.yaml": {
+    "mtime": 1776403394.8210568,
+    "hash": "86267fa33cbc951ac42307057aa62688"
+  },
+  "/Users/i318088/prv/pfire/backtest/docs/draft.txt": {
+    "mtime": 1776368621.2763925,
+    "hash": "6d83c4757f42c8741dc5ed312c72a688"
+  },
+  "/Users/i318088/prv/pfire/backtest/docs/superpowers/plans/2026-04-16-backtest-engine.md": {
+    "mtime": 1776370723.7169476,
+    "hash": "ad81c62db061c197f8d7abfbb67788e6"
+  },
+  "/Users/i318088/prv/pfire/backtest/docs/superpowers/specs/2026-04-16-backtest-engine-design.md": {
+    "mtime": 1776370447.6272063,
+    "hash": "03446c7d8970d93b4371fed68c540c55"
+  }
+}
