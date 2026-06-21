@@ -12,6 +12,7 @@ from actions.openbb_screener import screen_stocks as _openbb_screen_stocks
 from actions.rebalance import rebalance as _mock_rebalance
 from actions.screen_stocks import screen_stocks as _mock_screen_stocks
 from core.models import BacktestConfig, Currency, Portfolio, Transaction, Wallet
+import time
 
 
 class BacktestContext:
@@ -21,6 +22,7 @@ class BacktestContext:
         self.all_transactions: list[Transaction] = []
         self.balance_history: list[tuple] = []
         self.cost_basis: dict[str, tuple] = {}
+        self.start_time: float = time.monotonic()
 
         self.wallet = Wallet(holdings={})
         for currency_code, amount in config.initial_cash.items():
