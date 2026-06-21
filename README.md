@@ -15,15 +15,30 @@ python main.py -config=config/backtest.yaml -strategy=strategies/basic.py
 Edit `config/backtest.yaml`:
 
 ```yaml
-start_date: "2025-01-01"
-end_date: "2025-12-31"
+start_date: "2022-01-01"
+end_date: "2026-06-01"
 interval: "month"       # day | month | Ndays (e.g. 7days)
 base_currency: "USD"
 initial_cash:
   USD: 10000
 
 screening:
-  min_score: 0.5
+  mktcap_min: 200000000000
+  exchange: "nyse,nasdaq"
+  country: "us"
+  beta_max: 1.5
+
+summary:
+  total_return: true
+  cagr: true
+  max_drawdown: true
+  volatility: true
+  sharpe_ratio: true
+  total_trades: true
+  buy_trades: false
+  sell_trades: false
+  win_rate: true
+  profit_factor: true
 ```
 
 ## Writing a Strategy
@@ -32,25 +47,31 @@ Create a Python file with a `run(ctx)` function:
 
 ```python
 def run(ctx):
+  ctx.display_config()  # print config at start
+
   while ctx.advance():
-    screened = ctx.screen_stocks()
-    transactions = ctx.rebalance(screened)
+    screened = ctx.openbb_screen_stocks()
+    transactions = ctx.openbb_rebalance(screened)
     ctx.execute_transactions(transactions)
     ctx.display_wallet()
     ctx.display_portfolio()
-    ctx.display_balance()
+    ctx.openbb_display_balance()
+    ctx.openbb_calculate_stats()  # accumulate balance history
 
   # sell everything at end
-  ctx.execute_transactions(ctx.rebalance([]))
+  ctx.execute_transactions(ctx.openbb_rebalance([]))
   ctx.display_portfolio()
-  ctx.display_balance()
+  ctx.openbb_display_balance()
+  ctx.openbb_calculate_stats()
+
+  ctx.display_summary()  # print performance metrics
 ```
 
 ## Strategies
 
 | File | Data | Use |
 |------|------|-----|
-| `strategies/mock.py` | Deterministic mock data | Testing — fast, no API calls |
+| `tests/mock_strategy.py` | Deterministic mock data | Testing — fast, no API calls |
 | `strategies/basic.py` | Live OpenBB data (yfinance/FMP) | Real backtests |
 
 ## Project Structure
@@ -87,3 +108,7 @@ pytest tests/
   changing the import.
 - **Diff-based rebalancing** — equal-weight allocation, minimal trades
 - **Multi-currency** — FX conversion for balance display
+- **Stats accumulation** — `ctx.openbb_calculate_stats()` called each period tracks balance history
+  and avg cost basis; `ctx.display_summary()` uses this to compute total return, CAGR, max drawdown,
+  Sharpe, volatility, win rate, and profit factor
+- **Configurable summary** — `summary:` section in YAML toggles which metrics are printed

@@ -11,18 +11,19 @@ def test_load_config():
 
     config = load_config("config/backtest.yaml")
     assert isinstance(config, BacktestConfig)
-    assert config.start_date == date(2020, 1, 1)
-    assert config.end_date == date(2025, 12, 31)
+    assert config.start_date == date(2022, 1, 1)
+    assert config.end_date == date(2026, 6, 1)
     assert config.interval == "month"
     assert config.base_currency == "USD"
     assert config.initial_cash["USD"] == Decimal("10000")
     assert "mktcap_min" in config.screening
+    assert isinstance(config.summary, dict)
 
 
 def test_load_strategy():
     from main import load_strategy
 
-    strategy = load_strategy("strategies/basic.py")
+    strategy = load_strategy("tests/mock_strategy.py")
     assert hasattr(strategy, "run")
     assert callable(strategy.run)
 

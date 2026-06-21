@@ -41,3 +41,4 @@ class BacktestConfig:
     base_currency: str
     initial_cash: dict[str, Decimal]
     screening: dict
+    summary: dict = field(default_factory=dict)
