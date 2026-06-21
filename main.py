@@ -29,6 +29,7 @@ def load_config(path: str) -> BacktestConfig:
             k: Decimal(str(v)) for k, v in raw["initial_cash"].items()
         },
         screening=raw.get("screening", {}),
+        summary=raw.get("summary", {}),
     )
 
 

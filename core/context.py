@@ -1,8 +1,11 @@
 from actions.advance import advance as _advance
 from actions.display_balance import display_balance as _mock_display_balance
+from actions.display_config import display_config as _display_config
 from actions.display_portfolio import display_portfolio as _display_portfolio
+from actions.display_summary import display_summary as _display_summary
 from actions.display_wallet import display_wallet as _display_wallet
 from actions.execute_transactions import execute_transactions as _execute_transactions
+from actions.openbb_calculate_stats import calculate_stats as _openbb_calculate_stats
 from actions.openbb_display_balance import display_balance as _openbb_display_balance
 from actions.openbb_rebalance import rebalance as _openbb_rebalance
 from actions.openbb_screener import screen_stocks as _openbb_screen_stocks
@@ -16,6 +19,8 @@ class BacktestContext:
         self.config = config
         self.processing_date = None
         self.all_transactions: list[Transaction] = []
+        self.balance_history: list[tuple] = []
+        self.cost_basis: dict[str, tuple] = {}
 
         self.wallet = Wallet(holdings={})
         for currency_code, amount in config.initial_cash.items():
@@ -29,11 +34,17 @@ class BacktestContext:
     def execute_transactions(self, transactions: list[Transaction]) -> None:
         _execute_transactions(self, transactions)
 
+    def display_config(self) -> None:
+        _display_config(self)
+
     def display_wallet(self) -> None:
         _display_wallet(self)
 
     def display_portfolio(self) -> None:
         _display_portfolio(self)
+
+    def display_summary(self) -> None:
+        _display_summary(self)
 
     # Mock-backed
     def mock_screen_stocks(self) -> list[str]:
@@ -54,3 +65,6 @@ class BacktestContext:
 
     def openbb_display_balance(self) -> None:
         _openbb_display_balance(self)
+
+    def openbb_calculate_stats(self) -> None:
+        _openbb_calculate_stats(self)

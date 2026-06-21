@@ -1,5 +1,5 @@
-start_date: "2020-01-01"
-end_date: "2025-12-31"
+start_date: "2022-01-01"
+end_date: "2026-06-01"
 interval: "month"
 base_currency: "USD"
 initial_cash:
@@ -14,3 +14,60 @@ screening:
   # max_pe: 40
   # min_roe: 0.10
   # min_revenue_growth: 0.05
+
+summary:
+  total_return:
+    enabled: true
+    thresholds:
+      excellent: { min: 50,  hint: "Excellent — more than doubled the investment." }
+      good:      { min: 20,  hint: "Good — solid nominal gain over the period." }
+      weak:      { min: 0,   hint: "Weak — positive but modest absolute gain." }
+      bad:       { hint: "Bad — strategy lost money in absolute terms." }
+  cagr:
+    enabled: true
+    thresholds:
+      excellent: { min: 15, hint: "Excellent — beats most passive index funds annually." }
+      good:      { min: 8,  hint: "Good — roughly in line with long-run S&P 500 average." }
+      weak:      { min: 0,  hint: "Weak — underperforms a basic buy-and-hold index." }
+      bad:       { hint: "Bad — annualized loss; strategy destroys capital over time." }
+  max_drawdown:
+    enabled: true
+    thresholds:
+      excellent: { min: -10, hint: "Excellent — very shallow drawdown, low pain for investors." }
+      good:      { min: -20, hint: "Good — moderate drawdown, acceptable for equity strategies." }
+      weak:      { min: -35, hint: "Weak — significant drawdown; investors may panic-sell." }
+      bad:       { hint: "Bad — severe drawdown; strategy likely unacceptable in practice." }
+  volatility:
+    enabled: true
+    thresholds:
+      excellent: { max: 10, hint: "Excellent — very stable, bond-like return profile." }
+      good:      { max: 18, hint: "Good — typical equity-level volatility." }
+      weak:      { max: 30, hint: "Weak — high volatility; bumpy ride for investors." }
+      bad:       { hint: "Bad — extreme volatility; high risk of ruin." }
+  sharpe_ratio:
+    enabled: true
+    thresholds:
+      excellent: { min: 1.5, hint: "Excellent — high risk-adjusted return." }
+      good:      { min: 1.0, hint: "Good — acceptable risk-adjusted return." }
+      weak:      { min: 0.5, hint: "Weak — return barely compensates for risk taken." }
+      bad:       { hint: "Bad — poor risk-adjusted return; not worth the risk." }
+  total_trades:
+    enabled: true
+    hint: "Total number of buy and sell orders executed."
+  buy_trades:
+    enabled: false
+  sell_trades:
+    enabled: false
+  win_rate:
+    enabled: true
+    thresholds:
+      excellent: { min: 60, hint: "Good — majority of sells closed above average buy price." }
+      weak:      { min: 50, hint: "Weak — more than half profitable but margin is thin." }
+      bad:       { hint: "Bad — most sells closed at a loss vs. avg entry price." }
+  profit_factor:
+    enabled: true
+    thresholds:
+      excellent: { min: 2.0, hint: "Excellent — gross wins more than double gross losses." }
+      good:      { min: 1.5, hint: "Good — winners clearly outweigh losers in dollar terms." }
+      weak:      { min: 1.0, hint: "Weak — profitable but thin margin between wins and losses." }
+      bad:       { hint: "Bad — gross losses exceed gross wins; strategy bleeds capital." }
