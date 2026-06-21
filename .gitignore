@@ -1,3 +1,4 @@
 backtest.iml
 .worktrees/
 .env
+cache/

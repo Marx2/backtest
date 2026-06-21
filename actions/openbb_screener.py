@@ -4,29 +4,23 @@ from dotenv import load_dotenv
 load_dotenv()
 from openbb import obb
 
-# Module-level caches — screener and fundamentals don't change within a run
-_screener_cache: dict[str, list[str]] = {}  # key: frozenset of params → symbols
-_fundamentals_cache: dict[str, dict] = {}   # key: symbol → metrics row
+from core.cache import cached
+
+# Module-level cache — fundamentals don't change within a run
+_fundamentals_cache: dict[str, dict] = {}
 
 
+@cached("screener")
 def screen_stocks(d: date, params: dict) -> list[str]:
     # NOTE: obb.equity.screener does not support historical screening.
     # It returns current market data only. The `d` parameter is accepted for interface
     # compatibility but is not used in the API call.
-    kwargs = dict(
-        mktcap_min=params.get("mktcap_min", 200_000_000_000),
-    )
+    kwargs = dict(mktcap_min=params.get("mktcap_min", 200_000_000_000))
     if "beta_max" in params:
         kwargs["beta_max"] = params["beta_max"]
-
-    cache_key = str(sorted(kwargs.items()))
-    if cache_key not in _screener_cache:
-        print("[screener] running equity screener...", flush=True)
-        _screener_cache[cache_key] = _run_screener(kwargs)
-
-    symbols = _screener_cache[cache_key]
-    symbols = _apply_fundamental_filters(symbols, params)
-    return symbols
+    print("[screener] running equity screener...", flush=True)
+    symbols = _run_screener(kwargs)
+    return _apply_fundamental_filters(symbols, params)
 
 
 def _run_screener(kwargs: dict) -> list[str]:

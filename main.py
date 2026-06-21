@@ -5,6 +5,7 @@ from decimal import Decimal
 
 import yaml
 
+from core.cache import configure as configure_cache, clear as clear_cache
 from core.context import BacktestContext
 from core.models import BacktestConfig
 
@@ -13,6 +14,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Run backtest")
     parser.add_argument("-config", required=True, help="Path to YAML config file")
     parser.add_argument("-strategy", required=True, help="Path to strategy Python file")
+    parser.add_argument("--clear-cache", action="store_true", help="Clear cache before running")
     return parser.parse_args()
 
 
@@ -30,6 +32,7 @@ def load_config(path: str) -> BacktestConfig:
         },
         screening=raw.get("screening", {}),
         summary=raw.get("summary", {}),
+        cache=raw.get("cache", {}),
     )
 
 
@@ -43,6 +46,16 @@ def load_strategy(path: str):
 def main():
     args = parse_args()
     config = load_config(args.config)
+
+    cache_cfg = config.cache
+    configure_cache(
+        enabled=cache_cfg.get("enabled", False),
+        ttl_days=cache_cfg.get("ttl_days", 7),
+        cache_dir=cache_cfg.get("dir", "cache"),
+    )
+    if args.clear_cache:
+        clear_cache()
+
     ctx = BacktestContext(config)
     strategy = load_strategy(args.strategy)
     strategy.run(ctx)

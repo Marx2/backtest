@@ -5,7 +5,10 @@ from dotenv import load_dotenv
 load_dotenv()
 from openbb import obb
 
+from core.cache import cached
 
+
+@cached("fx_rates")
 def get_fx_rate(from_currency: str, to_currency: str, d: date) -> Decimal:
     if from_currency == to_currency:
         return Decimal("1")

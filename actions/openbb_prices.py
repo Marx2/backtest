@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 from openbb import obb
 
+from core.cache import cached
+
 _cache: dict[tuple[str, date], Decimal] = {}
 _warmed: set[str] = set()
 
@@ -13,12 +15,10 @@ backtest_start: date | None = None
 backtest_end: date | None = None
 
 
-def _warm_ticker(ticker: str) -> None:
-    """Fetch full price history for a ticker and populate cache."""
-    _warmed.add(ticker)
+@cached("prices")
+def _fetch_ticker_history(ticker: str, fetch_start: date, fetch_end: date) -> dict:
+    """Fetch full price history; returns {date_iso: price_str} for cache serialization."""
     print(f"[prices] fetching {ticker}...", flush=True)
-    fetch_start = (backtest_start or date(2020, 1, 1)) - timedelta(days=14)
-    fetch_end = backtest_end or date.today()
     for provider in ["yfinance", "fmp"]:
         try:
             df = obb.equity.price.historical(
@@ -30,16 +30,27 @@ def _warm_ticker(ticker: str) -> None:
             ).to_df()
             if df.empty:
                 continue
-            for idx_date, row in df.iterrows():
-                d = idx_date.date() if hasattr(idx_date, "date") else idx_date
-                _cache[(ticker, d)] = Decimal(str(row["close"])).quantize(Decimal("0.01"))
-            return
+            return {
+                (idx_date.date() if hasattr(idx_date, "date") else idx_date).isoformat(): str(row["close"])
+                for idx_date, row in df.iterrows()
+            }
         except Exception:
             continue
+    return {}
+
+
+def _warm_ticker(ticker: str) -> None:
+    """Fetch full price history for a ticker and populate in-process cache."""
+    _warmed.add(ticker)
+    fetch_start = (backtest_start or date(2020, 1, 1)) - timedelta(days=14)
+    fetch_end = backtest_end or date.today()
+    history = _fetch_ticker_history(ticker, fetch_start, fetch_end)
+    for date_iso, price_str in history.items():
+        d = date.fromisoformat(date_iso)
+        _cache[(ticker, d)] = Decimal(price_str).quantize(Decimal("0.01"))
 
 
 def get_price(ticker: str, d: date) -> Decimal:
-    # Bulk-fetch full history on first access for this ticker
     if ticker not in _warmed:
         _warm_ticker(ticker)
 
@@ -47,7 +58,6 @@ def get_price(ticker: str, d: date) -> Decimal:
     if key in _cache:
         return _cache[key]
 
-    # Look back up to 14 days for weekends/holidays
     for delta in range(1, 15):
         k = (ticker, d - timedelta(days=delta))
         if k in _cache:
