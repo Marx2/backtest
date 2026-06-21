@@ -1,6 +1,5 @@
 import hashlib
 import json
-import os
 from datetime import date, datetime
 from functools import wraps
 from pathlib import Path
@@ -9,6 +8,7 @@ from pathlib import Path
 _CACHE_DIR = Path("cache")
 _enabled = False
 _ttl_days = 7
+_mem: dict = {}  # in-process layer — survives for the duration of the run
 
 
 def configure(enabled: bool, ttl_days: int = 7, cache_dir: str = "cache") -> None:
@@ -19,6 +19,7 @@ def configure(enabled: bool, ttl_days: int = 7, cache_dir: str = "cache") -> Non
 
 
 def clear() -> None:
+    _mem.clear()
     if _CACHE_DIR.exists():
         for f in _CACHE_DIR.rglob("*.json"):
             f.unlink()
@@ -26,7 +27,7 @@ def clear() -> None:
 
 
 def cached(namespace: str):
-    """Decorator. Caches return value as JSON keyed by namespace + args."""
+    """Decorator. In-process memory layer first, then file cache, then live call."""
     def decorator(fn):
         @wraps(fn)
         def wrapper(*args, **kwargs):
@@ -34,11 +35,17 @@ def cached(namespace: str):
                 return fn(*args, **kwargs)
 
             key = _make_key(namespace, args, kwargs)
-            cached_val = _read(namespace, key)
-            if cached_val is not None:
-                return cached_val
+
+            if key in _mem:
+                return _mem[key]
+
+            file_val = _read(namespace, key)
+            if file_val is not None:
+                _mem[key] = file_val
+                return file_val
 
             result = fn(*args, **kwargs)
+            _mem[key] = result
             _write(namespace, key, result)
             return result
         return wrapper
@@ -62,8 +69,7 @@ def _read(namespace: str, key: str):
     if age_days > _ttl_days:
         p.unlink()
         return None
-    raw = json.loads(p.read_text())
-    return _deserialize(raw)
+    return _deserialize(json.loads(p.read_text()))
 
 
 def _write(namespace: str, key: str, value) -> None:

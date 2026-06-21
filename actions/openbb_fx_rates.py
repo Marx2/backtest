@@ -8,11 +8,14 @@ from openbb import obb
 from core.cache import cached
 
 
-@cached("fx_rates")
 def get_fx_rate(from_currency: str, to_currency: str, d: date) -> Decimal:
     if from_currency == to_currency:
         return Decimal("1")
+    return _fetch_fx_rate(from_currency, to_currency, d)
 
+
+@cached("fx_rates")
+def _fetch_fx_rate(from_currency: str, to_currency: str, d: date) -> Decimal:
     pair = f"{from_currency}{to_currency}".lower()
     for window in [7, 14]:
         start = d - timedelta(days=window - 1)

@@ -1,8 +1,12 @@
 from decimal import Decimal
 import math
+import time
 
 
 def display_summary(ctx) -> None:
+    elapsed = time.monotonic() - ctx.start_time
+    elapsed_str = f"{elapsed:.1f}s" if elapsed < 60 else f"{int(elapsed // 60)}m {int(elapsed % 60)}s"
+
     cfg = ctx.config
     summary_cfg = getattr(cfg, "summary", {})
 
@@ -48,6 +52,7 @@ def display_summary(ctx) -> None:
 
     print("=== Summary ===")
     print(f"  Period:         {start} → {end}  ({years:.1f} years)")
+    print(f"  Elapsed:        {elapsed_str}")
     print(f"  Initial value:  {cfg.base_currency} {initial:>12,.2f}")
     print(f"  Final value:    {cfg.base_currency} {final:>12,.2f}")
 
