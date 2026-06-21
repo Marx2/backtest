@@ -141,7 +141,7 @@
       "source_file": "main.py",
       "source_location": "L1",
       "id": "main_py",
-      "community": 9,
+      "community": 11,
       "norm_label": "main.py"
     },
     {
@@ -150,7 +150,7 @@
       "source_file": "main.py",
       "source_location": "L13",
       "id": "backtest_main_parse_args",
-      "community": 9,
+      "community": 11,
       "norm_label": "parse_args()"
     },
     {
@@ -159,7 +159,7 @@
       "source_file": "main.py",
       "source_location": "L21",
       "id": "backtest_main_load_config",
-      "community": 9,
+      "community": 11,
       "norm_label": "load_config()"
     },
     {
@@ -168,7 +168,7 @@
       "source_file": "main.py",
       "source_location": "L39",
       "id": "backtest_main_load_strategy",
-      "community": 9,
+      "community": 11,
       "norm_label": "load_strategy()"
     },
     {
@@ -177,7 +177,7 @@
       "source_file": "main.py",
       "source_location": "L46",
       "id": "backtest_main_main",
-      "community": 9,
+      "community": 11,
       "norm_label": "main()"
     },
     {
@@ -249,7 +249,7 @@
       "source_file": "core/cache.py",
       "source_location": "L1",
       "id": "core_cache_py",
-      "community": 10,
+      "community": 9,
       "norm_label": "cache.py"
     },
     {
@@ -258,7 +258,7 @@
       "source_file": "core/cache.py",
       "source_location": "L14",
       "id": "core_cache_configure",
-      "community": 10,
+      "community": 9,
       "norm_label": "configure()"
     },
     {
@@ -267,80 +267,80 @@
       "source_file": "core/cache.py",
       "source_location": "L21",
       "id": "core_cache_clear",
-      "community": 10,
+      "community": 9,
       "norm_label": "clear()"
     },
     {
       "label": "cached()",
       "file_type": "code",
       "source_file": "core/cache.py",
-      "source_location": "L28",
+      "source_location": "L29",
       "id": "core_cache_cached",
-      "community": 10,
+      "community": 9,
       "norm_label": "cached()"
     },
     {
       "label": "_make_key()",
       "file_type": "code",
       "source_file": "core/cache.py",
-      "source_location": "L48",
+      "source_location": "L55",
       "id": "core_cache_make_key",
-      "community": 10,
+      "community": 9,
       "norm_label": "_make_key()"
     },
     {
       "label": "_path()",
       "file_type": "code",
       "source_file": "core/cache.py",
-      "source_location": "L53",
+      "source_location": "L60",
       "id": "core_cache_path",
-      "community": 10,
+      "community": 9,
       "norm_label": "_path()"
     },
     {
       "label": "_read()",
       "file_type": "code",
       "source_file": "core/cache.py",
-      "source_location": "L57",
+      "source_location": "L64",
       "id": "core_cache_read",
-      "community": 10,
+      "community": 9,
       "norm_label": "_read()"
     },
     {
       "label": "_write()",
       "file_type": "code",
       "source_file": "core/cache.py",
-      "source_location": "L69",
+      "source_location": "L75",
       "id": "core_cache_write",
-      "community": 10,
+      "community": 9,
       "norm_label": "_write()"
     },
     {
       "label": "_serialize()",
       "file_type": "code",
       "source_file": "core/cache.py",
-      "source_location": "L75",
+      "source_location": "L81",
       "id": "core_cache_serialize",
-      "community": 10,
+      "community": 9,
       "norm_label": "_serialize()"
     },
     {
       "label": "_deserialize()",
       "file_type": "code",
       "source_file": "core/cache.py",
-      "source_location": "L88",
+      "source_location": "L94",
       "id": "core_cache_deserialize",
-      "community": 10,
+      "community": 9,
       "norm_label": "_deserialize()"
     },
     {
-      "label": "Decorator. Caches return value as JSON keyed by namespace + args.",
+      "label": "Decorator. In-process memory layer first, then file cache, then live call.",
       "file_type": "rationale",
       "source_file": "core/cache.py",
-      "source_location": "L29",
-      "id": "core_cache_rationale_29",
-      "community": 10,
-      "norm_label": "decorator. caches return value as json keyed by namespace + args."
+      "source_location": "L30",
+      "id": "core_cache_rationale_30",
+      "community": 9,
+      "norm_label": "decorator. in-process memory layer first, then file cache, then live call."
     },
     {
       "label": "__init__.py",
@@ -348,7 +348,7 @@
       "source_file": "core/__init__.py",
       "source_location": "L1",
       "id": "core_init_py",
-      "community": 54,
+      "community": 55,
       "norm_label": "__init__.py"
     },
     {
@@ -364,7 +364,7 @@
       "label": "BacktestContext",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "id": "core_context_backtestcontext",
       "community": 3,
       "norm_label": "backtestcontext"
@@ -373,7 +373,7 @@
       "label": ".__init__()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "core_context_backtestcontext_init",
       "community": 0,
       "norm_label": ".__init__()"
@@ -382,7 +382,7 @@
       "label": ".advance()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L31",
+      "source_location": "L33",
       "id": "core_context_backtestcontext_advance",
       "community": 3,
       "norm_label": ".advance()"
@@ -391,7 +391,7 @@
       "label": ".execute_transactions()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L34",
+      "source_location": "L36",
       "id": "core_context_backtestcontext_execute_transactions",
       "community": 3,
       "norm_label": ".execute_transactions()"
@@ -400,7 +400,7 @@
       "label": ".display_config()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L37",
+      "source_location": "L39",
       "id": "core_context_backtestcontext_display_config",
       "community": 3,
       "norm_label": ".display_config()"
@@ -409,7 +409,7 @@
       "label": ".display_wallet()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L40",
+      "source_location": "L42",
       "id": "core_context_backtestcontext_display_wallet",
       "community": 3,
       "norm_label": ".display_wallet()"
@@ -418,7 +418,7 @@
       "label": ".display_portfolio()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L43",
+      "source_location": "L45",
       "id": "core_context_backtestcontext_display_portfolio",
       "community": 3,
       "norm_label": ".display_portfolio()"
@@ -427,7 +427,7 @@
       "label": ".display_summary()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L46",
+      "source_location": "L48",
       "id": "core_context_backtestcontext_display_summary",
       "community": 3,
       "norm_label": ".display_summary()"
@@ -436,7 +436,7 @@
       "label": ".mock_screen_stocks()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L50",
+      "source_location": "L52",
       "id": "core_context_backtestcontext_mock_screen_stocks",
       "community": 3,
       "norm_label": ".mock_screen_stocks()"
@@ -445,7 +445,7 @@
       "label": ".mock_rebalance()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L53",
+      "source_location": "L55",
       "id": "core_context_backtestcontext_mock_rebalance",
       "community": 3,
       "norm_label": ".mock_rebalance()"
@@ -454,7 +454,7 @@
       "label": ".mock_display_balance()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L56",
+      "source_location": "L58",
       "id": "core_context_backtestcontext_mock_display_balance",
       "community": 3,
       "norm_label": ".mock_display_balance()"
@@ -463,7 +463,7 @@
       "label": ".openbb_screen_stocks()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L60",
+      "source_location": "L62",
       "id": "core_context_backtestcontext_openbb_screen_stocks",
       "community": 3,
       "norm_label": ".openbb_screen_stocks()"
@@ -472,7 +472,7 @@
       "label": ".openbb_rebalance()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L63",
+      "source_location": "L65",
       "id": "core_context_backtestcontext_openbb_rebalance",
       "community": 3,
       "norm_label": ".openbb_rebalance()"
@@ -481,7 +481,7 @@
       "label": ".openbb_display_balance()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L66",
+      "source_location": "L68",
       "id": "core_context_backtestcontext_openbb_display_balance",
       "community": 3,
       "norm_label": ".openbb_display_balance()"
@@ -490,7 +490,7 @@
       "label": ".openbb_calculate_stats()",
       "file_type": "code",
       "source_file": "core/context.py",
-      "source_location": "L69",
+      "source_location": "L71",
       "id": "core_context_backtestcontext_openbb_calculate_stats",
       "community": 3,
       "norm_label": ".openbb_calculate_stats()"
@@ -717,7 +717,7 @@
       "source_file": "tests/test_screen_stocks.py",
       "source_location": "L1",
       "id": "tests_test_screen_stocks_py",
-      "community": 16,
+      "community": 17,
       "norm_label": "test_screen_stocks.py"
     },
     {
@@ -726,7 +726,7 @@
       "source_file": "tests/test_screen_stocks.py",
       "source_location": "L8",
       "id": "tests_test_screen_stocks_make_config",
-      "community": 16,
+      "community": 17,
       "norm_label": "_make_config()"
     },
     {
@@ -735,7 +735,7 @@
       "source_file": "tests/test_screen_stocks.py",
       "source_location": "L19",
       "id": "tests_test_screen_stocks_fakecontext",
-      "community": 16,
+      "community": 17,
       "norm_label": "fakecontext"
     },
     {
@@ -744,7 +744,7 @@
       "source_file": "tests/test_screen_stocks.py",
       "source_location": "L20",
       "id": "tests_test_screen_stocks_fakecontext_init",
-      "community": 16,
+      "community": 17,
       "norm_label": ".__init__()"
     },
     {
@@ -753,7 +753,7 @@
       "source_file": "tests/test_screen_stocks.py",
       "source_location": "L25",
       "id": "tests_test_screen_stocks_test_screen_stocks_returns_list",
-      "community": 16,
+      "community": 17,
       "norm_label": "test_screen_stocks_returns_list()"
     },
     {
@@ -762,7 +762,7 @@
       "source_file": "tests/test_screen_stocks.py",
       "source_location": "L31",
       "id": "tests_test_screen_stocks_test_screen_stocks_uses_config_params",
-      "community": 16,
+      "community": 17,
       "norm_label": "test_screen_stocks_uses_config_params()"
     },
     {
@@ -771,7 +771,7 @@
       "source_file": "tests/test_screen_stocks.py",
       "source_location": "L38",
       "id": "tests_test_screen_stocks_test_screen_stocks_deterministic",
-      "community": 16,
+      "community": 17,
       "norm_label": "test_screen_stocks_deterministic()"
     },
     {
@@ -852,7 +852,7 @@
       "source_file": "tests/test_mock_screener.py",
       "source_location": "L1",
       "id": "tests_test_mock_screener_py",
-      "community": 17,
+      "community": 18,
       "norm_label": "test_mock_screener.py"
     },
     {
@@ -861,7 +861,7 @@
       "source_file": "tests/test_mock_screener.py",
       "source_location": "L6",
       "id": "tests_test_mock_screener_test_screen_stocks_returns_list",
-      "community": 17,
+      "community": 18,
       "norm_label": "test_screen_stocks_returns_list()"
     },
     {
@@ -870,7 +870,7 @@
       "source_file": "tests/test_mock_screener.py",
       "source_location": "L11",
       "id": "tests_test_mock_screener_test_screen_stocks_returns_strings",
-      "community": 17,
+      "community": 18,
       "norm_label": "test_screen_stocks_returns_strings()"
     },
     {
@@ -879,7 +879,7 @@
       "source_file": "tests/test_mock_screener.py",
       "source_location": "L17",
       "id": "tests_test_mock_screener_test_screen_stocks_deterministic",
-      "community": 17,
+      "community": 18,
       "norm_label": "test_screen_stocks_deterministic()"
     },
     {
@@ -888,7 +888,7 @@
       "source_file": "tests/test_mock_screener.py",
       "source_location": "L23",
       "id": "tests_test_mock_screener_test_screen_stocks_subset_of_universe",
-      "community": 17,
+      "community": 18,
       "norm_label": "test_screen_stocks_subset_of_universe()"
     },
     {
@@ -897,7 +897,7 @@
       "source_file": "tests/test_mock_screener.py",
       "source_location": "L32",
       "id": "tests_test_mock_screener_test_screen_stocks_different_dates_can_differ",
-      "community": 17,
+      "community": 18,
       "norm_label": "test_screen_stocks_different_dates_can_differ()"
     },
     {
@@ -906,7 +906,7 @@
       "source_file": "tests/test_mock_screener.py",
       "source_location": "L40",
       "id": "tests_test_mock_screener_test_screen_stocks_higher_min_score_fewer_results",
-      "community": 17,
+      "community": 18,
       "norm_label": "test_screen_stocks_higher_min_score_fewer_results()"
     },
     {
@@ -915,7 +915,7 @@
       "source_file": "tests/test_openbb_screener.py",
       "source_location": "L1",
       "id": "tests_test_openbb_screener_py",
-      "community": 12,
+      "community": 13,
       "norm_label": "test_openbb_screener.py"
     },
     {
@@ -924,7 +924,7 @@
       "source_file": "tests/test_openbb_screener.py",
       "source_location": "L10",
       "id": "tests_test_openbb_screener_test_screen_stocks_returns_list",
-      "community": 12,
+      "community": 13,
       "norm_label": "test_screen_stocks_returns_list()"
     },
     {
@@ -933,7 +933,7 @@
       "source_file": "tests/test_openbb_screener.py",
       "source_location": "L15",
       "id": "tests_test_openbb_screener_test_screen_stocks_returns_strings",
-      "community": 12,
+      "community": 13,
       "norm_label": "test_screen_stocks_returns_strings()"
     },
     {
@@ -942,7 +942,7 @@
       "source_file": "tests/test_openbb_screener.py",
       "source_location": "L20",
       "id": "tests_test_openbb_screener_test_screen_stocks_non_empty",
-      "community": 12,
+      "community": 13,
       "norm_label": "test_screen_stocks_non_empty()"
     },
     {
@@ -951,7 +951,7 @@
       "source_file": "tests/test_openbb_screener.py",
       "source_location": "L25",
       "id": "tests_test_openbb_screener_test_screen_stocks_symbols_are_uppercase",
-      "community": 12,
+      "community": 13,
       "norm_label": "test_screen_stocks_symbols_are_uppercase()"
     },
     {
@@ -960,7 +960,7 @@
       "source_file": "tests/test_openbb_screener.py",
       "source_location": "L31",
       "id": "tests_test_openbb_screener_test_screen_stocks_min_score_higher_fewer_or_equal",
-      "community": 12,
+      "community": 13,
       "norm_label": "test_screen_stocks_min_score_higher_fewer_or_equal()"
     },
     {
@@ -969,7 +969,7 @@
       "source_file": "tests/test_openbb_screener.py",
       "source_location": "L37",
       "id": "tests_test_openbb_screener_test_screen_stocks_custom_mktcap_min",
-      "community": 12,
+      "community": 13,
       "norm_label": "test_screen_stocks_custom_mktcap_min()"
     },
     {
@@ -978,7 +978,7 @@
       "source_file": "tests/test_openbb_screener.py",
       "source_location": "L43",
       "id": "tests_test_openbb_screener_test_screen_stocks_empty_params",
-      "community": 12,
+      "community": 13,
       "norm_label": "test_screen_stocks_empty_params()"
     },
     {
@@ -987,7 +987,7 @@
       "source_file": "tests/__init__.py",
       "source_location": "L1",
       "id": "tests_init_py",
-      "community": 55,
+      "community": 56,
       "norm_label": "__init__.py"
     },
     {
@@ -1158,7 +1158,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L1",
       "id": "tests_test_advance_py",
-      "community": 6,
+      "community": 7,
       "norm_label": "test_advance.py"
     },
     {
@@ -1167,7 +1167,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L8",
       "id": "tests_test_advance_make_config",
-      "community": 6,
+      "community": 7,
       "norm_label": "_make_config()"
     },
     {
@@ -1176,7 +1176,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L19",
       "id": "tests_test_advance_fakecontext",
-      "community": 6,
+      "community": 7,
       "norm_label": "fakecontext"
     },
     {
@@ -1185,7 +1185,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L20",
       "id": "tests_test_advance_fakecontext_init",
-      "community": 6,
+      "community": 7,
       "norm_label": ".__init__()"
     },
     {
@@ -1194,7 +1194,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L25",
       "id": "tests_test_advance_test_advance_first_call_sets_start_date",
-      "community": 6,
+      "community": 7,
       "norm_label": "test_advance_first_call_sets_start_date()"
     },
     {
@@ -1203,7 +1203,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L32",
       "id": "tests_test_advance_test_advance_month_interval",
-      "community": 6,
+      "community": 7,
       "norm_label": "test_advance_month_interval()"
     },
     {
@@ -1212,7 +1212,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L39",
       "id": "tests_test_advance_test_advance_day_interval",
-      "community": 6,
+      "community": 7,
       "norm_label": "test_advance_day_interval()"
     },
     {
@@ -1221,7 +1221,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L46",
       "id": "tests_test_advance_test_advance_ndays_interval",
-      "community": 6,
+      "community": 7,
       "norm_label": "test_advance_ndays_interval()"
     },
     {
@@ -1230,7 +1230,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L53",
       "id": "tests_test_advance_test_advance_past_end_returns_false",
-      "community": 6,
+      "community": 7,
       "norm_label": "test_advance_past_end_returns_false()"
     },
     {
@@ -1239,7 +1239,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L62",
       "id": "tests_test_advance_test_advance_month_end_clamping",
-      "community": 6,
+      "community": 7,
       "norm_label": "test_advance_month_end_clamping()"
     },
     {
@@ -1248,7 +1248,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L73",
       "id": "tests_test_advance_test_advance_exact_end_date_returns_false",
-      "community": 6,
+      "community": 7,
       "norm_label": "test_advance_exact_end_date_returns_false()"
     },
     {
@@ -1257,7 +1257,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L63",
       "id": "tests_test_advance_rationale_63",
-      "community": 6,
+      "community": 7,
       "norm_label": "jan 31 + 1 month = feb 28."
     },
     {
@@ -1266,7 +1266,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L74",
       "id": "tests_test_advance_rationale_74",
-      "community": 6,
+      "community": 7,
       "norm_label": "if next date would be past end, return false without advancing."
     },
     {
@@ -1275,7 +1275,7 @@
       "source_file": "tests/test_openbb_prices.py",
       "source_location": "L1",
       "id": "tests_test_openbb_prices_py",
-      "community": 18,
+      "community": 19,
       "norm_label": "test_openbb_prices.py"
     },
     {
@@ -1284,7 +1284,7 @@
       "source_file": "tests/test_openbb_prices.py",
       "source_location": "L10",
       "id": "tests_test_openbb_prices_test_get_price_returns_decimal",
-      "community": 18,
+      "community": 19,
       "norm_label": "test_get_price_returns_decimal()"
     },
     {
@@ -1293,7 +1293,7 @@
       "source_file": "tests/test_openbb_prices.py",
       "source_location": "L15",
       "id": "tests_test_openbb_prices_test_get_price_positive",
-      "community": 18,
+      "community": 19,
       "norm_label": "test_get_price_positive()"
     },
     {
@@ -1302,7 +1302,7 @@
       "source_file": "tests/test_openbb_prices.py",
       "source_location": "L20",
       "id": "tests_test_openbb_prices_test_get_price_reasonable_range",
-      "community": 18,
+      "community": 19,
       "norm_label": "test_get_price_reasonable_range()"
     },
     {
@@ -1311,7 +1311,7 @@
       "source_file": "tests/test_openbb_prices.py",
       "source_location": "L25",
       "id": "tests_test_openbb_prices_test_get_price_two_decimal_places",
-      "community": 18,
+      "community": 19,
       "norm_label": "test_get_price_two_decimal_places()"
     },
     {
@@ -1320,7 +1320,7 @@
       "source_file": "tests/test_openbb_prices.py",
       "source_location": "L30",
       "id": "tests_test_openbb_prices_test_get_price_different_tickers_differ",
-      "community": 18,
+      "community": 19,
       "norm_label": "test_get_price_different_tickers_differ()"
     },
     {
@@ -1329,7 +1329,7 @@
       "source_file": "tests/test_openbb_prices.py",
       "source_location": "L36",
       "id": "tests_test_openbb_prices_test_get_price_weekend_returns_price",
-      "community": 18,
+      "community": 19,
       "norm_label": "test_get_price_weekend_returns_price()"
     },
     {
@@ -1518,7 +1518,7 @@
       "source_file": "tests/test_mock_prices.py",
       "source_location": "L1",
       "id": "tests_test_mock_prices_py",
-      "community": 13,
+      "community": 14,
       "norm_label": "test_mock_prices.py"
     },
     {
@@ -1527,7 +1527,7 @@
       "source_file": "tests/test_mock_prices.py",
       "source_location": "L7",
       "id": "tests_test_mock_prices_test_get_price_returns_decimal",
-      "community": 13,
+      "community": 14,
       "norm_label": "test_get_price_returns_decimal()"
     },
     {
@@ -1536,7 +1536,7 @@
       "source_file": "tests/test_mock_prices.py",
       "source_location": "L12",
       "id": "tests_test_mock_prices_test_get_price_positive",
-      "community": 13,
+      "community": 14,
       "norm_label": "test_get_price_positive()"
     },
     {
@@ -1545,7 +1545,7 @@
       "source_file": "tests/test_mock_prices.py",
       "source_location": "L17",
       "id": "tests_test_mock_prices_test_get_price_deterministic",
-      "community": 13,
+      "community": 14,
       "norm_label": "test_get_price_deterministic()"
     },
     {
@@ -1554,7 +1554,7 @@
       "source_file": "tests/test_mock_prices.py",
       "source_location": "L23",
       "id": "tests_test_mock_prices_test_get_price_different_tickers_different_prices",
-      "community": 13,
+      "community": 14,
       "norm_label": "test_get_price_different_tickers_different_prices()"
     },
     {
@@ -1563,7 +1563,7 @@
       "source_file": "tests/test_mock_prices.py",
       "source_location": "L29",
       "id": "tests_test_mock_prices_test_get_price_different_dates_different_prices",
-      "community": 13,
+      "community": 14,
       "norm_label": "test_get_price_different_dates_different_prices()"
     },
     {
@@ -1572,7 +1572,7 @@
       "source_file": "tests/test_mock_prices.py",
       "source_location": "L35",
       "id": "tests_test_mock_prices_test_get_price_reasonable_range",
-      "community": 13,
+      "community": 14,
       "norm_label": "test_get_price_reasonable_range()"
     },
     {
@@ -1581,7 +1581,7 @@
       "source_file": "tests/test_mock_prices.py",
       "source_location": "L36",
       "id": "tests_test_mock_prices_rationale_36",
-      "community": 13,
+      "community": 14,
       "norm_label": "prices should be in a reasonable stock price range."
     },
     {
@@ -1626,7 +1626,7 @@
       "source_file": "tests/test_integration.py",
       "source_location": "L58",
       "id": "tests_test_integration_test_backtest_cli_end_to_end",
-      "community": 9,
+      "community": 11,
       "norm_label": "test_backtest_cli_end_to_end()"
     },
     {
@@ -1653,7 +1653,7 @@
       "source_file": "tests/test_integration.py",
       "source_location": "L59",
       "id": "tests_test_integration_rationale_59",
-      "community": 9,
+      "community": 11,
       "norm_label": "test via main.load_config + strategy load."
     },
     {
@@ -1662,7 +1662,7 @@
       "source_file": "tests/test_mock_fx_rates.py",
       "source_location": "L1",
       "id": "tests_test_mock_fx_rates_py",
-      "community": 14,
+      "community": 15,
       "norm_label": "test_mock_fx_rates.py"
     },
     {
@@ -1671,7 +1671,7 @@
       "source_file": "tests/test_mock_fx_rates.py",
       "source_location": "L7",
       "id": "tests_test_mock_fx_rates_test_get_fx_rate_returns_decimal",
-      "community": 14,
+      "community": 15,
       "norm_label": "test_get_fx_rate_returns_decimal()"
     },
     {
@@ -1680,7 +1680,7 @@
       "source_file": "tests/test_mock_fx_rates.py",
       "source_location": "L12",
       "id": "tests_test_mock_fx_rates_test_get_fx_rate_positive",
-      "community": 14,
+      "community": 15,
       "norm_label": "test_get_fx_rate_positive()"
     },
     {
@@ -1689,7 +1689,7 @@
       "source_file": "tests/test_mock_fx_rates.py",
       "source_location": "L17",
       "id": "tests_test_mock_fx_rates_test_get_fx_rate_deterministic",
-      "community": 14,
+      "community": 15,
       "norm_label": "test_get_fx_rate_deterministic()"
     },
     {
@@ -1698,7 +1698,7 @@
       "source_file": "tests/test_mock_fx_rates.py",
       "source_location": "L23",
       "id": "tests_test_mock_fx_rates_test_get_fx_rate_same_currency_is_one",
-      "community": 14,
+      "community": 15,
       "norm_label": "test_get_fx_rate_same_currency_is_one()"
     },
     {
@@ -1707,7 +1707,7 @@
       "source_file": "tests/test_mock_fx_rates.py",
       "source_location": "L28",
       "id": "tests_test_mock_fx_rates_test_get_fx_rate_different_dates_different_rates",
-      "community": 14,
+      "community": 15,
       "norm_label": "test_get_fx_rate_different_dates_different_rates()"
     },
     {
@@ -1716,7 +1716,7 @@
       "source_file": "tests/test_mock_fx_rates.py",
       "source_location": "L34",
       "id": "tests_test_mock_fx_rates_test_get_fx_rate_reasonable_range",
-      "community": 14,
+      "community": 15,
       "norm_label": "test_get_fx_rate_reasonable_range()"
     },
     {
@@ -1725,7 +1725,7 @@
       "source_file": "tests/test_mock_fx_rates.py",
       "source_location": "L35",
       "id": "tests_test_mock_fx_rates_rationale_35",
-      "community": 14,
+      "community": 15,
       "norm_label": "fx rates should be in reasonable range."
     },
     {
@@ -1734,7 +1734,7 @@
       "source_file": "tests/test_openbb_fx_rates.py",
       "source_location": "L1",
       "id": "tests_test_openbb_fx_rates_py",
-      "community": 19,
+      "community": 20,
       "norm_label": "test_openbb_fx_rates.py"
     },
     {
@@ -1743,7 +1743,7 @@
       "source_file": "tests/test_openbb_fx_rates.py",
       "source_location": "L10",
       "id": "tests_test_openbb_fx_rates_test_get_fx_rate_returns_decimal",
-      "community": 19,
+      "community": 20,
       "norm_label": "test_get_fx_rate_returns_decimal()"
     },
     {
@@ -1752,7 +1752,7 @@
       "source_file": "tests/test_openbb_fx_rates.py",
       "source_location": "L15",
       "id": "tests_test_openbb_fx_rates_test_get_fx_rate_positive",
-      "community": 19,
+      "community": 20,
       "norm_label": "test_get_fx_rate_positive()"
     },
     {
@@ -1761,7 +1761,7 @@
       "source_file": "tests/test_openbb_fx_rates.py",
       "source_location": "L20",
       "id": "tests_test_openbb_fx_rates_test_get_fx_rate_same_currency_is_one",
-      "community": 19,
+      "community": 20,
       "norm_label": "test_get_fx_rate_same_currency_is_one()"
     },
     {
@@ -1770,7 +1770,7 @@
       "source_file": "tests/test_openbb_fx_rates.py",
       "source_location": "L25",
       "id": "tests_test_openbb_fx_rates_test_get_fx_rate_eurusd_reasonable_range",
-      "community": 19,
+      "community": 20,
       "norm_label": "test_get_fx_rate_eurusd_reasonable_range()"
     },
     {
@@ -1779,7 +1779,7 @@
       "source_file": "tests/test_openbb_fx_rates.py",
       "source_location": "L30",
       "id": "tests_test_openbb_fx_rates_test_get_fx_rate_four_decimal_places",
-      "community": 19,
+      "community": 20,
       "norm_label": "test_get_fx_rate_four_decimal_places()"
     },
     {
@@ -1788,7 +1788,7 @@
       "source_file": "tests/test_openbb_fx_rates.py",
       "source_location": "L35",
       "id": "tests_test_openbb_fx_rates_test_get_fx_rate_weekend_returns_rate",
-      "community": 19,
+      "community": 20,
       "norm_label": "test_get_fx_rate_weekend_returns_rate()"
     },
     {
@@ -1797,7 +1797,7 @@
       "source_file": "tests/test_main.py",
       "source_location": "L1",
       "id": "tests_test_main_py",
-      "community": 9,
+      "community": 11,
       "norm_label": "test_main.py"
     },
     {
@@ -1806,7 +1806,7 @@
       "source_file": "tests/test_main.py",
       "source_location": "L9",
       "id": "tests_test_main_test_load_config",
-      "community": 9,
+      "community": 11,
       "norm_label": "test_load_config()"
     },
     {
@@ -1815,7 +1815,7 @@
       "source_file": "tests/test_main.py",
       "source_location": "L23",
       "id": "tests_test_main_test_load_strategy",
-      "community": 9,
+      "community": 11,
       "norm_label": "test_load_strategy()"
     },
     {
@@ -1824,7 +1824,7 @@
       "source_file": "tests/test_main.py",
       "source_location": "L31",
       "id": "tests_test_main_test_parse_args",
-      "community": 9,
+      "community": 11,
       "norm_label": "test_parse_args()"
     },
     {
@@ -1833,7 +1833,7 @@
       "source_file": "actions/display_config.py",
       "source_location": "L1",
       "id": "actions_display_config_py",
-      "community": 48,
+      "community": 50,
       "norm_label": "display_config.py"
     },
     {
@@ -1842,7 +1842,7 @@
       "source_file": "actions/display_config.py",
       "source_location": "L4",
       "id": "actions_display_config_display_config",
-      "community": 48,
+      "community": 50,
       "norm_label": "display_config()"
     },
     {
@@ -1932,7 +1932,7 @@
       "source_file": "actions/__init__.py",
       "source_location": "L1",
       "id": "actions_init_py",
-      "community": 56,
+      "community": 57,
       "norm_label": "__init__.py"
     },
     {
@@ -1941,7 +1941,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L1",
       "id": "actions_mock_screener_py",
-      "community": 24,
+      "community": 25,
       "norm_label": "mock_screener.py"
     },
     {
@@ -1950,7 +1950,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L7",
       "id": "actions_mock_screener_screen_stocks",
-      "community": 24,
+      "community": 25,
       "norm_label": "screen_stocks()"
     },
     {
@@ -1959,7 +1959,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L22",
       "id": "actions_mock_screener_ticker_score",
-      "community": 24,
+      "community": 25,
       "norm_label": "_ticker_score()"
     },
     {
@@ -1968,7 +1968,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L8",
       "id": "actions_mock_screener_rationale_8",
-      "community": 24,
+      "community": 25,
       "norm_label": "screen stocks from hardcoded universe based on date and params.      each ticker"
     },
     {
@@ -1977,7 +1977,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L23",
       "id": "actions_mock_screener_rationale_23",
-      "community": 24,
+      "community": 25,
       "norm_label": "deterministic score for ticker on given date. range: 0.0-1.0."
     },
     {
@@ -1986,17 +1986,26 @@
       "source_file": "actions/openbb_fx_rates.py",
       "source_location": "L1",
       "id": "actions_openbb_fx_rates_py",
-      "community": 49,
+      "community": 41,
       "norm_label": "openbb_fx_rates.py"
     },
     {
       "label": "get_fx_rate()",
       "file_type": "code",
       "source_file": "actions/openbb_fx_rates.py",
-      "source_location": "L12",
+      "source_location": "L11",
       "id": "actions_openbb_fx_rates_get_fx_rate",
-      "community": 49,
+      "community": 41,
       "norm_label": "get_fx_rate()"
+    },
+    {
+      "label": "_fetch_fx_rate()",
+      "file_type": "code",
+      "source_file": "actions/openbb_fx_rates.py",
+      "source_location": "L18",
+      "id": "actions_openbb_fx_rates_fetch_fx_rate",
+      "community": 41,
+      "norm_label": "_fetch_fx_rate()"
     },
     {
       "label": "openbb_prices.py",
@@ -2004,7 +2013,7 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L1",
       "id": "actions_openbb_prices_py",
-      "community": 20,
+      "community": 21,
       "norm_label": "openbb_prices.py"
     },
     {
@@ -2013,7 +2022,7 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L19",
       "id": "actions_openbb_prices_fetch_ticker_history",
-      "community": 20,
+      "community": 21,
       "norm_label": "_fetch_ticker_history()"
     },
     {
@@ -2022,7 +2031,7 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L42",
       "id": "actions_openbb_prices_warm_ticker",
-      "community": 20,
+      "community": 21,
       "norm_label": "_warm_ticker()"
     },
     {
@@ -2031,7 +2040,7 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L53",
       "id": "actions_openbb_prices_get_price",
-      "community": 20,
+      "community": 21,
       "norm_label": "get_price()"
     },
     {
@@ -2040,7 +2049,7 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L20",
       "id": "actions_openbb_prices_rationale_20",
-      "community": 20,
+      "community": 21,
       "norm_label": "fetch full price history; returns {date_iso: price_str} for cache serialization."
     },
     {
@@ -2049,7 +2058,7 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L43",
       "id": "actions_openbb_prices_rationale_43",
-      "community": 20,
+      "community": 21,
       "norm_label": "fetch full price history for a ticker and populate in-process cache."
     },
     {
@@ -2058,7 +2067,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L1",
       "id": "actions_mock_prices_py",
-      "community": 21,
+      "community": 22,
       "norm_label": "mock_prices.py"
     },
     {
@@ -2067,7 +2076,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L6",
       "id": "actions_mock_prices_get_price",
-      "community": 21,
+      "community": 22,
       "norm_label": "get_price()"
     },
     {
@@ -2076,7 +2085,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L18",
       "id": "actions_mock_prices_ticker_base_price",
-      "community": 21,
+      "community": 22,
       "norm_label": "_ticker_base_price()"
     },
     {
@@ -2085,7 +2094,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L25",
       "id": "actions_mock_prices_date_variation",
-      "community": 21,
+      "community": 22,
       "norm_label": "_date_variation()"
     },
     {
@@ -2094,7 +2103,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L7",
       "id": "actions_mock_prices_rationale_7",
-      "community": 21,
+      "community": 22,
       "norm_label": "generate a deterministic mock price using seeded random walk.      uses hash of"
     },
     {
@@ -2103,7 +2112,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L19",
       "id": "actions_mock_prices_rationale_19",
-      "community": 21,
+      "community": 22,
       "norm_label": "deterministic base price from ticker symbol. range: 20-500."
     },
     {
@@ -2112,7 +2121,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L26",
       "id": "actions_mock_prices_rationale_26",
-      "community": 21,
+      "community": 22,
       "norm_label": "deterministic daily variation from ticker+date. range: -0.20 to +0.20."
     },
     {
@@ -2148,7 +2157,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L1",
       "id": "actions_advance_py",
-      "community": 25,
+      "community": 26,
       "norm_label": "advance.py"
     },
     {
@@ -2157,7 +2166,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L7",
       "id": "actions_advance_advance",
-      "community": 25,
+      "community": 26,
       "norm_label": "advance()"
     },
     {
@@ -2166,7 +2175,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L21",
       "id": "actions_advance_next_date",
-      "community": 25,
+      "community": 26,
       "norm_label": "_next_date()"
     },
     {
@@ -2175,7 +2184,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L8",
       "id": "actions_advance_rationale_8",
-      "community": 25,
+      "community": 26,
       "norm_label": "advance processing_date by interval. return false if past end boundary."
     },
     {
@@ -2184,7 +2193,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L22",
       "id": "actions_advance_rationale_22",
-      "community": 25,
+      "community": 26,
       "norm_label": "calculate next date based on interval string."
     },
     {
@@ -2193,7 +2202,7 @@
       "source_file": "actions/execute_transactions.py",
       "source_location": "L1",
       "id": "actions_execute_transactions_py",
-      "community": 41,
+      "community": 42,
       "norm_label": "execute_transactions.py"
     },
     {
@@ -2202,7 +2211,7 @@
       "source_file": "actions/execute_transactions.py",
       "source_location": "L6",
       "id": "actions_execute_transactions_execute_transactions",
-      "community": 41,
+      "community": 42,
       "norm_label": "execute_transactions()"
     },
     {
@@ -2211,7 +2220,7 @@
       "source_file": "actions/execute_transactions.py",
       "source_location": "L7",
       "id": "actions_execute_transactions_rationale_7",
-      "community": 41,
+      "community": 42,
       "norm_label": "execute transactions: update wallet and portfolio, record in history."
     },
     {
@@ -2220,7 +2229,7 @@
       "source_file": "actions/display_balance.py",
       "source_location": "L1",
       "id": "actions_display_balance_py",
-      "community": 42,
+      "community": 43,
       "norm_label": "display_balance.py"
     },
     {
@@ -2229,7 +2238,7 @@
       "source_file": "actions/display_balance.py",
       "source_location": "L7",
       "id": "actions_display_balance_display_balance",
-      "community": 42,
+      "community": 43,
       "norm_label": "display_balance()"
     },
     {
@@ -2238,7 +2247,7 @@
       "source_file": "actions/display_balance.py",
       "source_location": "L8",
       "id": "actions_display_balance_rationale_8",
-      "community": 42,
+      "community": 43,
       "norm_label": "calculate and print total portfolio value in base currency."
     },
     {
@@ -2247,7 +2256,7 @@
       "source_file": "actions/display_portfolio.py",
       "source_location": "L1",
       "id": "actions_display_portfolio_py",
-      "community": 43,
+      "community": 44,
       "norm_label": "display_portfolio.py"
     },
     {
@@ -2256,7 +2265,7 @@
       "source_file": "actions/display_portfolio.py",
       "source_location": "L1",
       "id": "actions_display_portfolio_display_portfolio",
-      "community": 43,
+      "community": 44,
       "norm_label": "display_portfolio()"
     },
     {
@@ -2265,7 +2274,7 @@
       "source_file": "actions/display_portfolio.py",
       "source_location": "L2",
       "id": "actions_display_portfolio_rationale_2",
-      "community": 43,
+      "community": 44,
       "norm_label": "print portfolio positions."
     },
     {
@@ -2274,25 +2283,25 @@
       "source_file": "actions/display_summary.py",
       "source_location": "L1",
       "id": "actions_display_summary_py",
-      "community": 44,
+      "community": 45,
       "norm_label": "display_summary.py"
     },
     {
       "label": "display_summary()",
       "file_type": "code",
       "source_file": "actions/display_summary.py",
-      "source_location": "L5",
+      "source_location": "L6",
       "id": "actions_display_summary_display_summary",
-      "community": 44,
+      "community": 45,
       "norm_label": "display_summary()"
     },
     {
       "label": "_periods_per_year()",
       "file_type": "code",
       "source_file": "actions/display_summary.py",
-      "source_location": "L159",
+      "source_location": "L164",
       "id": "actions_display_summary_periods_per_year",
-      "community": 44,
+      "community": 45,
       "norm_label": "_periods_per_year()"
     },
     {
@@ -2328,7 +2337,7 @@
       "source_file": "actions/display_wallet.py",
       "source_location": "L1",
       "id": "actions_display_wallet_py",
-      "community": 45,
+      "community": 46,
       "norm_label": "display_wallet.py"
     },
     {
@@ -2337,7 +2346,7 @@
       "source_file": "actions/display_wallet.py",
       "source_location": "L1",
       "id": "actions_display_wallet_display_wallet",
-      "community": 45,
+      "community": 46,
       "norm_label": "display_wallet()"
     },
     {
@@ -2346,7 +2355,7 @@
       "source_file": "actions/display_wallet.py",
       "source_location": "L2",
       "id": "actions_display_wallet_rationale_2",
-      "community": 45,
+      "community": 46,
       "norm_label": "print wallet contents."
     },
     {
@@ -2355,7 +2364,7 @@
       "source_file": "actions/openbb_screener.py",
       "source_location": "L1",
       "id": "actions_openbb_screener_py",
-      "community": 22,
+      "community": 23,
       "norm_label": "openbb_screener.py"
     },
     {
@@ -2364,7 +2373,7 @@
       "source_file": "actions/openbb_screener.py",
       "source_location": "L14",
       "id": "actions_openbb_screener_screen_stocks",
-      "community": 22,
+      "community": 23,
       "norm_label": "screen_stocks()"
     },
     {
@@ -2373,7 +2382,7 @@
       "source_file": "actions/openbb_screener.py",
       "source_location": "L26",
       "id": "actions_openbb_screener_run_screener",
-      "community": 22,
+      "community": 23,
       "norm_label": "_run_screener()"
     },
     {
@@ -2382,7 +2391,7 @@
       "source_file": "actions/openbb_screener.py",
       "source_location": "L39",
       "id": "actions_openbb_screener_get_fundamentals",
-      "community": 22,
+      "community": 23,
       "norm_label": "_get_fundamentals()"
     },
     {
@@ -2391,7 +2400,7 @@
       "source_file": "actions/openbb_screener.py",
       "source_location": "L46",
       "id": "actions_openbb_screener_apply_fundamental_filters",
-      "community": 22,
+      "community": 23,
       "norm_label": "_apply_fundamental_filters()"
     },
     {
@@ -2400,7 +2409,7 @@
       "source_file": "actions/openbb_screener.py",
       "source_location": "L15",
       "id": "actions_openbb_screener_rationale_15",
-      "community": 22,
+      "community": 23,
       "norm_label": "# note: obb.equity.screener does not support historical screening."
     },
     {
@@ -2409,7 +2418,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L1",
       "id": "actions_mock_fx_rates_py",
-      "community": 23,
+      "community": 24,
       "norm_label": "mock_fx_rates.py"
     },
     {
@@ -2418,7 +2427,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L6",
       "id": "actions_mock_fx_rates_get_fx_rate",
-      "community": 23,
+      "community": 24,
       "norm_label": "get_fx_rate()"
     },
     {
@@ -2427,7 +2436,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L20",
       "id": "actions_mock_fx_rates_pair_base_rate",
-      "community": 23,
+      "community": 24,
       "norm_label": "_pair_base_rate()"
     },
     {
@@ -2436,7 +2445,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L28",
       "id": "actions_mock_fx_rates_date_variation",
-      "community": 23,
+      "community": 24,
       "norm_label": "_date_variation()"
     },
     {
@@ -2445,7 +2454,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L7",
       "id": "actions_mock_fx_rates_rationale_7",
-      "community": 23,
+      "community": 24,
       "norm_label": "generate a deterministic mock fx rate.      same currency returns 1. otherwise u"
     },
     {
@@ -2454,7 +2463,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L21",
       "id": "actions_mock_fx_rates_rationale_21",
-      "community": 23,
+      "community": 24,
       "norm_label": "deterministic base rate for currency pair. range: 0.5-2.0."
     },
     {
@@ -2463,7 +2472,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L29",
       "id": "actions_mock_fx_rates_rationale_29",
-      "community": 23,
+      "community": 24,
       "norm_label": "deterministic daily variation. range: -0.05 to +0.05."
     },
     {
@@ -2485,10 +2494,19 @@
       "norm_label": "pfire-backtest"
     },
     {
-      "label": "Usage",
+      "label": "Documentation",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L7",
+      "id": "backtest_readme_documentation",
+      "community": 5,
+      "norm_label": "documentation"
+    },
+    {
+      "label": "Usage",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L11",
       "id": "backtest_readme_usage",
       "community": 5,
       "norm_label": "usage"
@@ -2497,7 +2515,7 @@
       "label": "code:bash (python main.py -config=config/backtest.yaml -strategy=strate)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L9",
+      "source_location": "L13",
       "id": "backtest_readme_codeblock_1",
       "community": 5,
       "norm_label": "code:bash (python main.py -config=config/backtest.yaml -strategy=strate)"
@@ -2506,7 +2524,7 @@
       "label": "Configuration",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L13",
+      "source_location": "L17",
       "id": "backtest_readme_configuration",
       "community": 5,
       "norm_label": "configuration"
@@ -2515,7 +2533,7 @@
       "label": "code:yaml (start_date: \"2022-01-01\")",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L17",
+      "source_location": "L21",
       "id": "backtest_readme_codeblock_2",
       "community": 5,
       "norm_label": "code:yaml (start_date: \"2022-01-01\")"
@@ -2524,7 +2542,7 @@
       "label": "Clearing the cache",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L44",
+      "source_location": "L48",
       "id": "backtest_readme_clearing_the_cache",
       "community": 5,
       "norm_label": "clearing the cache"
@@ -2533,7 +2551,7 @@
       "label": "code:bash (python main.py -config=config/backtest.yaml -strategy=strate)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L46",
+      "source_location": "L50",
       "id": "backtest_readme_codeblock_3",
       "community": 5,
       "norm_label": "code:bash (python main.py -config=config/backtest.yaml -strategy=strate)"
@@ -2542,7 +2560,7 @@
       "label": "Writing a Strategy",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L50",
+      "source_location": "L54",
       "id": "backtest_readme_writing_a_strategy",
       "community": 5,
       "norm_label": "writing a strategy"
@@ -2551,7 +2569,7 @@
       "label": "code:python (def run(ctx):)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L54",
+      "source_location": "L58",
       "id": "backtest_readme_codeblock_4",
       "community": 5,
       "norm_label": "code:python (def run(ctx):)"
@@ -2560,7 +2578,7 @@
       "label": "Strategies",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L76",
+      "source_location": "L80",
       "id": "backtest_readme_strategies",
       "community": 5,
       "norm_label": "strategies"
@@ -2569,7 +2587,7 @@
       "label": "Project Structure",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L83",
+      "source_location": "L87",
       "id": "backtest_readme_project_structure",
       "community": 5,
       "norm_label": "project structure"
@@ -2578,7 +2596,7 @@
       "label": "code:block5 (actions/        # one file per action; mock + OpenBB data pr)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L85",
+      "source_location": "L89",
       "id": "backtest_readme_codeblock_5",
       "community": 5,
       "norm_label": "code:block5 (actions/        # one file per action; mock + openbb data pr)"
@@ -2587,7 +2605,7 @@
       "label": "Setup",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L93",
+      "source_location": "L97",
       "id": "backtest_readme_setup",
       "community": 5,
       "norm_label": "setup"
@@ -2596,7 +2614,7 @@
       "label": "code:bash (pip install -r requirements.txt)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L95",
+      "source_location": "L99",
       "id": "backtest_readme_codeblock_6",
       "community": 5,
       "norm_label": "code:bash (pip install -r requirements.txt)"
@@ -2605,7 +2623,7 @@
       "label": "Tests",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L102",
+      "source_location": "L106",
       "id": "backtest_readme_tests",
       "community": 5,
       "norm_label": "tests"
@@ -2614,7 +2632,7 @@
       "label": "code:bash (pytest tests/)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L104",
+      "source_location": "L108",
       "id": "backtest_readme_codeblock_7",
       "community": 5,
       "norm_label": "code:bash (pytest tests/)"
@@ -2623,7 +2641,7 @@
       "label": "Architecture",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L108",
+      "source_location": "L112",
       "id": "backtest_readme_architecture",
       "community": 5,
       "norm_label": "architecture"
@@ -2634,7 +2652,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "agents_md",
-      "community": 7,
+      "community": 8,
       "norm_label": "agents.md"
     },
     {
@@ -2643,7 +2661,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "backtest_agents_agent_configuration",
-      "community": 7,
+      "community": 8,
       "norm_label": "agent configuration"
     },
     {
@@ -2652,7 +2670,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L5",
       "id": "backtest_agents_project_context",
-      "community": 7,
+      "community": 8,
       "norm_label": "project context"
     },
     {
@@ -2661,7 +2679,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L9",
       "id": "backtest_agents_documentation_context7_mcp",
-      "community": 7,
+      "community": 8,
       "norm_label": "documentation (context7 mcp)"
     },
     {
@@ -2670,7 +2688,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L14",
       "id": "backtest_agents_agent_behaviors",
-      "community": 7,
+      "community": 8,
       "norm_label": "agent behaviors"
     },
     {
@@ -2679,7 +2697,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L19",
       "id": "backtest_agents_code_style",
-      "community": 7,
+      "community": 8,
       "norm_label": "code style"
     },
     {
@@ -2688,7 +2706,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L21",
       "id": "backtest_agents_development_commands",
-      "community": 7,
+      "community": 8,
       "norm_label": "development commands"
     },
     {
@@ -2697,7 +2715,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L23",
       "id": "backtest_agents_environment_setup",
-      "community": 7,
+      "community": 8,
       "norm_label": "environment setup"
     },
     {
@@ -2706,7 +2724,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L24",
       "id": "backtest_agents_codeblock_1",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:bash (# install dependencies)"
     },
     {
@@ -2715,7 +2733,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L33",
       "id": "backtest_agents_running_the_app",
-      "community": 7,
+      "community": 8,
       "norm_label": "running the app"
     },
     {
@@ -2724,7 +2742,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L34",
       "id": "backtest_agents_codeblock_2",
-      "community": 7,
+      "community": 8,
       "norm_label": "code:bash (python main.py -config=config/backtest.yaml -strategy=strate)"
     },
     {
@@ -2733,7 +2751,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L38",
       "id": "backtest_agents_project_structure_conventions",
-      "community": 7,
+      "community": 8,
       "norm_label": "project structure conventions"
     },
     {
@@ -2742,7 +2760,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L57",
       "id": "backtest_agents_applied_learning",
-      "community": 7,
+      "community": 8,
       "norm_label": "applied learning"
     },
     {
@@ -2751,7 +2769,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "claude_md",
-      "community": 50,
+      "community": 51,
       "norm_label": "claude.md"
     },
     {
@@ -2760,8 +2778,143 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "id": "backtest_claude_graphify",
-      "community": 50,
+      "community": 51,
       "norm_label": "graphify"
+    },
+    {
+      "label": "screener-filters.md",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L1",
+      "id": "docs_screener_filters_md",
+      "community": 6,
+      "norm_label": "screener-filters.md"
+    },
+    {
+      "label": "Screener Filters",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L1",
+      "id": "docs_screener_filters_screener_filters",
+      "community": 6,
+      "norm_label": "screener filters"
+    },
+    {
+      "label": "Stage 1 \u2014 OpenBB Screener Filters",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L12",
+      "id": "docs_screener_filters_stage_1_openbb_screener_filters",
+      "community": 6,
+      "norm_label": "stage 1 \u2014 openbb screener filters"
+    },
+    {
+      "label": "Market Cap",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L14",
+      "id": "docs_screener_filters_market_cap",
+      "community": 6,
+      "norm_label": "market cap"
+    },
+    {
+      "label": "Price",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L21",
+      "id": "docs_screener_filters_price",
+      "community": 6,
+      "norm_label": "price"
+    },
+    {
+      "label": "Beta",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L28",
+      "id": "docs_screener_filters_beta",
+      "community": 6,
+      "norm_label": "beta"
+    },
+    {
+      "label": "Volume",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L35",
+      "id": "docs_screener_filters_volume",
+      "community": 6,
+      "norm_label": "volume"
+    },
+    {
+      "label": "Dividend",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L42",
+      "id": "docs_screener_filters_dividend",
+      "community": 6,
+      "norm_label": "dividend"
+    },
+    {
+      "label": "Classification",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L49",
+      "id": "docs_screener_filters_classification",
+      "community": 6,
+      "norm_label": "classification"
+    },
+    {
+      "label": "Flags",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L58",
+      "id": "docs_screener_filters_flags",
+      "community": 6,
+      "norm_label": "flags"
+    },
+    {
+      "label": "Stage 2 \u2014 Fundamental Filters",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L70",
+      "id": "docs_screener_filters_stage_2_fundamental_filters",
+      "community": 6,
+      "norm_label": "stage 2 \u2014 fundamental filters"
+    },
+    {
+      "label": "Example Config",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L82",
+      "id": "docs_screener_filters_example_config",
+      "community": 6,
+      "norm_label": "example config"
+    },
+    {
+      "label": "code:yaml (screening:)",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L84",
+      "id": "docs_screener_filters_codeblock_1",
+      "community": 6,
+      "norm_label": "code:yaml (screening:)"
+    },
+    {
+      "label": "Extending Filters",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L104",
+      "id": "docs_screener_filters_extending_filters",
+      "community": 6,
+      "norm_label": "extending filters"
+    },
+    {
+      "label": "code:python (if \"volume_min\" in params:)",
+      "file_type": "document",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L108",
+      "id": "docs_screener_filters_codeblock_2",
+      "community": 6,
+      "norm_label": "code:python (if \"volume_min\" in params:)"
     },
     {
       "label": "2026-04-16-backtest-engine.md",
@@ -2769,7 +2922,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1",
       "id": "docs_superpowers_plans_2026_04_16_backtest_engine_md",
-      "community": 11,
+      "community": 12,
       "norm_label": "2026-04-16-backtest-engine.md"
     },
     {
@@ -2778,7 +2931,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1",
       "id": "plans_2026_04_16_backtest_engine_backtest_engine_implementation_plan",
-      "community": 11,
+      "community": 12,
       "norm_label": "backtest engine implementation plan"
     },
     {
@@ -2787,7 +2940,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L13",
       "id": "plans_2026_04_16_backtest_engine_file_structure",
-      "community": 11,
+      "community": 12,
       "norm_label": "file structure"
     },
     {
@@ -2796,7 +2949,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L15",
       "id": "plans_2026_04_16_backtest_engine_codeblock_1",
-      "community": 11,
+      "community": 12,
       "norm_label": "code:block1 (backtest/)"
     },
     {
@@ -2850,7 +3003,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L235",
       "id": "plans_2026_04_16_backtest_engine_task_2_mock_prices_provider",
-      "community": 28,
+      "community": 34,
       "norm_label": "task 2: mock prices provider"
     },
     {
@@ -2859,7 +3012,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L248",
       "id": "plans_2026_04_16_backtest_engine_codeblock_6",
-      "community": 28,
+      "community": 34,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -2868,7 +3021,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L298",
       "id": "plans_2026_04_16_backtest_engine_codeblock_7",
-      "community": 28,
+      "community": 34,
       "norm_label": "code:python (import hashlib)"
     },
     {
@@ -2877,7 +3030,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L338",
       "id": "plans_2026_04_16_backtest_engine_codeblock_8",
-      "community": 28,
+      "community": 34,
       "norm_label": "code:bash (git add actions/ tests/test_mock_prices.py)"
     },
     {
@@ -2886,7 +3039,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L345",
       "id": "plans_2026_04_16_backtest_engine_task_3_mock_fx_rates_provider",
-      "community": 30,
+      "community": 33,
       "norm_label": "task 3: mock fx rates provider"
     },
     {
@@ -2895,7 +3048,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L355",
       "id": "plans_2026_04_16_backtest_engine_codeblock_9",
-      "community": 30,
+      "community": 33,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -2904,7 +3057,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L404",
       "id": "plans_2026_04_16_backtest_engine_codeblock_10",
-      "community": 30,
+      "community": 33,
       "norm_label": "code:python (import hashlib)"
     },
     {
@@ -2913,7 +3066,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L447",
       "id": "plans_2026_04_16_backtest_engine_codeblock_11",
-      "community": 30,
+      "community": 33,
       "norm_label": "code:bash (git add actions/mock_fx_rates.py tests/test_mock_fx_rates.py)"
     },
     {
@@ -2922,7 +3075,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L454",
       "id": "plans_2026_04_16_backtest_engine_task_4_mock_screener_provider",
-      "community": 31,
+      "community": 30,
       "norm_label": "task 4: mock screener provider"
     },
     {
@@ -2931,7 +3084,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L464",
       "id": "plans_2026_04_16_backtest_engine_codeblock_12",
-      "community": 31,
+      "community": 30,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -2940,7 +3093,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L521",
       "id": "plans_2026_04_16_backtest_engine_codeblock_13",
-      "community": 31,
+      "community": 30,
       "norm_label": "code:python (import hashlib)"
     },
     {
@@ -2949,7 +3102,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L557",
       "id": "plans_2026_04_16_backtest_engine_codeblock_14",
-      "community": 31,
+      "community": 30,
       "norm_label": "code:bash (git add actions/mock_screener.py tests/test_mock_screener.py)"
     },
     {
@@ -2994,7 +3147,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L715",
       "id": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance",
-      "community": 15,
+      "community": 16,
       "norm_label": "task 6: display actions (wallet, portfolio, balance)"
     },
     {
@@ -3003,7 +3156,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L729",
       "id": "plans_2026_04_16_backtest_engine_codeblock_18",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3012,7 +3165,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L781",
       "id": "plans_2026_04_16_backtest_engine_codeblock_19",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:python (def display_wallet(ctx) -> none:)"
     },
     {
@@ -3021,7 +3174,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L801",
       "id": "plans_2026_04_16_backtest_engine_codeblock_20",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3030,7 +3183,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L843",
       "id": "plans_2026_04_16_backtest_engine_codeblock_21",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:python (def display_portfolio(ctx) -> none:)"
     },
     {
@@ -3039,7 +3192,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L863",
       "id": "plans_2026_04_16_backtest_engine_codeblock_22",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3048,7 +3201,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L951",
       "id": "plans_2026_04_16_backtest_engine_codeblock_23",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:python (from decimal import decimal)"
     },
     {
@@ -3057,7 +3210,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L987",
       "id": "plans_2026_04_16_backtest_engine_codeblock_24",
-      "community": 15,
+      "community": 16,
       "norm_label": "code:bash (git add actions/display_wallet.py actions/display_portfolio.)"
     },
     {
@@ -3066,7 +3219,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L994",
       "id": "plans_2026_04_16_backtest_engine_task_7_screen_stocks_action",
-      "community": 34,
+      "community": 29,
       "norm_label": "task 7: screen stocks action"
     },
     {
@@ -3075,7 +3228,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1004",
       "id": "plans_2026_04_16_backtest_engine_codeblock_25",
-      "community": 34,
+      "community": 29,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3084,7 +3237,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1059",
       "id": "plans_2026_04_16_backtest_engine_codeblock_26",
-      "community": 34,
+      "community": 29,
       "norm_label": "code:python (from actions.mock_screener import screen_stocks as mock_scre)"
     },
     {
@@ -3093,7 +3246,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1075",
       "id": "plans_2026_04_16_backtest_engine_codeblock_27",
-      "community": 34,
+      "community": 29,
       "norm_label": "code:bash (git add actions/screen_stocks.py tests/test_screen_stocks.py)"
     },
     {
@@ -3102,7 +3255,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1082",
       "id": "plans_2026_04_16_backtest_engine_task_8_rebalance_action",
-      "community": 33,
+      "community": 35,
       "norm_label": "task 8: rebalance action"
     },
     {
@@ -3111,7 +3264,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1092",
       "id": "plans_2026_04_16_backtest_engine_codeblock_28",
-      "community": 33,
+      "community": 35,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3120,7 +3273,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1221",
       "id": "plans_2026_04_16_backtest_engine_codeblock_29",
-      "community": 33,
+      "community": 35,
       "norm_label": "code:python (from decimal import decimal)"
     },
     {
@@ -3129,7 +3282,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1308",
       "id": "plans_2026_04_16_backtest_engine_codeblock_30",
-      "community": 33,
+      "community": 35,
       "norm_label": "code:bash (git add actions/rebalance.py tests/test_rebalance.py)"
     },
     {
@@ -3138,7 +3291,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1315",
       "id": "plans_2026_04_16_backtest_engine_task_9_execute_transactions_action",
-      "community": 35,
+      "community": 31,
       "norm_label": "task 9: execute transactions action"
     },
     {
@@ -3147,7 +3300,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1325",
       "id": "plans_2026_04_16_backtest_engine_codeblock_31",
-      "community": 35,
+      "community": 31,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3156,7 +3309,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1419",
       "id": "plans_2026_04_16_backtest_engine_codeblock_32",
-      "community": 35,
+      "community": 31,
       "norm_label": "code:python (from decimal import decimal)"
     },
     {
@@ -3165,7 +3318,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1459",
       "id": "plans_2026_04_16_backtest_engine_codeblock_33",
-      "community": 35,
+      "community": 31,
       "norm_label": "code:bash (git add actions/execute_transactions.py tests/test_execute_t)"
     },
     {
@@ -3174,7 +3327,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1466",
       "id": "plans_2026_04_16_backtest_engine_task_10_backtestcontext",
-      "community": 29,
+      "community": 12,
       "norm_label": "task 10: backtestcontext"
     },
     {
@@ -3183,7 +3336,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1476",
       "id": "plans_2026_04_16_backtest_engine_codeblock_34",
-      "community": 29,
+      "community": 12,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3192,7 +3345,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1564",
       "id": "plans_2026_04_16_backtest_engine_codeblock_35",
-      "community": 29,
+      "community": 12,
       "norm_label": "code:python (from decimal import decimal)"
     },
     {
@@ -3201,7 +3354,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1619",
       "id": "plans_2026_04_16_backtest_engine_codeblock_36",
-      "community": 29,
+      "community": 12,
       "norm_label": "code:bash (git add core/context.py tests/test_context.py)"
     },
     {
@@ -3210,7 +3363,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1626",
       "id": "plans_2026_04_16_backtest_engine_task_11_yaml_config_loading_main_py",
-      "community": 26,
+      "community": 28,
       "norm_label": "task 11: yaml config loading & main.py"
     },
     {
@@ -3219,7 +3372,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1637",
       "id": "plans_2026_04_16_backtest_engine_codeblock_37",
-      "community": 26,
+      "community": 28,
       "norm_label": "code:yaml (start_date: \"2025-01-01\")"
     },
     {
@@ -3228,7 +3381,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1653",
       "id": "plans_2026_04_16_backtest_engine_codeblock_38",
-      "community": 26,
+      "community": 28,
       "norm_label": "code:python (import sys)"
     },
     {
@@ -3237,7 +3390,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1705",
       "id": "plans_2026_04_16_backtest_engine_codeblock_39",
-      "community": 26,
+      "community": 28,
       "norm_label": "code:python (import argparse)"
     },
     {
@@ -3246,7 +3399,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1766",
       "id": "plans_2026_04_16_backtest_engine_codeblock_40",
-      "community": 26,
+      "community": 28,
       "norm_label": "code:bash (git add main.py config/backtest.yaml tests/test_main.py)"
     },
     {
@@ -3255,7 +3408,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1773",
       "id": "plans_2026_04_16_backtest_engine_task_12_basic_strategy",
-      "community": 11,
+      "community": 48,
       "norm_label": "task 12: basic strategy"
     },
     {
@@ -3264,7 +3417,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1782",
       "id": "plans_2026_04_16_backtest_engine_codeblock_41",
-      "community": 11,
+      "community": 48,
       "norm_label": "code:python (from core.context import backtestcontext)"
     },
     {
@@ -3273,7 +3426,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1810",
       "id": "plans_2026_04_16_backtest_engine_codeblock_42",
-      "community": 11,
+      "community": 48,
       "norm_label": "code:bash (git add strategies/basic.py)"
     },
     {
@@ -3282,7 +3435,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1817",
       "id": "plans_2026_04_16_backtest_engine_task_13_integration_test",
-      "community": 46,
+      "community": 47,
       "norm_label": "task 13: integration test"
     },
     {
@@ -3291,7 +3444,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1826",
       "id": "plans_2026_04_16_backtest_engine_codeblock_43",
-      "community": 46,
+      "community": 47,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3300,7 +3453,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1915",
       "id": "plans_2026_04_16_backtest_engine_codeblock_44",
-      "community": 46,
+      "community": 47,
       "norm_label": "code:bash (git add tests/test_integration.py)"
     },
     {
@@ -3309,7 +3462,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1922",
       "id": "plans_2026_04_16_backtest_engine_task_14_end_to_end_smoke_test",
-      "community": 11,
+      "community": 12,
       "norm_label": "task 14: end-to-end smoke test"
     },
     {
@@ -3318,7 +3471,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1941",
       "id": "plans_2026_04_16_backtest_engine_codeblock_45",
-      "community": 11,
+      "community": 12,
       "norm_label": "code:bash (git add -a)"
     },
     {
@@ -3592,11 +3745,20 @@
       "norm_label": "constraints"
     },
     {
+      "label": "Decorator. Caches return value as JSON keyed by namespace + args.",
+      "file_type": "rationale",
+      "source_file": "core/cache.py",
+      "source_location": "L29",
+      "community": 9,
+      "norm_label": "decorator. caches return value as json keyed by namespace + args.",
+      "id": "core_cache_rationale_29"
+    },
+    {
       "label": "Fetch full price history for a ticker and populate cache.",
       "file_type": "rationale",
       "source_file": "actions/openbb_prices.py",
       "source_location": "L17",
-      "community": 20,
+      "community": 21,
       "norm_label": "fetch full price history for a ticker and populate cache.",
       "id": "actions_openbb_prices_rationale_17"
     },
@@ -3605,7 +3767,7 @@
       "file_type": "rationale",
       "source_file": "actions/openbb_screener.py",
       "source_location": "L13",
-      "community": 22,
+      "community": 23,
       "norm_label": "# note: obb.equity.screener does not support historical screening.",
       "id": "actions_openbb_screener_rationale_13"
     },
@@ -3614,7 +3776,7 @@
       "file_type": "code",
       "source_file": "strategies/mock.py",
       "source_location": "L1",
-      "community": 47,
+      "community": 49,
       "norm_label": "mock.py",
       "id": "strategies_mock_py"
     },
@@ -3623,7 +3785,7 @@
       "file_type": "code",
       "source_file": "strategies/mock.py",
       "source_location": "L4",
-      "community": 47,
+      "community": 49,
       "norm_label": "run()",
       "id": "strategies_mock_run"
     },
@@ -3632,7 +3794,7 @@
       "file_type": "rationale",
       "source_file": "strategies/mock.py",
       "source_location": "L5",
-      "community": 47,
+      "community": 49,
       "norm_label": "basic equal-weight strategy using mock (deterministic) data.",
       "id": "strategies_mock_rationale_5"
     },
@@ -3645,7 +3807,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "parse_args",
       "id": "main_parse_args"
     },
@@ -3658,7 +3820,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "load_config",
       "id": "main_load_config"
     },
@@ -3671,7 +3833,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "load_strategy",
       "id": "main_load_strategy"
     },
@@ -3684,7 +3846,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "main",
       "id": "main_main"
     },
@@ -3762,7 +3924,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "backtestconfig",
       "id": "models_backtestconfig"
     },
@@ -4009,7 +4171,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "test_backtest_config_creation",
       "id": "test_models_test_backtest_config_creation"
     },
@@ -4048,7 +4210,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "test_load_config",
       "id": "test_main_test_load_config"
     },
@@ -4061,7 +4223,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "test_load_strategy",
       "id": "test_main_test_load_strategy"
     },
@@ -4074,7 +4236,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "test_parse_args",
       "id": "test_main_test_parse_args"
     },
@@ -4113,7 +4275,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "test_backtest_cli_end_to_end",
       "id": "test_integration_test_backtest_cli_end_to_end"
     },
@@ -4126,7 +4288,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "test_advance_first_call_sets_start_date",
       "id": "test_advance_test_advance_first_call_sets_start_date"
     },
@@ -4139,7 +4301,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 58,
       "norm_label": "test_advance_month_interval",
       "id": "test_advance_test_advance_month_interval"
     },
@@ -4152,7 +4314,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
+      "community": 10,
       "norm_label": "fakecontext (advance test)",
       "id": "test_advance_fakecontext"
     },
@@ -4178,7 +4340,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 59,
       "norm_label": "test_rebalance_equal_weight",
       "id": "test_rebalance_test_rebalance_equal_weight"
     },
@@ -4204,7 +4366,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 59,
+      "community": 60,
       "norm_label": "test_execute_sell_updates_wallet_and_portfolio",
       "id": "test_execute_transactions_test_execute_sell_updates_wallet_and_portfolio"
     },
@@ -4217,7 +4379,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 61,
       "norm_label": "test_screen_stocks_returns_list",
       "id": "test_screen_stocks_test_screen_stocks_returns_list"
     },
@@ -4269,7 +4431,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "test_mock_screener_screen_stocks_returns_list",
       "id": "test_mock_screener_test_screen_stocks_returns_list"
     },
@@ -4282,7 +4444,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "test_openbb_screener_screen_stocks_returns_list",
       "id": "test_openbb_screener_test_screen_stocks_returns_list"
     },
@@ -4295,7 +4457,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "test_openbb_prices_get_price_returns_decimal",
       "id": "test_openbb_prices_test_get_price_returns_decimal"
     },
@@ -4308,7 +4470,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "test_mock_prices_get_price_returns_decimal",
       "id": "test_mock_prices_test_get_price_returns_decimal"
     },
@@ -4321,7 +4483,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 54,
       "norm_label": "test_mock_fx_rates_get_fx_rate_returns_decimal",
       "id": "test_mock_fx_rates_test_get_fx_rate_returns_decimal"
     },
@@ -4334,7 +4496,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 54,
       "norm_label": "test_openbb_fx_rates_get_fx_rate_returns_decimal",
       "id": "test_openbb_fx_rates_test_get_fx_rate_returns_decimal"
     },
@@ -4607,7 +4769,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 62,
       "norm_label": "display_portfolio.display_portfolio",
       "id": "display_portfolio_display_portfolio"
     },
@@ -4633,7 +4795,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 63,
       "norm_label": "display_wallet.display_wallet",
       "id": "display_wallet_display_wallet"
     },
@@ -4750,7 +4912,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 64,
       "norm_label": "requirements.txt",
       "id": "requirements_txt"
     },
@@ -6009,9 +6171,9 @@
       "source_file": "core/cache.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_py",
-      "target": "core_cache_configure",
-      "confidence_score": 1.0
+      "target": "core_cache_configure"
     },
     {
       "relation": "contains",
@@ -6019,9 +6181,9 @@
       "source_file": "core/cache.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_py",
-      "target": "core_cache_clear",
-      "confidence_score": 1.0
+      "target": "core_cache_clear"
     },
     {
       "relation": "contains",
@@ -6029,9 +6191,9 @@
       "source_file": "core/cache.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_py",
-      "target": "core_cache_cached",
-      "confidence_score": 1.0
+      "target": "core_cache_cached"
     },
     {
       "relation": "contains",
@@ -6039,9 +6201,9 @@
       "source_file": "core/cache.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_py",
-      "target": "core_cache_make_key",
-      "confidence_score": 1.0
+      "target": "core_cache_make_key"
     },
     {
       "relation": "contains",
@@ -6049,9 +6211,9 @@
       "source_file": "core/cache.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_py",
-      "target": "core_cache_path",
-      "confidence_score": 1.0
+      "target": "core_cache_path"
     },
     {
       "relation": "contains",
@@ -6059,9 +6221,9 @@
       "source_file": "core/cache.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_py",
-      "target": "core_cache_read",
-      "confidence_score": 1.0
+      "target": "core_cache_read"
     },
     {
       "relation": "contains",
@@ -6069,9 +6231,9 @@
       "source_file": "core/cache.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_py",
-      "target": "core_cache_write",
-      "confidence_score": 1.0
+      "target": "core_cache_write"
     },
     {
       "relation": "contains",
@@ -6079,9 +6241,9 @@
       "source_file": "core/cache.py",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_py",
-      "target": "core_cache_serialize",
-      "confidence_score": 1.0
+      "target": "core_cache_serialize"
     },
     {
       "relation": "contains",
@@ -6089,8 +6251,18 @@
       "source_file": "core/cache.py",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_py",
-      "target": "core_cache_deserialize",
+      "target": "core_cache_deserialize"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "core_cache_rationale_30",
+      "target": "core_cache_cached",
       "confidence_score": 1.0
     },
     {
@@ -6099,9 +6271,9 @@
       "source_file": "core/cache.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_rationale_29",
-      "target": "core_cache_cached",
-      "confidence_score": 1.0
+      "target": "core_cache_cached"
     },
     {
       "relation": "calls",
@@ -6110,9 +6282,9 @@
       "source_file": "core/cache.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_make_key",
-      "target": "core_cache_serialize",
-      "confidence_score": 1.0
+      "target": "core_cache_serialize"
     },
     {
       "relation": "calls",
@@ -6121,9 +6293,9 @@
       "source_file": "core/cache.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_read",
-      "target": "core_cache_path",
-      "confidence_score": 1.0
+      "target": "core_cache_path"
     },
     {
       "relation": "calls",
@@ -6132,9 +6304,9 @@
       "source_file": "core/cache.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_write",
-      "target": "core_cache_path",
-      "confidence_score": 1.0
+      "target": "core_cache_path"
     },
     {
       "relation": "calls",
@@ -6143,9 +6315,9 @@
       "source_file": "core/cache.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_read",
-      "target": "core_cache_deserialize",
-      "confidence_score": 1.0
+      "target": "core_cache_deserialize"
     },
     {
       "relation": "calls",
@@ -6154,9 +6326,9 @@
       "source_file": "core/cache.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_cache_write",
-      "target": "core_cache_serialize",
-      "confidence_score": 1.0
+      "target": "core_cache_serialize"
     },
     {
       "relation": "contains",
@@ -8404,12 +8576,33 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "actions/openbb_fx_rates.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "actions_openbb_fx_rates_py",
+      "target": "actions_openbb_fx_rates_fetch_fx_rate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "actions/openbb_fx_rates.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "actions_openbb_fx_rates_get_fx_rate",
+      "target": "actions_openbb_fx_rates_fetch_fx_rate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "actions/openbb_prices.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_openbb_prices_py",
-      "target": "actions_openbb_prices_fetch_ticker_history",
-      "confidence_score": 1.0
+      "target": "actions_openbb_prices_fetch_ticker_history"
     },
     {
       "relation": "contains",
@@ -8438,9 +8631,9 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_openbb_prices_warm_ticker",
-      "target": "actions_openbb_prices_fetch_ticker_history",
-      "confidence_score": 1.0
+      "target": "actions_openbb_prices_fetch_ticker_history"
     },
     {
       "relation": "rationale_for",
@@ -8448,9 +8641,9 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_openbb_prices_rationale_20",
-      "target": "actions_openbb_prices_fetch_ticker_history",
-      "confidence_score": 1.0
+      "target": "actions_openbb_prices_fetch_ticker_history"
     },
     {
       "relation": "calls",
@@ -8469,9 +8662,9 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_openbb_prices_rationale_43",
-      "target": "actions_openbb_prices_warm_ticker",
-      "confidence_score": 1.0
+      "target": "actions_openbb_prices_warm_ticker"
     },
     {
       "relation": "rationale_for",
@@ -8813,9 +9006,9 @@
       "source_file": "actions/openbb_screener.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_openbb_screener_rationale_15",
-      "target": "actions_openbb_screener_py",
-      "confidence_score": 1.0
+      "target": "actions_openbb_screener_py"
     },
     {
       "relation": "rationale_for",
@@ -8968,6 +9161,16 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "source": "backtest_readme_pfire_backtest",
+      "target": "backtest_readme_documentation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "backtest_readme_pfire_backtest",
       "target": "backtest_readme_usage"
@@ -9068,9 +9271,9 @@
       "source_file": "README.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_configuration",
-      "target": "backtest_readme_clearing_the_cache",
-      "confidence_score": 1.0
+      "target": "backtest_readme_clearing_the_cache"
     },
     {
       "relation": "contains",
@@ -9078,9 +9281,9 @@
       "source_file": "README.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_clearing_the_cache",
-      "target": "backtest_readme_codeblock_3",
-      "confidence_score": 1.0
+      "target": "backtest_readme_codeblock_3"
     },
     {
       "relation": "contains",
@@ -9098,9 +9301,9 @@
       "source_file": "README.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_writing_a_strategy",
-      "target": "backtest_readme_codeblock_4",
-      "confidence_score": 1.0
+      "target": "backtest_readme_codeblock_4"
     },
     {
       "relation": "contains",
@@ -9118,9 +9321,9 @@
       "source_file": "README.md",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_project_structure",
-      "target": "backtest_readme_codeblock_5",
-      "confidence_score": 1.0
+      "target": "backtest_readme_codeblock_5"
     },
     {
       "relation": "contains",
@@ -9138,9 +9341,9 @@
       "source_file": "README.md",
       "source_location": "L95",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_setup",
-      "target": "backtest_readme_codeblock_6",
-      "confidence_score": 1.0
+      "target": "backtest_readme_codeblock_6"
     },
     {
       "relation": "contains",
@@ -9158,9 +9361,9 @@
       "source_file": "README.md",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_tests",
-      "target": "backtest_readme_codeblock_7",
-      "confidence_score": 1.0
+      "target": "backtest_readme_codeblock_7"
     },
     {
       "relation": "contains",
@@ -9291,6 +9494,146 @@
       "confidence_score": 1.0,
       "source": "claude_md",
       "target": "backtest_claude_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_screener_filters_md",
+      "target": "docs_screener_filters_screener_filters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "docs_screener_filters_screener_filters",
+      "target": "docs_screener_filters_stage_1_openbb_screener_filters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "docs_screener_filters_screener_filters",
+      "target": "docs_screener_filters_stage_2_fundamental_filters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "docs_screener_filters_screener_filters",
+      "target": "docs_screener_filters_example_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "docs_screener_filters_screener_filters",
+      "target": "docs_screener_filters_extending_filters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "docs_screener_filters_stage_1_openbb_screener_filters",
+      "target": "docs_screener_filters_market_cap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "docs_screener_filters_stage_1_openbb_screener_filters",
+      "target": "docs_screener_filters_price",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "docs_screener_filters_stage_1_openbb_screener_filters",
+      "target": "docs_screener_filters_beta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "docs_screener_filters_stage_1_openbb_screener_filters",
+      "target": "docs_screener_filters_volume",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "docs_screener_filters_stage_1_openbb_screener_filters",
+      "target": "docs_screener_filters_dividend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "docs_screener_filters_stage_1_openbb_screener_filters",
+      "target": "docs_screener_filters_classification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "docs_screener_filters_stage_1_openbb_screener_filters",
+      "target": "docs_screener_filters_flags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "docs_screener_filters_example_config",
+      "target": "docs_screener_filters_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/screener-filters.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "docs_screener_filters_extending_filters",
+      "target": "docs_screener_filters_codeblock_2",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -11544,5 +11887,5 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md"
     }
   ],
-  "built_at_commit": "77f80d12d0f57e6501fb5ce1e99672820dc33f75"
+  "built_at_commit": "e0138edac64c5cacdef0b15f825f195904453e6c"
 }
