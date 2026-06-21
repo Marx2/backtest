@@ -4,6 +4,10 @@ Python backtesting engine for trading strategies. Runs strategies over historica
 multi-currency support and diff-based rebalancing. Includes mock providers for fast testing and
 real OpenBB providers (yfinance/FMP) for live data.
 
+## Documentation
+
+- [Screener filters](docs/screener-filters.md) — all available `screening:` params with providers and types
+
 ## Usage
 
 ```bash

@@ -8,16 +8,16 @@
     "hash": "5de297de59d673778e4077c98b9c3ded"
   },
   "/Users/i318088/prv/pfire/backtest/core/cache.py": {
-    "mtime": 1782062445.551633,
-    "hash": "8fe151c7bfa9c4762661df927550cc5d"
+    "mtime": 1782062954.032431,
+    "hash": "ca930fe979c000fcda7e0528f7a8bda6"
   },
   "/Users/i318088/prv/pfire/backtest/core/__init__.py": {
     "mtime": 1776372850.8556314,
     "hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "/Users/i318088/prv/pfire/backtest/core/context.py": {
-    "mtime": 1782059853.1168525,
-    "hash": "b784a3f8918a568d18201699dbf7ac4a"
+    "mtime": 1782062972.4896944,
+    "hash": "51d36fc8f6381c31c2dbd987bc34ff85"
   },
   "/Users/i318088/prv/pfire/backtest/strategies/basic.py": {
     "mtime": 1782059853.1256213,
@@ -124,8 +124,8 @@
     "hash": "689defc34a786089b5ebd548311f4b5a"
   },
   "/Users/i318088/prv/pfire/backtest/actions/openbb_fx_rates.py": {
-    "mtime": 1782062438.175527,
-    "hash": "5735c302385bd5c831e112967764a82d"
+    "mtime": 1782062961.1876042,
+    "hash": "7ee33e84acaa358d961179d039bbe96e"
   },
   "/Users/i318088/prv/pfire/backtest/actions/openbb_prices.py": {
     "mtime": 1782062432.9858131,
@@ -156,8 +156,8 @@
     "hash": "917e86da5beb502ebb567aa0c0385cbb"
   },
   "/Users/i318088/prv/pfire/backtest/actions/display_summary.py": {
-    "mtime": 1782060462.876639,
-    "hash": "aabe6e967463f600cb54bb739b8bb079"
+    "mtime": 1782062981.4713335,
+    "hash": "d6ef2c6d43b3ffd09dbf4d6c9165b973"
   },
   "/Users/i318088/prv/pfire/backtest/actions/rebalance.py": {
     "mtime": 1776372850.8466945,
@@ -180,8 +180,8 @@
     "hash": "ef3cda1e9ed1aef1cd19099f686ec1e2"
   },
   "/Users/i318088/prv/pfire/backtest/README.md": {
-    "mtime": 1782062562.3910537,
-    "hash": "ae26c20275b977272204eb59ba2213ce"
+    "mtime": 1782064521.9249368,
+    "hash": "4ce02f231ee30ef12bbb82d9cfa2135e"
   },
   "/Users/i318088/prv/pfire/backtest/AGENTS.md": {
     "mtime": 1776368114.095753,
@@ -194,6 +194,10 @@
   "/Users/i318088/prv/pfire/backtest/config/backtest.yaml": {
     "mtime": 1782062464.3379714,
     "hash": "01a093b117004fc144d0e3ca73383387"
+  },
+  "/Users/i318088/prv/pfire/backtest/docs/screener-filters.md": {
+    "mtime": 1782064517.7538931,
+    "hash": "6e8fe175fa5a2203205b01a31c6aff35"
   },
   "/Users/i318088/prv/pfire/backtest/docs/draft.txt": {
     "mtime": 1776368621.2763925,
