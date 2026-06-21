@@ -5,6 +5,11 @@ base_currency: "USD"
 initial_cash:
   USD: 10000
 
+cache:
+  enabled: true
+  ttl_days: 7
+  dir: "cache"
+
 screening:
   mktcap_min: 200000000000     # $200B+ = mega-caps only
   exchange: "nyse,nasdaq"       # US exchanges

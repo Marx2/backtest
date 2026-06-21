@@ -141,43 +141,43 @@
       "source_file": "main.py",
       "source_location": "L1",
       "id": "main_py",
-      "community": 11,
+      "community": 9,
       "norm_label": "main.py"
     },
     {
       "label": "parse_args()",
       "file_type": "code",
       "source_file": "main.py",
-      "source_location": "L12",
+      "source_location": "L13",
       "id": "backtest_main_parse_args",
-      "community": 11,
+      "community": 9,
       "norm_label": "parse_args()"
     },
     {
       "label": "load_config()",
       "file_type": "code",
       "source_file": "main.py",
-      "source_location": "L19",
+      "source_location": "L21",
       "id": "backtest_main_load_config",
-      "community": 11,
+      "community": 9,
       "norm_label": "load_config()"
     },
     {
       "label": "load_strategy()",
       "file_type": "code",
       "source_file": "main.py",
-      "source_location": "L36",
+      "source_location": "L39",
       "id": "backtest_main_load_strategy",
-      "community": 11,
+      "community": 9,
       "norm_label": "load_strategy()"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "main.py",
-      "source_location": "L43",
+      "source_location": "L46",
       "id": "backtest_main_main",
-      "community": 11,
+      "community": 9,
       "norm_label": "main()"
     },
     {
@@ -244,12 +244,111 @@
       "norm_label": "backtestconfig"
     },
     {
+      "label": "cache.py",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L1",
+      "id": "core_cache_py",
+      "community": 10,
+      "norm_label": "cache.py"
+    },
+    {
+      "label": "configure()",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L14",
+      "id": "core_cache_configure",
+      "community": 10,
+      "norm_label": "configure()"
+    },
+    {
+      "label": "clear()",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L21",
+      "id": "core_cache_clear",
+      "community": 10,
+      "norm_label": "clear()"
+    },
+    {
+      "label": "cached()",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L28",
+      "id": "core_cache_cached",
+      "community": 10,
+      "norm_label": "cached()"
+    },
+    {
+      "label": "_make_key()",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L48",
+      "id": "core_cache_make_key",
+      "community": 10,
+      "norm_label": "_make_key()"
+    },
+    {
+      "label": "_path()",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L53",
+      "id": "core_cache_path",
+      "community": 10,
+      "norm_label": "_path()"
+    },
+    {
+      "label": "_read()",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L57",
+      "id": "core_cache_read",
+      "community": 10,
+      "norm_label": "_read()"
+    },
+    {
+      "label": "_write()",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L69",
+      "id": "core_cache_write",
+      "community": 10,
+      "norm_label": "_write()"
+    },
+    {
+      "label": "_serialize()",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L75",
+      "id": "core_cache_serialize",
+      "community": 10,
+      "norm_label": "_serialize()"
+    },
+    {
+      "label": "_deserialize()",
+      "file_type": "code",
+      "source_file": "core/cache.py",
+      "source_location": "L88",
+      "id": "core_cache_deserialize",
+      "community": 10,
+      "norm_label": "_deserialize()"
+    },
+    {
+      "label": "Decorator. Caches return value as JSON keyed by namespace + args.",
+      "file_type": "rationale",
+      "source_file": "core/cache.py",
+      "source_location": "L29",
+      "id": "core_cache_rationale_29",
+      "community": 10,
+      "norm_label": "decorator. caches return value as json keyed by namespace + args."
+    },
+    {
       "label": "__init__.py",
       "file_type": "code",
       "source_file": "core/__init__.py",
       "source_location": "L1",
       "id": "core_init_py",
-      "community": 53,
+      "community": 54,
       "norm_label": "__init__.py"
     },
     {
@@ -402,7 +501,7 @@
       "source_file": "strategies/basic.py",
       "source_location": "L1",
       "id": "strategies_basic_py",
-      "community": 35,
+      "community": 36,
       "norm_label": "basic.py"
     },
     {
@@ -411,7 +510,7 @@
       "source_file": "strategies/basic.py",
       "source_location": "L4",
       "id": "strategies_basic_run",
-      "community": 35,
+      "community": 36,
       "norm_label": "run()"
     },
     {
@@ -420,7 +519,7 @@
       "source_file": "strategies/basic.py",
       "source_location": "L5",
       "id": "strategies_basic_rationale_5",
-      "community": 35,
+      "community": 36,
       "norm_label": "basic equal-weight strategy using live openbb data (yfinance/fmp)."
     },
     {
@@ -726,7 +825,7 @@
       "source_file": "tests/mock_strategy.py",
       "source_location": "L1",
       "id": "tests_mock_strategy_py",
-      "community": 36,
+      "community": 37,
       "norm_label": "mock_strategy.py"
     },
     {
@@ -735,7 +834,7 @@
       "source_file": "tests/mock_strategy.py",
       "source_location": "L4",
       "id": "tests_mock_strategy_run",
-      "community": 36,
+      "community": 37,
       "norm_label": "run()"
     },
     {
@@ -744,7 +843,7 @@
       "source_file": "tests/mock_strategy.py",
       "source_location": "L5",
       "id": "tests_mock_strategy_rationale_5",
-      "community": 36,
+      "community": 37,
       "norm_label": "basic equal-weight strategy using mock (deterministic) data."
     },
     {
@@ -888,7 +987,7 @@
       "source_file": "tests/__init__.py",
       "source_location": "L1",
       "id": "tests_init_py",
-      "community": 54,
+      "community": 55,
       "norm_label": "__init__.py"
     },
     {
@@ -897,7 +996,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L1",
       "id": "tests_test_rebalance_py",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_rebalance.py"
     },
     {
@@ -906,7 +1005,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L21",
       "id": "tests_test_rebalance_make_config",
-      "community": 5,
+      "community": 0,
       "norm_label": "_make_config()"
     },
     {
@@ -915,7 +1014,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L32",
       "id": "tests_test_rebalance_fakecontext",
-      "community": 5,
+      "community": 0,
       "norm_label": "fakecontext"
     },
     {
@@ -924,7 +1023,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L33",
       "id": "tests_test_rebalance_fakecontext_init",
-      "community": 5,
+      "community": 0,
       "norm_label": ".__init__()"
     },
     {
@@ -933,7 +1032,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L40",
       "id": "tests_test_rebalance_mock_price",
-      "community": 5,
+      "community": 0,
       "norm_label": "_mock_price()"
     },
     {
@@ -942,7 +1041,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L45",
       "id": "tests_test_rebalance_mock_fx",
-      "community": 5,
+      "community": 0,
       "norm_label": "_mock_fx()"
     },
     {
@@ -951,7 +1050,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L51",
       "id": "tests_test_rebalance_test_rebalance_from_cash_only",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_rebalance_from_cash_only()"
     },
     {
@@ -960,7 +1059,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L63",
       "id": "tests_test_rebalance_test_rebalance_equal_weight",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_rebalance_equal_weight()"
     },
     {
@@ -969,7 +1068,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L77",
       "id": "tests_test_rebalance_test_rebalance_sell_removed_ticker",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_rebalance_sell_removed_ticker()"
     },
     {
@@ -978,7 +1077,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L87",
       "id": "tests_test_rebalance_test_rebalance_empty_list_sells_all",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_rebalance_empty_list_sells_all()"
     },
     {
@@ -987,7 +1086,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L97",
       "id": "tests_test_rebalance_test_rebalance_diff_minimal_trades",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_rebalance_diff_minimal_trades()"
     },
     {
@@ -996,7 +1095,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L109",
       "id": "tests_test_rebalance_test_rebalance_returns_transactions_with_prices",
-      "community": 5,
+      "community": 0,
       "norm_label": "test_rebalance_returns_transactions_with_prices()"
     },
     {
@@ -1005,7 +1104,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L52",
       "id": "tests_test_rebalance_rationale_52",
-      "community": 5,
+      "community": 0,
       "norm_label": "from 10000 cash, buy 2 tickers equally."
     },
     {
@@ -1014,7 +1113,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L64",
       "id": "tests_test_rebalance_rationale_64",
-      "community": 5,
+      "community": 0,
       "norm_label": "each ticker gets equal share of total value."
     },
     {
@@ -1023,7 +1122,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L78",
       "id": "tests_test_rebalance_rationale_78",
-      "community": 5,
+      "community": 0,
       "norm_label": "ticker no longer in target \u2192 sell all."
     },
     {
@@ -1032,7 +1131,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L88",
       "id": "tests_test_rebalance_rationale_88",
-      "community": 5,
+      "community": 0,
       "norm_label": "empty target list \u2192 sell all positions."
     },
     {
@@ -1041,7 +1140,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L98",
       "id": "tests_test_rebalance_rationale_98",
-      "community": 5,
+      "community": 0,
       "norm_label": "already holding correct amount \u2192 no transaction for that ticker."
     },
     {
@@ -1050,7 +1149,7 @@
       "source_file": "tests/test_rebalance.py",
       "source_location": "L110",
       "id": "tests_test_rebalance_rationale_110",
-      "community": 5,
+      "community": 0,
       "norm_label": "each transaction has correct price set."
     },
     {
@@ -1059,7 +1158,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L1",
       "id": "tests_test_advance_py",
-      "community": 7,
+      "community": 6,
       "norm_label": "test_advance.py"
     },
     {
@@ -1068,7 +1167,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L8",
       "id": "tests_test_advance_make_config",
-      "community": 7,
+      "community": 6,
       "norm_label": "_make_config()"
     },
     {
@@ -1077,7 +1176,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L19",
       "id": "tests_test_advance_fakecontext",
-      "community": 7,
+      "community": 6,
       "norm_label": "fakecontext"
     },
     {
@@ -1086,7 +1185,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L20",
       "id": "tests_test_advance_fakecontext_init",
-      "community": 7,
+      "community": 6,
       "norm_label": ".__init__()"
     },
     {
@@ -1095,7 +1194,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L25",
       "id": "tests_test_advance_test_advance_first_call_sets_start_date",
-      "community": 7,
+      "community": 6,
       "norm_label": "test_advance_first_call_sets_start_date()"
     },
     {
@@ -1104,7 +1203,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L32",
       "id": "tests_test_advance_test_advance_month_interval",
-      "community": 7,
+      "community": 6,
       "norm_label": "test_advance_month_interval()"
     },
     {
@@ -1113,7 +1212,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L39",
       "id": "tests_test_advance_test_advance_day_interval",
-      "community": 7,
+      "community": 6,
       "norm_label": "test_advance_day_interval()"
     },
     {
@@ -1122,7 +1221,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L46",
       "id": "tests_test_advance_test_advance_ndays_interval",
-      "community": 7,
+      "community": 6,
       "norm_label": "test_advance_ndays_interval()"
     },
     {
@@ -1131,7 +1230,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L53",
       "id": "tests_test_advance_test_advance_past_end_returns_false",
-      "community": 7,
+      "community": 6,
       "norm_label": "test_advance_past_end_returns_false()"
     },
     {
@@ -1140,7 +1239,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L62",
       "id": "tests_test_advance_test_advance_month_end_clamping",
-      "community": 7,
+      "community": 6,
       "norm_label": "test_advance_month_end_clamping()"
     },
     {
@@ -1149,7 +1248,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L73",
       "id": "tests_test_advance_test_advance_exact_end_date_returns_false",
-      "community": 7,
+      "community": 6,
       "norm_label": "test_advance_exact_end_date_returns_false()"
     },
     {
@@ -1158,7 +1257,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L63",
       "id": "tests_test_advance_rationale_63",
-      "community": 7,
+      "community": 6,
       "norm_label": "jan 31 + 1 month = feb 28."
     },
     {
@@ -1167,7 +1266,7 @@
       "source_file": "tests/test_advance.py",
       "source_location": "L74",
       "id": "tests_test_advance_rationale_74",
-      "community": 7,
+      "community": 6,
       "norm_label": "if next date would be past end, return false without advancing."
     },
     {
@@ -1527,7 +1626,7 @@
       "source_file": "tests/test_integration.py",
       "source_location": "L58",
       "id": "tests_test_integration_test_backtest_cli_end_to_end",
-      "community": 11,
+      "community": 9,
       "norm_label": "test_backtest_cli_end_to_end()"
     },
     {
@@ -1554,7 +1653,7 @@
       "source_file": "tests/test_integration.py",
       "source_location": "L59",
       "id": "tests_test_integration_rationale_59",
-      "community": 11,
+      "community": 9,
       "norm_label": "test via main.load_config + strategy load."
     },
     {
@@ -1698,7 +1797,7 @@
       "source_file": "tests/test_main.py",
       "source_location": "L1",
       "id": "tests_test_main_py",
-      "community": 11,
+      "community": 9,
       "norm_label": "test_main.py"
     },
     {
@@ -1707,7 +1806,7 @@
       "source_file": "tests/test_main.py",
       "source_location": "L9",
       "id": "tests_test_main_test_load_config",
-      "community": 11,
+      "community": 9,
       "norm_label": "test_load_config()"
     },
     {
@@ -1716,7 +1815,7 @@
       "source_file": "tests/test_main.py",
       "source_location": "L23",
       "id": "tests_test_main_test_load_strategy",
-      "community": 11,
+      "community": 9,
       "norm_label": "test_load_strategy()"
     },
     {
@@ -1725,7 +1824,7 @@
       "source_file": "tests/test_main.py",
       "source_location": "L31",
       "id": "tests_test_main_test_parse_args",
-      "community": 11,
+      "community": 9,
       "norm_label": "test_parse_args()"
     },
     {
@@ -1734,7 +1833,7 @@
       "source_file": "actions/display_config.py",
       "source_location": "L1",
       "id": "actions_display_config_py",
-      "community": 47,
+      "community": 48,
       "norm_label": "display_config.py"
     },
     {
@@ -1743,7 +1842,7 @@
       "source_file": "actions/display_config.py",
       "source_location": "L4",
       "id": "actions_display_config_display_config",
-      "community": 47,
+      "community": 48,
       "norm_label": "display_config()"
     },
     {
@@ -1752,7 +1851,7 @@
       "source_file": "actions/screen_stocks.py",
       "source_location": "L1",
       "id": "actions_screen_stocks_py",
-      "community": 37,
+      "community": 38,
       "norm_label": "screen_stocks.py"
     },
     {
@@ -1761,7 +1860,7 @@
       "source_file": "actions/screen_stocks.py",
       "source_location": "L4",
       "id": "actions_screen_stocks_screen_stocks",
-      "community": 37,
+      "community": 38,
       "norm_label": "screen_stocks()"
     },
     {
@@ -1770,7 +1869,7 @@
       "source_file": "actions/screen_stocks.py",
       "source_location": "L5",
       "id": "actions_screen_stocks_rationale_5",
-      "community": 37,
+      "community": 38,
       "norm_label": "screen stocks using config screening params and current date."
     },
     {
@@ -1779,7 +1878,7 @@
       "source_file": "actions/openbb_calculate_stats.py",
       "source_location": "L1",
       "id": "actions_openbb_calculate_stats_py",
-      "community": 38,
+      "community": 39,
       "norm_label": "openbb_calculate_stats.py"
     },
     {
@@ -1788,7 +1887,7 @@
       "source_file": "actions/openbb_calculate_stats.py",
       "source_location": "L7",
       "id": "actions_openbb_calculate_stats_calculate_stats",
-      "community": 38,
+      "community": 39,
       "norm_label": "calculate_stats()"
     },
     {
@@ -1797,7 +1896,7 @@
       "source_file": "actions/openbb_calculate_stats.py",
       "source_location": "L8",
       "id": "actions_openbb_calculate_stats_rationale_8",
-      "community": 38,
+      "community": 39,
       "norm_label": "compute current total balance, append to ctx.balance_history, update ctx.cost_ba"
     },
     {
@@ -1806,7 +1905,7 @@
       "source_file": "actions/openbb_display_balance.py",
       "source_location": "L1",
       "id": "actions_openbb_display_balance_py",
-      "community": 39,
+      "community": 40,
       "norm_label": "openbb_display_balance.py"
     },
     {
@@ -1815,7 +1914,7 @@
       "source_file": "actions/openbb_display_balance.py",
       "source_location": "L7",
       "id": "actions_openbb_display_balance_display_balance",
-      "community": 39,
+      "community": 40,
       "norm_label": "display_balance()"
     },
     {
@@ -1824,7 +1923,7 @@
       "source_file": "actions/openbb_display_balance.py",
       "source_location": "L8",
       "id": "actions_openbb_display_balance_rationale_8",
-      "community": 39,
+      "community": 40,
       "norm_label": "calculate and print total portfolio value in base currency."
     },
     {
@@ -1833,7 +1932,7 @@
       "source_file": "actions/__init__.py",
       "source_location": "L1",
       "id": "actions_init_py",
-      "community": 55,
+      "community": 56,
       "norm_label": "__init__.py"
     },
     {
@@ -1842,7 +1941,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L1",
       "id": "actions_mock_screener_py",
-      "community": 23,
+      "community": 24,
       "norm_label": "mock_screener.py"
     },
     {
@@ -1851,7 +1950,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L7",
       "id": "actions_mock_screener_screen_stocks",
-      "community": 23,
+      "community": 24,
       "norm_label": "screen_stocks()"
     },
     {
@@ -1860,7 +1959,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L22",
       "id": "actions_mock_screener_ticker_score",
-      "community": 23,
+      "community": 24,
       "norm_label": "_ticker_score()"
     },
     {
@@ -1869,7 +1968,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L8",
       "id": "actions_mock_screener_rationale_8",
-      "community": 23,
+      "community": 24,
       "norm_label": "screen stocks from hardcoded universe based on date and params.      each ticker"
     },
     {
@@ -1878,7 +1977,7 @@
       "source_file": "actions/mock_screener.py",
       "source_location": "L23",
       "id": "actions_mock_screener_rationale_23",
-      "community": 23,
+      "community": 24,
       "norm_label": "deterministic score for ticker on given date. range: 0.0-1.0."
     },
     {
@@ -1887,16 +1986,16 @@
       "source_file": "actions/openbb_fx_rates.py",
       "source_location": "L1",
       "id": "actions_openbb_fx_rates_py",
-      "community": 48,
+      "community": 49,
       "norm_label": "openbb_fx_rates.py"
     },
     {
       "label": "get_fx_rate()",
       "file_type": "code",
       "source_file": "actions/openbb_fx_rates.py",
-      "source_location": "L9",
+      "source_location": "L12",
       "id": "actions_openbb_fx_rates_get_fx_rate",
-      "community": 48,
+      "community": 49,
       "norm_label": "get_fx_rate()"
     },
     {
@@ -1905,35 +2004,53 @@
       "source_file": "actions/openbb_prices.py",
       "source_location": "L1",
       "id": "actions_openbb_prices_py",
-      "community": 27,
+      "community": 20,
       "norm_label": "openbb_prices.py"
+    },
+    {
+      "label": "_fetch_ticker_history()",
+      "file_type": "code",
+      "source_file": "actions/openbb_prices.py",
+      "source_location": "L19",
+      "id": "actions_openbb_prices_fetch_ticker_history",
+      "community": 20,
+      "norm_label": "_fetch_ticker_history()"
     },
     {
       "label": "_warm_ticker()",
       "file_type": "code",
       "source_file": "actions/openbb_prices.py",
-      "source_location": "L16",
+      "source_location": "L42",
       "id": "actions_openbb_prices_warm_ticker",
-      "community": 27,
+      "community": 20,
       "norm_label": "_warm_ticker()"
     },
     {
       "label": "get_price()",
       "file_type": "code",
       "source_file": "actions/openbb_prices.py",
-      "source_location": "L41",
+      "source_location": "L53",
       "id": "actions_openbb_prices_get_price",
-      "community": 27,
+      "community": 20,
       "norm_label": "get_price()"
     },
     {
-      "label": "Fetch full price history for a ticker and populate cache.",
+      "label": "Fetch full price history; returns {date_iso: price_str} for cache serialization.",
       "file_type": "rationale",
       "source_file": "actions/openbb_prices.py",
-      "source_location": "L17",
-      "id": "actions_openbb_prices_rationale_17",
-      "community": 27,
-      "norm_label": "fetch full price history for a ticker and populate cache."
+      "source_location": "L20",
+      "id": "actions_openbb_prices_rationale_20",
+      "community": 20,
+      "norm_label": "fetch full price history; returns {date_iso: price_str} for cache serialization."
+    },
+    {
+      "label": "Fetch full price history for a ticker and populate in-process cache.",
+      "file_type": "rationale",
+      "source_file": "actions/openbb_prices.py",
+      "source_location": "L43",
+      "id": "actions_openbb_prices_rationale_43",
+      "community": 20,
+      "norm_label": "fetch full price history for a ticker and populate in-process cache."
     },
     {
       "label": "mock_prices.py",
@@ -1941,7 +2058,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L1",
       "id": "actions_mock_prices_py",
-      "community": 20,
+      "community": 21,
       "norm_label": "mock_prices.py"
     },
     {
@@ -1950,7 +2067,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L6",
       "id": "actions_mock_prices_get_price",
-      "community": 20,
+      "community": 21,
       "norm_label": "get_price()"
     },
     {
@@ -1959,7 +2076,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L18",
       "id": "actions_mock_prices_ticker_base_price",
-      "community": 20,
+      "community": 21,
       "norm_label": "_ticker_base_price()"
     },
     {
@@ -1968,7 +2085,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L25",
       "id": "actions_mock_prices_date_variation",
-      "community": 20,
+      "community": 21,
       "norm_label": "_date_variation()"
     },
     {
@@ -1977,7 +2094,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L7",
       "id": "actions_mock_prices_rationale_7",
-      "community": 20,
+      "community": 21,
       "norm_label": "generate a deterministic mock price using seeded random walk.      uses hash of"
     },
     {
@@ -1986,7 +2103,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L19",
       "id": "actions_mock_prices_rationale_19",
-      "community": 20,
+      "community": 21,
       "norm_label": "deterministic base price from ticker symbol. range: 20-500."
     },
     {
@@ -1995,7 +2112,7 @@
       "source_file": "actions/mock_prices.py",
       "source_location": "L26",
       "id": "actions_mock_prices_rationale_26",
-      "community": 20,
+      "community": 21,
       "norm_label": "deterministic daily variation from ticker+date. range: -0.20 to +0.20."
     },
     {
@@ -2031,7 +2148,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L1",
       "id": "actions_advance_py",
-      "community": 24,
+      "community": 25,
       "norm_label": "advance.py"
     },
     {
@@ -2040,7 +2157,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L7",
       "id": "actions_advance_advance",
-      "community": 24,
+      "community": 25,
       "norm_label": "advance()"
     },
     {
@@ -2049,7 +2166,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L21",
       "id": "actions_advance_next_date",
-      "community": 24,
+      "community": 25,
       "norm_label": "_next_date()"
     },
     {
@@ -2058,7 +2175,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L8",
       "id": "actions_advance_rationale_8",
-      "community": 24,
+      "community": 25,
       "norm_label": "advance processing_date by interval. return false if past end boundary."
     },
     {
@@ -2067,7 +2184,7 @@
       "source_file": "actions/advance.py",
       "source_location": "L22",
       "id": "actions_advance_rationale_22",
-      "community": 24,
+      "community": 25,
       "norm_label": "calculate next date based on interval string."
     },
     {
@@ -2076,7 +2193,7 @@
       "source_file": "actions/execute_transactions.py",
       "source_location": "L1",
       "id": "actions_execute_transactions_py",
-      "community": 40,
+      "community": 41,
       "norm_label": "execute_transactions.py"
     },
     {
@@ -2085,7 +2202,7 @@
       "source_file": "actions/execute_transactions.py",
       "source_location": "L6",
       "id": "actions_execute_transactions_execute_transactions",
-      "community": 40,
+      "community": 41,
       "norm_label": "execute_transactions()"
     },
     {
@@ -2094,7 +2211,7 @@
       "source_file": "actions/execute_transactions.py",
       "source_location": "L7",
       "id": "actions_execute_transactions_rationale_7",
-      "community": 40,
+      "community": 41,
       "norm_label": "execute transactions: update wallet and portfolio, record in history."
     },
     {
@@ -2103,7 +2220,7 @@
       "source_file": "actions/display_balance.py",
       "source_location": "L1",
       "id": "actions_display_balance_py",
-      "community": 41,
+      "community": 42,
       "norm_label": "display_balance.py"
     },
     {
@@ -2112,7 +2229,7 @@
       "source_file": "actions/display_balance.py",
       "source_location": "L7",
       "id": "actions_display_balance_display_balance",
-      "community": 41,
+      "community": 42,
       "norm_label": "display_balance()"
     },
     {
@@ -2121,7 +2238,7 @@
       "source_file": "actions/display_balance.py",
       "source_location": "L8",
       "id": "actions_display_balance_rationale_8",
-      "community": 41,
+      "community": 42,
       "norm_label": "calculate and print total portfolio value in base currency."
     },
     {
@@ -2130,7 +2247,7 @@
       "source_file": "actions/display_portfolio.py",
       "source_location": "L1",
       "id": "actions_display_portfolio_py",
-      "community": 42,
+      "community": 43,
       "norm_label": "display_portfolio.py"
     },
     {
@@ -2139,7 +2256,7 @@
       "source_file": "actions/display_portfolio.py",
       "source_location": "L1",
       "id": "actions_display_portfolio_display_portfolio",
-      "community": 42,
+      "community": 43,
       "norm_label": "display_portfolio()"
     },
     {
@@ -2148,7 +2265,7 @@
       "source_file": "actions/display_portfolio.py",
       "source_location": "L2",
       "id": "actions_display_portfolio_rationale_2",
-      "community": 42,
+      "community": 43,
       "norm_label": "print portfolio positions."
     },
     {
@@ -2157,7 +2274,7 @@
       "source_file": "actions/display_summary.py",
       "source_location": "L1",
       "id": "actions_display_summary_py",
-      "community": 43,
+      "community": 44,
       "norm_label": "display_summary.py"
     },
     {
@@ -2166,16 +2283,16 @@
       "source_file": "actions/display_summary.py",
       "source_location": "L5",
       "id": "actions_display_summary_display_summary",
-      "community": 43,
+      "community": 44,
       "norm_label": "display_summary()"
     },
     {
       "label": "_periods_per_year()",
       "file_type": "code",
       "source_file": "actions/display_summary.py",
-      "source_location": "L134",
+      "source_location": "L159",
       "id": "actions_display_summary_periods_per_year",
-      "community": 43,
+      "community": 44,
       "norm_label": "_periods_per_year()"
     },
     {
@@ -2211,7 +2328,7 @@
       "source_file": "actions/display_wallet.py",
       "source_location": "L1",
       "id": "actions_display_wallet_py",
-      "community": 44,
+      "community": 45,
       "norm_label": "display_wallet.py"
     },
     {
@@ -2220,7 +2337,7 @@
       "source_file": "actions/display_wallet.py",
       "source_location": "L1",
       "id": "actions_display_wallet_display_wallet",
-      "community": 44,
+      "community": 45,
       "norm_label": "display_wallet()"
     },
     {
@@ -2229,7 +2346,7 @@
       "source_file": "actions/display_wallet.py",
       "source_location": "L2",
       "id": "actions_display_wallet_rationale_2",
-      "community": 44,
+      "community": 45,
       "norm_label": "print wallet contents."
     },
     {
@@ -2245,7 +2362,7 @@
       "label": "screen_stocks()",
       "file_type": "code",
       "source_file": "actions/openbb_screener.py",
-      "source_location": "L12",
+      "source_location": "L14",
       "id": "actions_openbb_screener_screen_stocks",
       "community": 22,
       "norm_label": "screen_stocks()"
@@ -2254,7 +2371,7 @@
       "label": "_run_screener()",
       "file_type": "code",
       "source_file": "actions/openbb_screener.py",
-      "source_location": "L32",
+      "source_location": "L26",
       "id": "actions_openbb_screener_run_screener",
       "community": 22,
       "norm_label": "_run_screener()"
@@ -2263,7 +2380,7 @@
       "label": "_get_fundamentals()",
       "file_type": "code",
       "source_file": "actions/openbb_screener.py",
-      "source_location": "L45",
+      "source_location": "L39",
       "id": "actions_openbb_screener_get_fundamentals",
       "community": 22,
       "norm_label": "_get_fundamentals()"
@@ -2272,7 +2389,7 @@
       "label": "_apply_fundamental_filters()",
       "file_type": "code",
       "source_file": "actions/openbb_screener.py",
-      "source_location": "L52",
+      "source_location": "L46",
       "id": "actions_openbb_screener_apply_fundamental_filters",
       "community": 22,
       "norm_label": "_apply_fundamental_filters()"
@@ -2281,8 +2398,8 @@
       "label": "# NOTE: obb.equity.screener does not support historical screening.",
       "file_type": "rationale",
       "source_file": "actions/openbb_screener.py",
-      "source_location": "L13",
-      "id": "actions_openbb_screener_rationale_13",
+      "source_location": "L15",
+      "id": "actions_openbb_screener_rationale_15",
       "community": 22,
       "norm_label": "# note: obb.equity.screener does not support historical screening."
     },
@@ -2292,7 +2409,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L1",
       "id": "actions_mock_fx_rates_py",
-      "community": 21,
+      "community": 23,
       "norm_label": "mock_fx_rates.py"
     },
     {
@@ -2301,7 +2418,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L6",
       "id": "actions_mock_fx_rates_get_fx_rate",
-      "community": 21,
+      "community": 23,
       "norm_label": "get_fx_rate()"
     },
     {
@@ -2310,7 +2427,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L20",
       "id": "actions_mock_fx_rates_pair_base_rate",
-      "community": 21,
+      "community": 23,
       "norm_label": "_pair_base_rate()"
     },
     {
@@ -2319,7 +2436,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L28",
       "id": "actions_mock_fx_rates_date_variation",
-      "community": 21,
+      "community": 23,
       "norm_label": "_date_variation()"
     },
     {
@@ -2328,7 +2445,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L7",
       "id": "actions_mock_fx_rates_rationale_7",
-      "community": 21,
+      "community": 23,
       "norm_label": "generate a deterministic mock fx rate.      same currency returns 1. otherwise u"
     },
     {
@@ -2337,7 +2454,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L21",
       "id": "actions_mock_fx_rates_rationale_21",
-      "community": 21,
+      "community": 23,
       "norm_label": "deterministic base rate for currency pair. range: 0.5-2.0."
     },
     {
@@ -2346,7 +2463,7 @@
       "source_file": "actions/mock_fx_rates.py",
       "source_location": "L29",
       "id": "actions_mock_fx_rates_rationale_29",
-      "community": 21,
+      "community": 23,
       "norm_label": "deterministic daily variation. range: -0.05 to +0.05."
     },
     {
@@ -2355,7 +2472,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "readme_md",
-      "community": 6,
+      "community": 1,
       "norm_label": "readme.md"
     },
     {
@@ -2364,7 +2481,7 @@
       "source_file": "README.md",
       "source_location": "L1",
       "id": "backtest_readme_pfire_backtest",
-      "community": 6,
+      "community": 5,
       "norm_label": "pfire-backtest"
     },
     {
@@ -2373,7 +2490,7 @@
       "source_file": "README.md",
       "source_location": "L7",
       "id": "backtest_readme_usage",
-      "community": 6,
+      "community": 5,
       "norm_label": "usage"
     },
     {
@@ -2382,7 +2499,7 @@
       "source_file": "README.md",
       "source_location": "L9",
       "id": "backtest_readme_codeblock_1",
-      "community": 6,
+      "community": 5,
       "norm_label": "code:bash (python main.py -config=config/backtest.yaml -strategy=strate)"
     },
     {
@@ -2391,7 +2508,7 @@
       "source_file": "README.md",
       "source_location": "L13",
       "id": "backtest_readme_configuration",
-      "community": 6,
+      "community": 5,
       "norm_label": "configuration"
     },
     {
@@ -2400,97 +2517,115 @@
       "source_file": "README.md",
       "source_location": "L17",
       "id": "backtest_readme_codeblock_2",
-      "community": 6,
+      "community": 5,
       "norm_label": "code:yaml (start_date: \"2022-01-01\")"
+    },
+    {
+      "label": "Clearing the cache",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "id": "backtest_readme_clearing_the_cache",
+      "community": 5,
+      "norm_label": "clearing the cache"
+    },
+    {
+      "label": "code:bash (python main.py -config=config/backtest.yaml -strategy=strate)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L46",
+      "id": "backtest_readme_codeblock_3",
+      "community": 5,
+      "norm_label": "code:bash (python main.py -config=config/backtest.yaml -strategy=strate)"
     },
     {
       "label": "Writing a Strategy",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L44",
+      "source_location": "L50",
       "id": "backtest_readme_writing_a_strategy",
-      "community": 6,
+      "community": 5,
       "norm_label": "writing a strategy"
     },
     {
       "label": "code:python (def run(ctx):)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L48",
-      "id": "backtest_readme_codeblock_3",
-      "community": 6,
+      "source_location": "L54",
+      "id": "backtest_readme_codeblock_4",
+      "community": 5,
       "norm_label": "code:python (def run(ctx):)"
     },
     {
       "label": "Strategies",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L70",
+      "source_location": "L76",
       "id": "backtest_readme_strategies",
-      "community": 6,
+      "community": 5,
       "norm_label": "strategies"
     },
     {
       "label": "Project Structure",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L77",
+      "source_location": "L83",
       "id": "backtest_readme_project_structure",
-      "community": 6,
+      "community": 5,
       "norm_label": "project structure"
     },
     {
-      "label": "code:block4 (actions/        # one file per action; mock + OpenBB data pr)",
+      "label": "code:block5 (actions/        # one file per action; mock + OpenBB data pr)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L79",
-      "id": "backtest_readme_codeblock_4",
-      "community": 6,
-      "norm_label": "code:block4 (actions/        # one file per action; mock + openbb data pr)"
+      "source_location": "L85",
+      "id": "backtest_readme_codeblock_5",
+      "community": 5,
+      "norm_label": "code:block5 (actions/        # one file per action; mock + openbb data pr)"
     },
     {
       "label": "Setup",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L87",
+      "source_location": "L93",
       "id": "backtest_readme_setup",
-      "community": 6,
+      "community": 5,
       "norm_label": "setup"
     },
     {
       "label": "code:bash (pip install -r requirements.txt)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L89",
-      "id": "backtest_readme_codeblock_5",
-      "community": 6,
+      "source_location": "L95",
+      "id": "backtest_readme_codeblock_6",
+      "community": 5,
       "norm_label": "code:bash (pip install -r requirements.txt)"
     },
     {
       "label": "Tests",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L96",
+      "source_location": "L102",
       "id": "backtest_readme_tests",
-      "community": 6,
+      "community": 5,
       "norm_label": "tests"
     },
     {
       "label": "code:bash (pytest tests/)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L98",
-      "id": "backtest_readme_codeblock_6",
-      "community": 6,
+      "source_location": "L104",
+      "id": "backtest_readme_codeblock_7",
+      "community": 5,
       "norm_label": "code:bash (pytest tests/)"
     },
     {
       "label": "Architecture",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L102",
+      "source_location": "L108",
       "id": "backtest_readme_architecture",
-      "community": 6,
+      "community": 5,
       "norm_label": "architecture"
     },
     {
@@ -2499,7 +2634,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "agents_md",
-      "community": 8,
+      "community": 7,
       "norm_label": "agents.md"
     },
     {
@@ -2508,7 +2643,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "id": "backtest_agents_agent_configuration",
-      "community": 8,
+      "community": 7,
       "norm_label": "agent configuration"
     },
     {
@@ -2517,7 +2652,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L5",
       "id": "backtest_agents_project_context",
-      "community": 8,
+      "community": 7,
       "norm_label": "project context"
     },
     {
@@ -2526,7 +2661,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L9",
       "id": "backtest_agents_documentation_context7_mcp",
-      "community": 8,
+      "community": 7,
       "norm_label": "documentation (context7 mcp)"
     },
     {
@@ -2535,7 +2670,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L14",
       "id": "backtest_agents_agent_behaviors",
-      "community": 8,
+      "community": 7,
       "norm_label": "agent behaviors"
     },
     {
@@ -2544,7 +2679,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L19",
       "id": "backtest_agents_code_style",
-      "community": 8,
+      "community": 7,
       "norm_label": "code style"
     },
     {
@@ -2553,7 +2688,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L21",
       "id": "backtest_agents_development_commands",
-      "community": 8,
+      "community": 7,
       "norm_label": "development commands"
     },
     {
@@ -2562,7 +2697,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L23",
       "id": "backtest_agents_environment_setup",
-      "community": 8,
+      "community": 7,
       "norm_label": "environment setup"
     },
     {
@@ -2571,7 +2706,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L24",
       "id": "backtest_agents_codeblock_1",
-      "community": 8,
+      "community": 7,
       "norm_label": "code:bash (# install dependencies)"
     },
     {
@@ -2580,7 +2715,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L33",
       "id": "backtest_agents_running_the_app",
-      "community": 8,
+      "community": 7,
       "norm_label": "running the app"
     },
     {
@@ -2589,7 +2724,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L34",
       "id": "backtest_agents_codeblock_2",
-      "community": 8,
+      "community": 7,
       "norm_label": "code:bash (python main.py -config=config/backtest.yaml -strategy=strate)"
     },
     {
@@ -2598,7 +2733,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L38",
       "id": "backtest_agents_project_structure_conventions",
-      "community": 8,
+      "community": 7,
       "norm_label": "project structure conventions"
     },
     {
@@ -2607,7 +2742,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L57",
       "id": "backtest_agents_applied_learning",
-      "community": 8,
+      "community": 7,
       "norm_label": "applied learning"
     },
     {
@@ -2616,7 +2751,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "claude_md",
-      "community": 49,
+      "community": 50,
       "norm_label": "claude.md"
     },
     {
@@ -2625,7 +2760,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "id": "backtest_claude_graphify",
-      "community": 49,
+      "community": 50,
       "norm_label": "graphify"
     },
     {
@@ -2634,7 +2769,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1",
       "id": "docs_superpowers_plans_2026_04_16_backtest_engine_md",
-      "community": 9,
+      "community": 11,
       "norm_label": "2026-04-16-backtest-engine.md"
     },
     {
@@ -2643,7 +2778,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1",
       "id": "plans_2026_04_16_backtest_engine_backtest_engine_implementation_plan",
-      "community": 9,
+      "community": 11,
       "norm_label": "backtest engine implementation plan"
     },
     {
@@ -2652,7 +2787,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L13",
       "id": "plans_2026_04_16_backtest_engine_file_structure",
-      "community": 9,
+      "community": 11,
       "norm_label": "file structure"
     },
     {
@@ -2661,7 +2796,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L15",
       "id": "plans_2026_04_16_backtest_engine_codeblock_1",
-      "community": 9,
+      "community": 11,
       "norm_label": "code:block1 (backtest/)"
     },
     {
@@ -2670,7 +2805,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L59",
       "id": "plans_2026_04_16_backtest_engine_task_1_project_setup_data_models",
-      "community": 25,
+      "community": 27,
       "norm_label": "task 1: project setup & data models"
     },
     {
@@ -2679,7 +2814,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L70",
       "id": "plans_2026_04_16_backtest_engine_codeblock_2",
-      "community": 25,
+      "community": 27,
       "norm_label": "code:block2 (pyyaml>=6.0)"
     },
     {
@@ -2688,7 +2823,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L86",
       "id": "plans_2026_04_16_backtest_engine_codeblock_3",
-      "community": 25,
+      "community": 27,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -2697,7 +2832,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L175",
       "id": "plans_2026_04_16_backtest_engine_codeblock_4",
-      "community": 25,
+      "community": 27,
       "norm_label": "code:python (from dataclasses import dataclass, field)"
     },
     {
@@ -2706,7 +2841,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L228",
       "id": "plans_2026_04_16_backtest_engine_codeblock_5",
-      "community": 25,
+      "community": 27,
       "norm_label": "code:bash (git add requirements.txt core/ tests/)"
     },
     {
@@ -2751,7 +2886,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L345",
       "id": "plans_2026_04_16_backtest_engine_task_3_mock_fx_rates_provider",
-      "community": 29,
+      "community": 30,
       "norm_label": "task 3: mock fx rates provider"
     },
     {
@@ -2760,7 +2895,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L355",
       "id": "plans_2026_04_16_backtest_engine_codeblock_9",
-      "community": 29,
+      "community": 30,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -2769,7 +2904,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L404",
       "id": "plans_2026_04_16_backtest_engine_codeblock_10",
-      "community": 29,
+      "community": 30,
       "norm_label": "code:python (import hashlib)"
     },
     {
@@ -2778,7 +2913,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L447",
       "id": "plans_2026_04_16_backtest_engine_codeblock_11",
-      "community": 29,
+      "community": 30,
       "norm_label": "code:bash (git add actions/mock_fx_rates.py tests/test_mock_fx_rates.py)"
     },
     {
@@ -2787,7 +2922,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L454",
       "id": "plans_2026_04_16_backtest_engine_task_4_mock_screener_provider",
-      "community": 30,
+      "community": 31,
       "norm_label": "task 4: mock screener provider"
     },
     {
@@ -2796,7 +2931,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L464",
       "id": "plans_2026_04_16_backtest_engine_codeblock_12",
-      "community": 30,
+      "community": 31,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -2805,7 +2940,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L521",
       "id": "plans_2026_04_16_backtest_engine_codeblock_13",
-      "community": 30,
+      "community": 31,
       "norm_label": "code:python (import hashlib)"
     },
     {
@@ -2814,7 +2949,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L557",
       "id": "plans_2026_04_16_backtest_engine_codeblock_14",
-      "community": 30,
+      "community": 31,
       "norm_label": "code:bash (git add actions/mock_screener.py tests/test_mock_screener.py)"
     },
     {
@@ -2823,7 +2958,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L564",
       "id": "plans_2026_04_16_backtest_engine_task_5_advance_action",
-      "community": 9,
+      "community": 32,
       "norm_label": "task 5: advance action"
     },
     {
@@ -2832,7 +2967,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L574",
       "id": "plans_2026_04_16_backtest_engine_codeblock_15",
-      "community": 9,
+      "community": 32,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -2841,7 +2976,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L666",
       "id": "plans_2026_04_16_backtest_engine_codeblock_16",
-      "community": 9,
+      "community": 32,
       "norm_label": "code:python (import re)"
     },
     {
@@ -2850,7 +2985,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L708",
       "id": "plans_2026_04_16_backtest_engine_codeblock_17",
-      "community": 9,
+      "community": 32,
       "norm_label": "code:bash (git add actions/advance.py tests/test_advance.py)"
     },
     {
@@ -2931,7 +3066,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L994",
       "id": "plans_2026_04_16_backtest_engine_task_7_screen_stocks_action",
-      "community": 32,
+      "community": 34,
       "norm_label": "task 7: screen stocks action"
     },
     {
@@ -2940,7 +3075,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1004",
       "id": "plans_2026_04_16_backtest_engine_codeblock_25",
-      "community": 32,
+      "community": 34,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -2949,7 +3084,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1059",
       "id": "plans_2026_04_16_backtest_engine_codeblock_26",
-      "community": 32,
+      "community": 34,
       "norm_label": "code:python (from actions.mock_screener import screen_stocks as mock_scre)"
     },
     {
@@ -2958,7 +3093,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1075",
       "id": "plans_2026_04_16_backtest_engine_codeblock_27",
-      "community": 32,
+      "community": 34,
       "norm_label": "code:bash (git add actions/screen_stocks.py tests/test_screen_stocks.py)"
     },
     {
@@ -2967,7 +3102,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1082",
       "id": "plans_2026_04_16_backtest_engine_task_8_rebalance_action",
-      "community": 34,
+      "community": 33,
       "norm_label": "task 8: rebalance action"
     },
     {
@@ -2976,7 +3111,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1092",
       "id": "plans_2026_04_16_backtest_engine_codeblock_28",
-      "community": 34,
+      "community": 33,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -2985,7 +3120,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1221",
       "id": "plans_2026_04_16_backtest_engine_codeblock_29",
-      "community": 34,
+      "community": 33,
       "norm_label": "code:python (from decimal import decimal)"
     },
     {
@@ -2994,7 +3129,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1308",
       "id": "plans_2026_04_16_backtest_engine_codeblock_30",
-      "community": 34,
+      "community": 33,
       "norm_label": "code:bash (git add actions/rebalance.py tests/test_rebalance.py)"
     },
     {
@@ -3003,7 +3138,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1315",
       "id": "plans_2026_04_16_backtest_engine_task_9_execute_transactions_action",
-      "community": 31,
+      "community": 35,
       "norm_label": "task 9: execute transactions action"
     },
     {
@@ -3012,7 +3147,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1325",
       "id": "plans_2026_04_16_backtest_engine_codeblock_31",
-      "community": 31,
+      "community": 35,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3021,7 +3156,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1419",
       "id": "plans_2026_04_16_backtest_engine_codeblock_32",
-      "community": 31,
+      "community": 35,
       "norm_label": "code:python (from decimal import decimal)"
     },
     {
@@ -3030,7 +3165,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1459",
       "id": "plans_2026_04_16_backtest_engine_codeblock_33",
-      "community": 31,
+      "community": 35,
       "norm_label": "code:bash (git add actions/execute_transactions.py tests/test_execute_t)"
     },
     {
@@ -3039,7 +3174,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1466",
       "id": "plans_2026_04_16_backtest_engine_task_10_backtestcontext",
-      "community": 33,
+      "community": 29,
       "norm_label": "task 10: backtestcontext"
     },
     {
@@ -3048,7 +3183,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1476",
       "id": "plans_2026_04_16_backtest_engine_codeblock_34",
-      "community": 33,
+      "community": 29,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3057,7 +3192,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1564",
       "id": "plans_2026_04_16_backtest_engine_codeblock_35",
-      "community": 33,
+      "community": 29,
       "norm_label": "code:python (from decimal import decimal)"
     },
     {
@@ -3066,7 +3201,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1619",
       "id": "plans_2026_04_16_backtest_engine_codeblock_36",
-      "community": 33,
+      "community": 29,
       "norm_label": "code:bash (git add core/context.py tests/test_context.py)"
     },
     {
@@ -3120,7 +3255,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1773",
       "id": "plans_2026_04_16_backtest_engine_task_12_basic_strategy",
-      "community": 9,
+      "community": 11,
       "norm_label": "task 12: basic strategy"
     },
     {
@@ -3129,7 +3264,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1782",
       "id": "plans_2026_04_16_backtest_engine_codeblock_41",
-      "community": 9,
+      "community": 11,
       "norm_label": "code:python (from core.context import backtestcontext)"
     },
     {
@@ -3138,7 +3273,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1810",
       "id": "plans_2026_04_16_backtest_engine_codeblock_42",
-      "community": 9,
+      "community": 11,
       "norm_label": "code:bash (git add strategies/basic.py)"
     },
     {
@@ -3147,7 +3282,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1817",
       "id": "plans_2026_04_16_backtest_engine_task_13_integration_test",
-      "community": 45,
+      "community": 46,
       "norm_label": "task 13: integration test"
     },
     {
@@ -3156,7 +3291,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1826",
       "id": "plans_2026_04_16_backtest_engine_codeblock_43",
-      "community": 45,
+      "community": 46,
       "norm_label": "code:python (from datetime import date)"
     },
     {
@@ -3165,7 +3300,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1915",
       "id": "plans_2026_04_16_backtest_engine_codeblock_44",
-      "community": 45,
+      "community": 46,
       "norm_label": "code:bash (git add tests/test_integration.py)"
     },
     {
@@ -3174,7 +3309,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1922",
       "id": "plans_2026_04_16_backtest_engine_task_14_end_to_end_smoke_test",
-      "community": 9,
+      "community": 11,
       "norm_label": "task 14: end-to-end smoke test"
     },
     {
@@ -3183,7 +3318,7 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1941",
       "id": "plans_2026_04_16_backtest_engine_codeblock_45",
-      "community": 9,
+      "community": 11,
       "norm_label": "code:bash (git add -a)"
     },
     {
@@ -3457,11 +3592,29 @@
       "norm_label": "constraints"
     },
     {
+      "label": "Fetch full price history for a ticker and populate cache.",
+      "file_type": "rationale",
+      "source_file": "actions/openbb_prices.py",
+      "source_location": "L17",
+      "community": 20,
+      "norm_label": "fetch full price history for a ticker and populate cache.",
+      "id": "actions_openbb_prices_rationale_17"
+    },
+    {
+      "label": "# NOTE: obb.equity.screener does not support historical screening.",
+      "file_type": "rationale",
+      "source_file": "actions/openbb_screener.py",
+      "source_location": "L13",
+      "community": 22,
+      "norm_label": "# note: obb.equity.screener does not support historical screening.",
+      "id": "actions_openbb_screener_rationale_13"
+    },
+    {
       "label": "mock.py",
       "file_type": "code",
       "source_file": "strategies/mock.py",
       "source_location": "L1",
-      "community": 46,
+      "community": 47,
       "norm_label": "mock.py",
       "id": "strategies_mock_py"
     },
@@ -3470,7 +3623,7 @@
       "file_type": "code",
       "source_file": "strategies/mock.py",
       "source_location": "L4",
-      "community": 46,
+      "community": 47,
       "norm_label": "run()",
       "id": "strategies_mock_run"
     },
@@ -3479,7 +3632,7 @@
       "file_type": "rationale",
       "source_file": "strategies/mock.py",
       "source_location": "L5",
-      "community": 46,
+      "community": 47,
       "norm_label": "basic equal-weight strategy using mock (deterministic) data.",
       "id": "strategies_mock_rationale_5"
     },
@@ -3492,7 +3645,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "parse_args",
       "id": "main_parse_args"
     },
@@ -3505,7 +3658,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "load_config",
       "id": "main_load_config"
     },
@@ -3518,7 +3671,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "load_strategy",
       "id": "main_load_strategy"
     },
@@ -3531,7 +3684,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "main",
       "id": "main_main"
     },
@@ -3609,7 +3762,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "backtestconfig",
       "id": "models_backtestconfig"
     },
@@ -3856,7 +4009,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "test_backtest_config_creation",
       "id": "test_models_test_backtest_config_creation"
     },
@@ -3895,7 +4048,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "test_load_config",
       "id": "test_main_test_load_config"
     },
@@ -3908,7 +4061,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "test_load_strategy",
       "id": "test_main_test_load_strategy"
     },
@@ -3921,7 +4074,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "test_parse_args",
       "id": "test_main_test_parse_args"
     },
@@ -3960,7 +4113,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "test_backtest_cli_end_to_end",
       "id": "test_integration_test_backtest_cli_end_to_end"
     },
@@ -3973,7 +4126,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "test_advance_first_call_sets_start_date",
       "id": "test_advance_test_advance_first_call_sets_start_date"
     },
@@ -3986,7 +4139,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 56,
+      "community": 57,
       "norm_label": "test_advance_month_interval",
       "id": "test_advance_test_advance_month_interval"
     },
@@ -3999,7 +4152,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "fakecontext (advance test)",
       "id": "test_advance_fakecontext"
     },
@@ -4025,7 +4178,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 58,
       "norm_label": "test_rebalance_equal_weight",
       "id": "test_rebalance_test_rebalance_equal_weight"
     },
@@ -4051,7 +4204,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 59,
       "norm_label": "test_execute_sell_updates_wallet_and_portfolio",
       "id": "test_execute_transactions_test_execute_sell_updates_wallet_and_portfolio"
     },
@@ -4064,7 +4217,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 59,
+      "community": 60,
       "norm_label": "test_screen_stocks_returns_list",
       "id": "test_screen_stocks_test_screen_stocks_returns_list"
     },
@@ -4116,7 +4269,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 51,
       "norm_label": "test_mock_screener_screen_stocks_returns_list",
       "id": "test_mock_screener_test_screen_stocks_returns_list"
     },
@@ -4129,7 +4282,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 50,
+      "community": 51,
       "norm_label": "test_openbb_screener_screen_stocks_returns_list",
       "id": "test_openbb_screener_test_screen_stocks_returns_list"
     },
@@ -4142,7 +4295,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "test_openbb_prices_get_price_returns_decimal",
       "id": "test_openbb_prices_test_get_price_returns_decimal"
     },
@@ -4155,7 +4308,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 51,
+      "community": 52,
       "norm_label": "test_mock_prices_get_price_returns_decimal",
       "id": "test_mock_prices_test_get_price_returns_decimal"
     },
@@ -4168,7 +4321,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "test_mock_fx_rates_get_fx_rate_returns_decimal",
       "id": "test_mock_fx_rates_test_get_fx_rate_returns_decimal"
     },
@@ -4181,7 +4334,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 52,
+      "community": 53,
       "norm_label": "test_openbb_fx_rates_get_fx_rate_returns_decimal",
       "id": "test_openbb_fx_rates_test_get_fx_rate_returns_decimal"
     },
@@ -4454,7 +4607,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 60,
+      "community": 61,
       "norm_label": "display_portfolio.display_portfolio",
       "id": "display_portfolio_display_portfolio"
     },
@@ -4480,7 +4633,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 61,
+      "community": 62,
       "norm_label": "display_wallet.display_wallet",
       "id": "display_wallet_display_wallet"
     },
@@ -4597,7 +4750,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 62,
+      "community": 63,
       "norm_label": "requirements.txt",
       "id": "requirements_txt"
     },
@@ -5853,6 +6006,161 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "core_cache_py",
+      "target": "core_cache_configure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "core_cache_py",
+      "target": "core_cache_clear",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "core_cache_py",
+      "target": "core_cache_cached",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "core_cache_py",
+      "target": "core_cache_make_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "core_cache_py",
+      "target": "core_cache_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "core_cache_py",
+      "target": "core_cache_read",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "core_cache_py",
+      "target": "core_cache_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "core_cache_py",
+      "target": "core_cache_serialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "core_cache_py",
+      "target": "core_cache_deserialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "core_cache_rationale_29",
+      "target": "core_cache_cached",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "core_cache_make_key",
+      "target": "core_cache_serialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "core_cache_read",
+      "target": "core_cache_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "core_cache_write",
+      "target": "core_cache_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "core_cache_read",
+      "target": "core_cache_deserialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "core/cache.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "core_cache_write",
+      "target": "core_cache_serialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "core/context.py",
       "source_location": "L14",
       "weight": 1.0,
@@ -5896,9 +6204,9 @@
       "source_file": "core/context.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_context_backtestcontext",
-      "target": "core_context_backtestcontext_display_config",
-      "confidence_score": 1.0
+      "target": "core_context_backtestcontext_display_config"
     },
     {
       "relation": "method",
@@ -5926,9 +6234,9 @@
       "source_file": "core/context.py",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_context_backtestcontext",
-      "target": "core_context_backtestcontext_display_summary",
-      "confidence_score": 1.0
+      "target": "core_context_backtestcontext_display_summary"
     },
     {
       "relation": "method",
@@ -5996,9 +6304,9 @@
       "source_file": "core/context.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "core_context_backtestcontext",
-      "target": "core_context_backtestcontext_openbb_calculate_stats",
-      "confidence_score": 1.0
+      "target": "core_context_backtestcontext_openbb_calculate_stats"
     },
     {
       "relation": "calls",
@@ -6636,9 +6944,9 @@
       "source_file": "tests/mock_strategy.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_mock_strategy_py",
-      "target": "tests_mock_strategy_run",
-      "confidence_score": 1.0
+      "target": "tests_mock_strategy_run"
     },
     {
       "relation": "rationale_for",
@@ -6646,9 +6954,9 @@
       "source_file": "tests/mock_strategy.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_mock_strategy_rationale_5",
-      "target": "tests_mock_strategy_run",
-      "confidence_score": 1.0
+      "target": "tests_mock_strategy_run"
     },
     {
       "relation": "contains",
@@ -7968,9 +8276,9 @@
       "source_file": "actions/display_config.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_display_config_py",
-      "target": "actions_display_config_display_config",
-      "confidence_score": 1.0
+      "target": "actions_display_config_display_config"
     },
     {
       "relation": "contains",
@@ -7998,9 +8306,9 @@
       "source_file": "actions/openbb_calculate_stats.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_openbb_calculate_stats_py",
-      "target": "actions_openbb_calculate_stats_calculate_stats",
-      "confidence_score": 1.0
+      "target": "actions_openbb_calculate_stats_calculate_stats"
     },
     {
       "relation": "rationale_for",
@@ -8008,9 +8316,9 @@
       "source_file": "actions/openbb_calculate_stats.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_openbb_calculate_stats_rationale_8",
-      "target": "actions_openbb_calculate_stats_calculate_stats",
-      "confidence_score": 1.0
+      "target": "actions_openbb_calculate_stats_calculate_stats"
     },
     {
       "relation": "contains",
@@ -8097,6 +8405,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "actions/openbb_prices.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "actions_openbb_prices_py",
+      "target": "actions_openbb_prices_fetch_ticker_history",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "actions/openbb_prices.py",
       "source_location": "L16",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -8118,11 +8436,42 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "actions/openbb_prices.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "actions_openbb_prices_warm_ticker",
+      "target": "actions_openbb_prices_fetch_ticker_history",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "actions/openbb_prices.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "actions_openbb_prices_rationale_20",
+      "target": "actions_openbb_prices_fetch_ticker_history",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "actions/openbb_prices.py",
       "source_location": "L44",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "actions_openbb_prices_get_price",
       "target": "actions_openbb_prices_warm_ticker"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "actions/openbb_prices.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "actions_openbb_prices_rationale_43",
+      "target": "actions_openbb_prices_warm_ticker",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -8353,9 +8702,9 @@
       "source_file": "actions/display_summary.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_display_summary_py",
-      "target": "actions_display_summary_display_summary",
-      "confidence_score": 1.0
+      "target": "actions_display_summary_display_summary"
     },
     {
       "relation": "contains",
@@ -8363,9 +8712,9 @@
       "source_file": "actions/display_summary.py",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_display_summary_py",
-      "target": "actions_display_summary_periods_per_year",
-      "confidence_score": 1.0
+      "target": "actions_display_summary_periods_per_year"
     },
     {
       "relation": "calls",
@@ -8374,9 +8723,9 @@
       "source_file": "actions/display_summary.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "actions_display_summary_display_summary",
-      "target": "actions_display_summary_periods_per_year",
-      "confidence_score": 1.0
+      "target": "actions_display_summary_periods_per_year"
     },
     {
       "relation": "contains",
@@ -8457,6 +8806,16 @@
       "confidence_score": 1.0,
       "source": "actions_openbb_screener_py",
       "target": "actions_openbb_screener_apply_fundamental_filters"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "actions/openbb_screener.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "actions_openbb_screener_rationale_15",
+      "target": "actions_openbb_screener_py",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -8589,9 +8948,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "backtest_readme_pfire_backtest",
-      "confidence_score": 1.0
+      "target": "backtest_readme_pfire_backtest"
     },
     {
       "relation": "references",
@@ -8609,9 +8968,9 @@
       "source_file": "README.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_pfire_backtest",
-      "target": "backtest_readme_usage",
-      "confidence_score": 1.0
+      "target": "backtest_readme_usage"
     },
     {
       "relation": "contains",
@@ -8619,9 +8978,9 @@
       "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_pfire_backtest",
-      "target": "backtest_readme_configuration",
-      "confidence_score": 1.0
+      "target": "backtest_readme_configuration"
     },
     {
       "relation": "contains",
@@ -8629,9 +8988,9 @@
       "source_file": "README.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_pfire_backtest",
-      "target": "backtest_readme_writing_a_strategy",
-      "confidence_score": 1.0
+      "target": "backtest_readme_writing_a_strategy"
     },
     {
       "relation": "contains",
@@ -8639,9 +8998,9 @@
       "source_file": "README.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_pfire_backtest",
-      "target": "backtest_readme_strategies",
-      "confidence_score": 1.0
+      "target": "backtest_readme_strategies"
     },
     {
       "relation": "contains",
@@ -8649,9 +9008,9 @@
       "source_file": "README.md",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_pfire_backtest",
-      "target": "backtest_readme_project_structure",
-      "confidence_score": 1.0
+      "target": "backtest_readme_project_structure"
     },
     {
       "relation": "contains",
@@ -8659,9 +9018,9 @@
       "source_file": "README.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_pfire_backtest",
-      "target": "backtest_readme_setup",
-      "confidence_score": 1.0
+      "target": "backtest_readme_setup"
     },
     {
       "relation": "contains",
@@ -8669,9 +9028,9 @@
       "source_file": "README.md",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_pfire_backtest",
-      "target": "backtest_readme_tests",
-      "confidence_score": 1.0
+      "target": "backtest_readme_tests"
     },
     {
       "relation": "contains",
@@ -8679,9 +9038,9 @@
       "source_file": "README.md",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_pfire_backtest",
-      "target": "backtest_readme_architecture",
-      "confidence_score": 1.0
+      "target": "backtest_readme_architecture"
     },
     {
       "relation": "contains",
@@ -8689,9 +9048,9 @@
       "source_file": "README.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_usage",
-      "target": "backtest_readme_codeblock_1",
-      "confidence_score": 1.0
+      "target": "backtest_readme_codeblock_1"
     },
     {
       "relation": "contains",
@@ -8699,8 +9058,28 @@
       "source_file": "README.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_configuration",
-      "target": "backtest_readme_codeblock_2",
+      "target": "backtest_readme_codeblock_2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "backtest_readme_configuration",
+      "target": "backtest_readme_clearing_the_cache",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "backtest_readme_clearing_the_cache",
+      "target": "backtest_readme_codeblock_3",
       "confidence_score": 1.0
     },
     {
@@ -8709,8 +9088,18 @@
       "source_file": "README.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_writing_a_strategy",
-      "target": "backtest_readme_codeblock_3",
+      "target": "backtest_readme_codeblock_3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "backtest_readme_writing_a_strategy",
+      "target": "backtest_readme_codeblock_4",
       "confidence_score": 1.0
     },
     {
@@ -8719,8 +9108,18 @@
       "source_file": "README.md",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_project_structure",
-      "target": "backtest_readme_codeblock_4",
+      "target": "backtest_readme_codeblock_4"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "backtest_readme_project_structure",
+      "target": "backtest_readme_codeblock_5",
       "confidence_score": 1.0
     },
     {
@@ -8729,8 +9128,18 @@
       "source_file": "README.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_setup",
-      "target": "backtest_readme_codeblock_5",
+      "target": "backtest_readme_codeblock_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "backtest_readme_setup",
+      "target": "backtest_readme_codeblock_6",
       "confidence_score": 1.0
     },
     {
@@ -8739,8 +9148,18 @@
       "source_file": "README.md",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_readme_tests",
-      "target": "backtest_readme_codeblock_6",
+      "target": "backtest_readme_codeblock_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "backtest_readme_tests",
+      "target": "backtest_readme_codeblock_7",
       "confidence_score": 1.0
     },
     {
@@ -8749,9 +9168,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_md",
-      "target": "backtest_agents_agent_configuration",
-      "confidence_score": 1.0
+      "target": "backtest_agents_agent_configuration"
     },
     {
       "relation": "contains",
@@ -8759,9 +9178,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_agent_configuration",
-      "target": "backtest_agents_project_context",
-      "confidence_score": 1.0
+      "target": "backtest_agents_project_context"
     },
     {
       "relation": "contains",
@@ -8769,9 +9188,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_agent_configuration",
-      "target": "backtest_agents_documentation_context7_mcp",
-      "confidence_score": 1.0
+      "target": "backtest_agents_documentation_context7_mcp"
     },
     {
       "relation": "contains",
@@ -8779,9 +9198,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_agent_configuration",
-      "target": "backtest_agents_agent_behaviors",
-      "confidence_score": 1.0
+      "target": "backtest_agents_agent_behaviors"
     },
     {
       "relation": "contains",
@@ -8789,9 +9208,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_agent_configuration",
-      "target": "backtest_agents_code_style",
-      "confidence_score": 1.0
+      "target": "backtest_agents_code_style"
     },
     {
       "relation": "contains",
@@ -8799,9 +9218,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_agent_configuration",
-      "target": "backtest_agents_development_commands",
-      "confidence_score": 1.0
+      "target": "backtest_agents_development_commands"
     },
     {
       "relation": "contains",
@@ -8809,9 +9228,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_agent_configuration",
-      "target": "backtest_agents_project_structure_conventions",
-      "confidence_score": 1.0
+      "target": "backtest_agents_project_structure_conventions"
     },
     {
       "relation": "contains",
@@ -8819,9 +9238,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_agent_configuration",
-      "target": "backtest_agents_applied_learning",
-      "confidence_score": 1.0
+      "target": "backtest_agents_applied_learning"
     },
     {
       "relation": "contains",
@@ -8829,9 +9248,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_development_commands",
-      "target": "backtest_agents_environment_setup",
-      "confidence_score": 1.0
+      "target": "backtest_agents_environment_setup"
     },
     {
       "relation": "contains",
@@ -8839,9 +9258,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_development_commands",
-      "target": "backtest_agents_running_the_app",
-      "confidence_score": 1.0
+      "target": "backtest_agents_running_the_app"
     },
     {
       "relation": "contains",
@@ -8849,9 +9268,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_environment_setup",
-      "target": "backtest_agents_codeblock_1",
-      "confidence_score": 1.0
+      "target": "backtest_agents_codeblock_1"
     },
     {
       "relation": "contains",
@@ -8859,9 +9278,9 @@
       "source_file": "AGENTS.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backtest_agents_running_the_app",
-      "target": "backtest_agents_codeblock_2",
-      "confidence_score": 1.0
+      "target": "backtest_agents_codeblock_2"
     },
     {
       "relation": "contains",
@@ -8869,9 +9288,9 @@
       "source_file": "CLAUDE.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_md",
-      "target": "backtest_claude_graphify",
-      "confidence_score": 1.0
+      "target": "backtest_claude_graphify"
     },
     {
       "relation": "contains",
@@ -8879,9 +9298,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_superpowers_plans_2026_04_16_backtest_engine_md",
-      "target": "plans_2026_04_16_backtest_engine_backtest_engine_implementation_plan",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_backtest_engine_implementation_plan"
     },
     {
       "relation": "contains",
@@ -8889,9 +9308,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_backtest_engine_implementation_plan",
-      "target": "plans_2026_04_16_backtest_engine_file_structure",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_file_structure"
     },
     {
       "relation": "contains",
@@ -8899,9 +9318,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_1",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_1"
     },
     {
       "relation": "contains",
@@ -8909,9 +9328,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_1_project_setup_data_models",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_1_project_setup_data_models"
     },
     {
       "relation": "contains",
@@ -8919,9 +9338,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L235",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_2_mock_prices_provider",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_2_mock_prices_provider"
     },
     {
       "relation": "contains",
@@ -8929,9 +9348,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L345",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_3_mock_fx_rates_provider",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_3_mock_fx_rates_provider"
     },
     {
       "relation": "contains",
@@ -8939,9 +9358,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L454",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_4_mock_screener_provider",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_4_mock_screener_provider"
     },
     {
       "relation": "contains",
@@ -8949,9 +9368,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L564",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_5_advance_action",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_5_advance_action"
     },
     {
       "relation": "contains",
@@ -8959,9 +9378,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L715",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance"
     },
     {
       "relation": "contains",
@@ -8969,9 +9388,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L994",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_7_screen_stocks_action",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_7_screen_stocks_action"
     },
     {
       "relation": "contains",
@@ -8979,9 +9398,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1082",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_8_rebalance_action",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_8_rebalance_action"
     },
     {
       "relation": "contains",
@@ -8989,9 +9408,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1315",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_9_execute_transactions_action",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_9_execute_transactions_action"
     },
     {
       "relation": "contains",
@@ -8999,9 +9418,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1466",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_10_backtestcontext",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_10_backtestcontext"
     },
     {
       "relation": "contains",
@@ -9009,9 +9428,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1626",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_11_yaml_config_loading_main_py",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_11_yaml_config_loading_main_py"
     },
     {
       "relation": "contains",
@@ -9019,9 +9438,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1773",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_12_basic_strategy",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_12_basic_strategy"
     },
     {
       "relation": "contains",
@@ -9029,9 +9448,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1817",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_13_integration_test",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_13_integration_test"
     },
     {
       "relation": "contains",
@@ -9039,9 +9458,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1922",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_file_structure",
-      "target": "plans_2026_04_16_backtest_engine_task_14_end_to_end_smoke_test",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_task_14_end_to_end_smoke_test"
     },
     {
       "relation": "contains",
@@ -9049,9 +9468,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_1_project_setup_data_models",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_2",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_2"
     },
     {
       "relation": "contains",
@@ -9059,9 +9478,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L86",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_1_project_setup_data_models",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_3",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_3"
     },
     {
       "relation": "contains",
@@ -9069,9 +9488,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_1_project_setup_data_models",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_4",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_4"
     },
     {
       "relation": "contains",
@@ -9079,9 +9498,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L228",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_1_project_setup_data_models",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_5",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_5"
     },
     {
       "relation": "contains",
@@ -9089,9 +9508,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L248",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_2_mock_prices_provider",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_6",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_6"
     },
     {
       "relation": "contains",
@@ -9099,9 +9518,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L298",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_2_mock_prices_provider",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_7",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_7"
     },
     {
       "relation": "contains",
@@ -9109,9 +9528,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L338",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_2_mock_prices_provider",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_8",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_8"
     },
     {
       "relation": "contains",
@@ -9119,9 +9538,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L355",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_3_mock_fx_rates_provider",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_9",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_9"
     },
     {
       "relation": "contains",
@@ -9129,9 +9548,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L404",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_3_mock_fx_rates_provider",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_10",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_10"
     },
     {
       "relation": "contains",
@@ -9139,9 +9558,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L447",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_3_mock_fx_rates_provider",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_11",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_11"
     },
     {
       "relation": "contains",
@@ -9149,9 +9568,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L464",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_4_mock_screener_provider",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_12",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_12"
     },
     {
       "relation": "contains",
@@ -9159,9 +9578,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L521",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_4_mock_screener_provider",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_13",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_13"
     },
     {
       "relation": "contains",
@@ -9169,9 +9588,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L557",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_4_mock_screener_provider",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_14",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_14"
     },
     {
       "relation": "contains",
@@ -9179,9 +9598,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L574",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_5_advance_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_15",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_15"
     },
     {
       "relation": "contains",
@@ -9189,9 +9608,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L666",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_5_advance_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_16",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_16"
     },
     {
       "relation": "contains",
@@ -9199,9 +9618,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L708",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_5_advance_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_17",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_17"
     },
     {
       "relation": "contains",
@@ -9209,9 +9628,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L729",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_18",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_18"
     },
     {
       "relation": "contains",
@@ -9219,9 +9638,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L781",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_19",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_19"
     },
     {
       "relation": "contains",
@@ -9229,9 +9648,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L801",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_20",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_20"
     },
     {
       "relation": "contains",
@@ -9239,9 +9658,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L843",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_21",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_21"
     },
     {
       "relation": "contains",
@@ -9249,9 +9668,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L863",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_22",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_22"
     },
     {
       "relation": "contains",
@@ -9259,9 +9678,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L951",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_23",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_23"
     },
     {
       "relation": "contains",
@@ -9269,9 +9688,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L987",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_6_display_actions_wallet_portfolio_balance",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_24",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_24"
     },
     {
       "relation": "contains",
@@ -9279,9 +9698,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1004",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_7_screen_stocks_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_25",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_25"
     },
     {
       "relation": "contains",
@@ -9289,9 +9708,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1059",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_7_screen_stocks_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_26",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_26"
     },
     {
       "relation": "contains",
@@ -9299,9 +9718,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1075",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_7_screen_stocks_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_27",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_27"
     },
     {
       "relation": "contains",
@@ -9309,9 +9728,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1092",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_8_rebalance_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_28",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_28"
     },
     {
       "relation": "contains",
@@ -9319,9 +9738,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1221",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_8_rebalance_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_29",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_29"
     },
     {
       "relation": "contains",
@@ -9329,9 +9748,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1308",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_8_rebalance_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_30",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_30"
     },
     {
       "relation": "contains",
@@ -9339,9 +9758,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1325",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_9_execute_transactions_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_31",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_31"
     },
     {
       "relation": "contains",
@@ -9349,9 +9768,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1419",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_9_execute_transactions_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_32",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_32"
     },
     {
       "relation": "contains",
@@ -9359,9 +9778,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1459",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_9_execute_transactions_action",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_33",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_33"
     },
     {
       "relation": "contains",
@@ -9369,9 +9788,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1476",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_10_backtestcontext",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_34",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_34"
     },
     {
       "relation": "contains",
@@ -9379,9 +9798,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1564",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_10_backtestcontext",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_35",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_35"
     },
     {
       "relation": "contains",
@@ -9389,9 +9808,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1619",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_10_backtestcontext",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_36",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_36"
     },
     {
       "relation": "contains",
@@ -9399,9 +9818,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1637",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_11_yaml_config_loading_main_py",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_37",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_37"
     },
     {
       "relation": "contains",
@@ -9409,9 +9828,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1653",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_11_yaml_config_loading_main_py",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_38",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_38"
     },
     {
       "relation": "contains",
@@ -9419,9 +9838,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1705",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_11_yaml_config_loading_main_py",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_39",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_39"
     },
     {
       "relation": "contains",
@@ -9429,9 +9848,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1766",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_11_yaml_config_loading_main_py",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_40",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_40"
     },
     {
       "relation": "contains",
@@ -9439,9 +9858,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1782",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_12_basic_strategy",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_41",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_41"
     },
     {
       "relation": "contains",
@@ -9449,9 +9868,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1810",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_12_basic_strategy",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_42",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_42"
     },
     {
       "relation": "contains",
@@ -9459,9 +9878,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1826",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_13_integration_test",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_43",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_43"
     },
     {
       "relation": "contains",
@@ -9469,9 +9888,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1915",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_13_integration_test",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_44",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_44"
     },
     {
       "relation": "contains",
@@ -9479,9 +9898,9 @@
       "source_file": "docs/superpowers/plans/2026-04-16-backtest-engine.md",
       "source_location": "L1941",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "plans_2026_04_16_backtest_engine_task_14_end_to_end_smoke_test",
-      "target": "plans_2026_04_16_backtest_engine_codeblock_45",
-      "confidence_score": 1.0
+      "target": "plans_2026_04_16_backtest_engine_codeblock_45"
     },
     {
       "relation": "contains",
@@ -9489,9 +9908,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_superpowers_specs_2026_04_16_backtest_engine_design_md",
-      "target": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec"
     },
     {
       "relation": "contains",
@@ -9499,9 +9918,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_overview",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_overview"
     },
     {
       "relation": "contains",
@@ -9509,9 +9928,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_architecture",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_architecture"
     },
     {
       "relation": "contains",
@@ -9519,9 +9938,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_data_model",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_data_model"
     },
     {
       "relation": "contains",
@@ -9529,9 +9948,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_configuration",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_configuration"
     },
     {
       "relation": "contains",
@@ -9539,9 +9958,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_strategy_interface",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_strategy_interface"
     },
     {
       "relation": "contains",
@@ -9549,9 +9968,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_backtestcontext",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_backtestcontext"
     },
     {
       "relation": "contains",
@@ -9559,9 +9978,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_actions",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_actions"
     },
     {
       "relation": "contains",
@@ -9569,9 +9988,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_mock_data_providers",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_mock_data_providers"
     },
     {
       "relation": "contains",
@@ -9579,9 +9998,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L213",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_interval_date_handling",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_interval_date_handling"
     },
     {
       "relation": "contains",
@@ -9589,9 +10008,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L223",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_file_structure",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_file_structure"
     },
     {
       "relation": "contains",
@@ -9599,9 +10018,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L256",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_backtest_engine_design_spec",
-      "target": "specs_2026_04_16_backtest_engine_design_constraints",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_constraints"
     },
     {
       "relation": "contains",
@@ -9609,9 +10028,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_data_model",
-      "target": "specs_2026_04_16_backtest_engine_design_codeblock_1",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_codeblock_1"
     },
     {
       "relation": "contains",
@@ -9619,9 +10038,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_configuration",
-      "target": "specs_2026_04_16_backtest_engine_design_codeblock_2",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_codeblock_2"
     },
     {
       "relation": "contains",
@@ -9629,9 +10048,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_strategy_interface",
-      "target": "specs_2026_04_16_backtest_engine_design_codeblock_3",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_codeblock_3"
     },
     {
       "relation": "contains",
@@ -9639,9 +10058,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_actions",
-      "target": "specs_2026_04_16_backtest_engine_design_advance_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_advance_py"
     },
     {
       "relation": "contains",
@@ -9649,9 +10068,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_actions",
-      "target": "specs_2026_04_16_backtest_engine_design_screen_stocks_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_screen_stocks_py"
     },
     {
       "relation": "contains",
@@ -9659,9 +10078,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_actions",
-      "target": "specs_2026_04_16_backtest_engine_design_rebalance_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_rebalance_py"
     },
     {
       "relation": "contains",
@@ -9669,9 +10088,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_actions",
-      "target": "specs_2026_04_16_backtest_engine_design_execute_transactions_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_execute_transactions_py"
     },
     {
       "relation": "contains",
@@ -9679,9 +10098,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_actions",
-      "target": "specs_2026_04_16_backtest_engine_design_display_wallet_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_display_wallet_py"
     },
     {
       "relation": "contains",
@@ -9689,9 +10108,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_actions",
-      "target": "specs_2026_04_16_backtest_engine_design_display_portfolio_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_display_portfolio_py"
     },
     {
       "relation": "contains",
@@ -9699,9 +10118,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_actions",
-      "target": "specs_2026_04_16_backtest_engine_design_display_balance_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_display_balance_py"
     },
     {
       "relation": "contains",
@@ -9709,9 +10128,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_mock_data_providers",
-      "target": "specs_2026_04_16_backtest_engine_design_mock_prices_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_mock_prices_py"
     },
     {
       "relation": "contains",
@@ -9719,9 +10138,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_mock_data_providers",
-      "target": "specs_2026_04_16_backtest_engine_design_mock_fx_rates_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_mock_fx_rates_py"
     },
     {
       "relation": "contains",
@@ -9729,9 +10148,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L204",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_mock_data_providers",
-      "target": "specs_2026_04_16_backtest_engine_design_mock_screener_py",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_mock_screener_py"
     },
     {
       "relation": "contains",
@@ -9739,9 +10158,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L190",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_mock_prices_py",
-      "target": "specs_2026_04_16_backtest_engine_design_codeblock_4",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_codeblock_4"
     },
     {
       "relation": "contains",
@@ -9749,9 +10168,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_mock_fx_rates_py",
-      "target": "specs_2026_04_16_backtest_engine_design_codeblock_5",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_codeblock_5"
     },
     {
       "relation": "contains",
@@ -9759,9 +10178,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L206",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_mock_screener_py",
-      "target": "specs_2026_04_16_backtest_engine_design_codeblock_6",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_codeblock_6"
     },
     {
       "relation": "contains",
@@ -9769,9 +10188,9 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md",
       "source_location": "L225",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "specs_2026_04_16_backtest_engine_design_file_structure",
-      "target": "specs_2026_04_16_backtest_engine_design_codeblock_7",
-      "confidence_score": 1.0
+      "target": "specs_2026_04_16_backtest_engine_design_codeblock_7"
     },
     {
       "relation": "contains",
@@ -11125,5 +11544,5 @@
       "source_file": "docs/superpowers/specs/2026-04-16-backtest-engine-design.md"
     }
   ],
-  "built_at_commit": "a49b6146c284663ff1c7e36f7613e97f19bf61ca"
+  "built_at_commit": "77f80d12d0f57e6501fb5ce1e99672820dc33f75"
 }

@@ -17,10 +17,15 @@ Edit `config/backtest.yaml`:
 ```yaml
 start_date: "2022-01-01"
 end_date: "2026-06-01"
-interval: "month"       # day | month | Ndays (e.g. 7days)
+interval: "month"       # day | week | month | quarter | year
 base_currency: "USD"
 initial_cash:
   USD: 10000
+
+cache:
+  enabled: true     # false to always hit live APIs
+  ttl_days: 7       # cached responses older than this are re-fetched
+  dir: "cache"      # directory for cache files (gitignored)
 
 screening:
   mktcap_min: 200000000000
@@ -29,16 +34,17 @@ screening:
   beta_max: 1.5
 
 summary:
-  total_return: true
-  cagr: true
-  max_drawdown: true
-  volatility: true
-  sharpe_ratio: true
-  total_trades: true
-  buy_trades: false
-  sell_trades: false
-  win_rate: true
-  profit_factor: true
+  total_return:
+    enabled: true
+    thresholds:
+      excellent: { min: 50,  hint: "..." }
+      ...
+```
+
+### Clearing the cache
+
+```bash
+python main.py -config=config/backtest.yaml -strategy=strategies/basic.py --clear-cache
 ```
 
 ## Writing a Strategy
@@ -112,3 +118,5 @@ pytest tests/
   and avg cost basis; `ctx.display_summary()` uses this to compute total return, CAGR, max drawdown,
   Sharpe, volatility, win rate, and profit factor
 - **Configurable summary** — `summary:` section in YAML toggles which metrics are printed
+- **File-based cache** — `cache:` section in YAML enables/disables caching of API responses to
+  `cache/` dir (gitignored); TTL configurable; clear with `--clear-cache`

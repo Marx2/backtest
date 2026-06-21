@@ -42,3 +42,4 @@ class BacktestConfig:
     initial_cash: dict[str, Decimal]
     screening: dict
     summary: dict = field(default_factory=dict)
+    cache: dict = field(default_factory=dict)
